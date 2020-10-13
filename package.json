@@ -1,0 +1,27 @@
+{
+  "name": "hots",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/xmas/hots.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/xmas/hots/issues"
+  },
+  "homepage": "https://github.com/xmas/hots#readme",
+  "dependencies": {
+    "axios": "^0.20.0",
+    "colors": "^1.4.0",
+    "dotenv": "^8.2.0",
+    "lodash": "^4.17.20",
+    "objects-to-csv": "^1.3.6",
+    "yargs": "^16.0.3"
+  }
+}
