@@ -4,4 +4,4 @@
 
 
 
- node stats.js --team "The Nine Avatara" -d data/*
+ node stats.js -d data/* --team "The Nine Avatara" 
