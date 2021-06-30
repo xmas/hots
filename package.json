@@ -24,6 +24,7 @@
     "lodash": "^4.17.20",
     "mathjs": "^7.5.1",
     "ml-matrix": "^6.5.3",
+    "mongodb": "^3.6.9",
     "objects-to-csv": "^1.3.6",
     "yargs": "^16.0.3"
   }
