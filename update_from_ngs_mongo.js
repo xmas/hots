@@ -2,70 +2,192 @@ const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 const _ = require('lodash')
 const ObjectsToCsv = require('objects-to-csv');
+const fs = require('fs')
+require('dotenv').config();
+const jsonl = require("node-jsonl");
+
+const base = 'http://nexusgamingseries.org/api'
+const axios = require('axios')
+axios.defaults.params = {};
+const api = axios.create({
+    baseURL: base
+})
+
+const hp_base = 'https://api.heroesprofile.com/api'
+axios.defaults.params = {};
+const hp_api = axios.create({
+    baseURL: hp_base
+})
+hp_api.interceptors.request.use((config) => {
+    config.params = config.params || {};
+    config.params['api_token'] = process.env.HEROES_PROFILE_TOKEN
+    return config;
+});
+
 
 const agg = [
     {
-      '$match': {
-        'questionnaire.registered': true
-      }
+        '$match': {
+            'questionnaire.registered': true
+        }
     }, {
-      '$lookup': {
-        'from': 'users', 
-        'localField': 'teamMembers.displayName', 
-        'foreignField': 'displayName', 
-        'as': 'teamDetails'
-      }
+        '$lookup': {
+            'from': 'users',
+            'localField': 'teamMembers.displayName',
+            'foreignField': 'displayName',
+            'as': 'teamDetails'
+        }
     }
-  ];
-  
-  const db_name = "heroku_8jbv3vlb"
- 
+];
+
+const db_name = "heroku_8jbv3vlb"
+
+
+let s11 = JSON.parse(fs.readFileSync('ngs_s11_results.json', 'utf8'))
+
+const player_level_file = "ngs_player_level_cache.jsonl"
+const player_detail_file = "ngs_player_detail_cache.jsonl"
+let player_levels = {}
+let player_details = {}
+
+
+
+async function readPlayerCache(filepath, obj, key) {
+    const rl = jsonl.readlines(filepath)
+
+    while (true) {
+        const { value, done } = await rl.next()
+        if (done) break;
+        // console.log(value); // value => T
+        obj[value[key]] = value
+    }
+}
+
 
 async function run() {
-  try {
-    let teams = []
-    const client = MongoClient.connect(
-        'mongodb+srv://neoneROprod:f88IfzGEopyW6VXi@cluster1.tumzk.mongodb.net/myFirstDatabase?authSource=admin&replicaSet=atlas-8v96lc-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true',
-        { useNewUrlParser: true, useUnifiedTopology: true },
-        async function(connectErr, client) {
-          assert.equal(null, connectErr);
-          const coll = client.db(db_name).collection('teams');
-          const aggCursor = coll.aggregate(agg)
-          await aggCursor.forEach(team => {
-            // console.log(team.teamDetails);
-            const team_data = parseTeam(team)
-            teams.push(team_data)
-          });
-          console.log(teams)
-          new ObjectsToCsv(teams).toDisk(`ngs_teams.csv`);
+    try {
+        await readPlayerCache(player_level_file, player_levels, 'battletag')
+        await readPlayerCache(player_detail_file, player_details, 'battletag')
 
-          client.close();
-        });
-  } catch (e) {
-      console.log(e)
-  }
+        let teams = []
+        const client = MongoClient.connect(
+            'mongodb+srv://neoneROprod:f88IfzGEopyW6VXi@cluster1.tumzk.mongodb.net/myFirstDatabase?authSource=admin&replicaSet=atlas-8v96lc-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true',
+            { useNewUrlParser: true, useUnifiedTopology: true },
+            async function (connectErr, client) {
+                assert.equal(null, connectErr);
+                const coll = client.db(db_name).collection('teams');
+                const aggCursor = coll.aggregate(agg)
+                await aggCursor.forEach(async (team) => {
+                    // console.log(team.teamDetails);
+                    if (!team) {
+                        console.log(`UNDEFINED TEAM FOUND`)
+                        console.log(team)
+                        process.exit()
+                    }
+                    const s11_data = s11[team.teamName]
+                    // console.log(s11_data)
+                    Object.assign(team, s11_data)
+
+                    const team_data = await parseTeam(team)
+
+                    teams.push(team_data)
+                });
+                console.log(`Currently there are ${teams.length} teams registered`)
+                new ObjectsToCsv(teams).toDisk(`ngs_teams.csv`);
+
+                client.close();
+            });
+    } catch (e) {
+        console.log(e)
+    }
 }
 run().catch(console.dir);
 
-function parseTeam(team) {
+async function smurfDetectPlayer(player, team_name) {
+    let level
+    try {
+        let result = player_levels[player.displayName]
+        if (!result) {
+            result = await hp_api.get(`/Player?battletag=${encodeURIComponent(player.displayName)}&region=1`)
+            fs.appendFile(player_level_file, JSON.stringify(result.data) + "\n", function (err) {
+                if (err) return console.log(err);
+
+            });
+        }
+        level = result.account_level
+    } catch (e) {
+        console.log(e)
+    }
+    
+    if (level > 300) {
+        // console.log(`HIGH LEVEL ${player.displayName} level: ${level}`)
+        return
+    } else {
+        // console.log(`${player.displayName} level: ${level}`)
+
+    }
+
+    try {
+        let result = player_details[player.displayName]
+        if (!result) {
+            console.log(`no player details for ${player.displayName} level: ${level}`)
+            result = await hp_api.get(`/Player/Hero/All?battletag=${encodeURIComponent(player.displayName)}&region=1&game_type=${encodeURIComponent("Storm League")}`)
+            result = result.data
+            result['battletag'] = player.displayName
+            fs.appendFile(player_detail_file, JSON.stringify(result) + "\n", function (err) {
+                if (err) return console.log(err);
+
+            });
+        }
+        // console.log(result)
+        let storm = result["Storm League"]
+        // console.log(_.keys(storm))
+        let win_rate = _.chain(storm).map("win_rate").mean().value()
+
+        // console.log(team_name)
+        console.log(`${player.displayName} level: ${level} win_rate: ${win_rate} team: ${team_name.teamName_lower}`)
+    } catch (e) {
+        console.log(e)
+    }
+
+
+
+}
+
+async function parseTeam(team) {
     // _.map(team.teamDetails, (player) => {
     //     console.log(player.displayName)
     //     console.log(player.level)
     //     console.log(player)
     // })
 
-    let player_ranks = _.map(team.teamDetails, (player) => {
+    let player_ranks = _.map(team.teamDetails, async (player) => {
         let latest = _.last(player.verifiedRankHistory)
         let levels = _.map(player.verifiedRankHistory, 'level')
+        // console.log(player)
+        await smurfDetectPlayer(player, team)
+        if (!latest) {
+            console.log(`no verified history for player: ${player.displayName} on team: ${team.teamName}`)
+            // console.log(player)
+            // process.exit()
+            return {
+                name: player.displayName,
+                rank: 'UR',
+                level: 0,
+                heroesProfileMmr: player.heroesProfileMmr
+            }
+        }
+
         return {
             name: player.displayName,
-            rank: `${latest.hlRankMetal.charAt(0)}${latest.hlRankDivision}`,
+            rank: latest.hlRankMetal.startsWith("Grand") ? "GM" : `${latest.hlRankMetal.charAt(0)}${latest.hlRankDivision}`,
             level: latest.level,
             heroesProfileMmr: player.heroesProfileMmr
         }
     })
-    let avg_mmr_top_four = _.chain(player_ranks).sortBy('heroesProfileMmr').reverse().slice(0,4).meanBy('heroesProfileMmr').value()
-    let avg_rank_top_four = _.chain(player_ranks).sortBy('level').reverse().slice(0,4).meanBy('level').value()
+    player_ranks = Promise.all(player_ranks)
+    let avg_mmr_top_four = _.chain(player_ranks).sortBy('heroesProfileMmr').reverse().slice(0, 4).meanBy('heroesProfileMmr').value()
+    let avg_rank_top_four = _.chain(player_ranks).sortBy('level').reverse().slice(0, 4).meanBy('level').value()
     let ranks = _.chain(player_ranks).sortBy('level').reverse().map('rank').value()
     let all_ranks = _.chain(player_ranks).sortBy('level').reverse().map('rank').join(', ').value()
     let all_mmr = _.chain(player_ranks).sortBy('heroesProfileMmr').reverse().map('heroesProfileMmr').join(', ').value()
@@ -73,6 +195,17 @@ function parseTeam(team) {
     return {
         team: team.teamName,
         captain: team.captain,
+        last_season: team.questionnaire.lastSeaon,
+        old_team: team.questionnaire.oldTeam,
+        old_division: team.questionnaire.oldDivision,
+        returningPlayers: team.questionnaire.returningPlayers,
+        returningPlayersDiv: team.questionnaire.returningPlayersDiv,
+        newPlayers: team.questionnaire.newPlayers,
+        compLevel: team.questionnaire.compLevel,
+        divisionPlacement: team.questionnaire.divisionPlacement,
+        priorPlacement: team.questionnaire.priorPlacement,
+        otherLeagues: team.questionnaire.otherLeagues,
+        coast: team.questionnaire.eastWest,
         player_count: team.teamDetails.length,
         avg_rank_top_four: avg_rank_top_four,
         rank_1: ranks[0],
@@ -85,6 +218,12 @@ function parseTeam(team) {
         max_mmr: _.maxBy(team.teamDetails, 'heroesProfileMmr').heroesProfileMmr,
         mean_mmr: _.meanBy(team.teamDetails, 'heroesProfileMmr'),
         min_mmr: _.minBy(team.teamDetails, 'heroesProfileMmr').heroesProfileMmr,
-        all_mmr: all_mmr
+        all_mmr: all_mmr,
+        season_11_div: _.get(team, 'season_11_div', 'new team'),
+        wins: _.get(team, 'wins', ''),
+        losses: _.get(team, 'losses', ''),
+        points: _.get(team, 'points', ''),
+        dominations: _.get(team, 'dominations', ''),
+        matchesPlayed: _.get(team, 'matchesPlayed', ''),
     }
 }
