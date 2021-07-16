@@ -68,40 +68,46 @@ async function run() {
     try {
         await readPlayerCache(player_level_file, player_levels, 'battletag')
         await readPlayerCache(player_detail_file, player_details, 'battletag')
-
         let teams = []
-        const client = MongoClient.connect(
+        let  = []
+
+        const client = await MongoClient.connect(
             'mongodb+srv://neoneROprod:f88IfzGEopyW6VXi@cluster1.tumzk.mongodb.net/myFirstDatabase?authSource=admin&replicaSet=atlas-8v96lc-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true',
-            { useNewUrlParser: true, useUnifiedTopology: true },
-            async function (connectErr, client) {
-                assert.equal(null, connectErr);
-                const coll = client.db(db_name).collection('teams');
-                const aggCursor = coll.aggregate(agg)
-                await aggCursor.forEach(async (team) => {
-                    // console.log(team.teamDetails);
-                    if (!team) {
-                        console.log(`UNDEFINED TEAM FOUND`)
-                        console.log(team)
-                        process.exit()
-                    }
-                    const s11_data = s11[team.teamName]
-                    // console.log(s11_data)
-                    Object.assign(team, s11_data)
+            { useNewUrlParser: true, useUnifiedTopology: true })
 
-                    const team_data = await parseTeam(team)
+        const raw_teams = await client.db(db_name).collection('teams').aggregate(agg).toArray()
+        client.close();
 
-                    teams.push(team_data)
-                });
-                console.log(`Currently there are ${teams.length} teams registered`)
-                new ObjectsToCsv(teams).toDisk(`ngs_teams.csv`);
+        for (let i = 0; i < raw_teams.length; i++) {
+            const raw_team = raw_teams[i]
+            const team_data = await processTeam(raw_team)
+            teams.push(team_data)
 
-                client.close();
-            });
+        }
+        console.log(`Currently there are ${teams.length} teams registered`)
+        new ObjectsToCsv(teams).toDisk(`ngs_teams.csv`);
+        console.log(raw_teams)
     } catch (e) {
         console.log(e)
     }
+
 }
 run().catch(console.dir);
+
+async function processTeam(team) {
+    if (!team) {
+        console.log(`UNDEFINED TEAM FOUND`)
+        console.log(team)
+        process.exit()
+    }
+    const s11_data = s11[team.teamName]
+    // console.log(s11_data)
+    Object.assign(team, s11_data)
+
+    const team_data = await parseTeam(team)
+    console.log('data added to teams list')
+    return team_data
+}
 
 async function smurfDetectPlayer(player, team_name) {
     let level
@@ -118,7 +124,7 @@ async function smurfDetectPlayer(player, team_name) {
     } catch (e) {
         console.log(e)
     }
-    
+
     if (level > 300) {
         // console.log(`HIGH LEVEL ${player.displayName} level: ${level}`)
         return
@@ -155,27 +161,23 @@ async function smurfDetectPlayer(player, team_name) {
 }
 
 async function parseTeam(team) {
-    // _.map(team.teamDetails, (player) => {
-    //     console.log(player.displayName)
-    //     console.log(player.level)
-    //     console.log(player)
-    // })
 
-    let player_ranks = _.map(team.teamDetails, async (player) => {
+    let player_ranks_promises = _.map(team.teamDetails, async (player) => {
         let latest = _.last(player.verifiedRankHistory)
         let levels = _.map(player.verifiedRankHistory, 'level')
-        // console.log(player)
+
         await smurfDetectPlayer(player, team)
         if (!latest) {
             console.log(`no verified history for player: ${player.displayName} on team: ${team.teamName}`)
-            // console.log(player)
-            // process.exit()
             return {
                 name: player.displayName,
                 rank: 'UR',
                 level: 0,
                 heroesProfileMmr: player.heroesProfileMmr
             }
+        }
+        if (!player['heroesProfileMmr']) {
+            console.log(`no MMR for player: ${player.displayName} team: ${team.teamName_lower}`)
         }
 
         return {
@@ -185,7 +187,13 @@ async function parseTeam(team) {
             heroesProfileMmr: player.heroesProfileMmr
         }
     })
-    player_ranks = Promise.all(player_ranks)
+    const player_ranks = await Promise.all(player_ranks_promises)
+
+    console.log(team.teamName_lower)
+    // console.log(player_ranks)
+    // console.log(_.map(player_ranks, 'heroesProfileMmr'))
+    console.log(_.chain(player_ranks).sortBy('heroesProfileMmr').reverse().slice(0, 4).meanBy('heroesProfileMmr').value())
+
     let avg_mmr_top_four = _.chain(player_ranks).sortBy('heroesProfileMmr').reverse().slice(0, 4).meanBy('heroesProfileMmr').value()
     let avg_rank_top_four = _.chain(player_ranks).sortBy('level').reverse().slice(0, 4).meanBy('level').value()
     let ranks = _.chain(player_ranks).sortBy('level').reverse().map('rank').value()
@@ -195,7 +203,7 @@ async function parseTeam(team) {
     return {
         team: team.teamName,
         captain: team.captain,
-        last_season: team.questionnaire.lastSeaon,
+        last_season: team.questionnaire.lastSeason,
         old_team: team.questionnaire.oldTeam,
         old_division: team.questionnaire.oldDivision,
         returningPlayers: team.questionnaire.returningPlayers,
@@ -205,6 +213,7 @@ async function parseTeam(team) {
         divisionPlacement: team.questionnaire.divisionPlacement,
         priorPlacement: team.questionnaire.priorPlacement,
         otherLeagues: team.questionnaire.otherLeagues,
+        otherInfo: team.questionnaire.otherInfo,
         coast: team.questionnaire.eastWest,
         player_count: team.teamDetails.length,
         avg_rank_top_four: avg_rank_top_four,
