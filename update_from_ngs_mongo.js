@@ -24,6 +24,12 @@ hp_api.interceptors.request.use((config) => {
     return config;
 });
 
+const jrwAnalysis = require('johnsons-relative-weights');
+const {
+    Matrix,
+    correlation
+} = require('ml-matrix');
+
 
 const agg = [
     {
@@ -85,8 +91,11 @@ async function run() {
 
         }
         console.log(`Currently there are ${teams.length} teams registered`)
+        
+
+
         new ObjectsToCsv(teams).toDisk(`ngs_teams.csv`);
-        console.log(raw_teams)
+        // console.log(raw_teams)
     } catch (e) {
         console.log(e)
     }
@@ -105,11 +114,11 @@ async function processTeam(team) {
     Object.assign(team, s11_data)
 
     const team_data = await parseTeam(team)
-    console.log('data added to teams list')
+    // console.log('data added to teams list')
     return team_data
 }
 
-async function smurfDetectPlayer(player, team_name) {
+async function smurfDetectPlayer(player, team) {
     let level
     try {
         let result = player_levels[player.displayName]
@@ -132,7 +141,8 @@ async function smurfDetectPlayer(player, team_name) {
         // console.log(`${player.displayName} level: ${level}`)
 
     }
-
+    // console.log('BUG IN LEVELS>>>>>')
+    // return
     try {
         let result = player_details[player.displayName]
         if (!result) {
@@ -151,7 +161,8 @@ async function smurfDetectPlayer(player, team_name) {
         let win_rate = _.chain(storm).map("win_rate").mean().value()
 
         // console.log(team_name)
-        console.log(`${player.displayName} level: ${level} win_rate: ${win_rate} team: ${team_name.teamName_lower}`)
+        // _.set(team['potentialSmurfs'],  
+        console.log(`${player.displayName} level: ${level} win_rate: ${win_rate} team: ${team.teamName_lower}`)
     } catch (e) {
         console.log(e)
     }
@@ -189,20 +200,23 @@ async function parseTeam(team) {
     })
     const player_ranks = await Promise.all(player_ranks_promises)
 
-    console.log(team.teamName_lower)
+    // console.log(team.teamName_lower)
     // console.log(player_ranks)
     // console.log(_.map(player_ranks, 'heroesProfileMmr'))
-    console.log(_.chain(player_ranks).sortBy('heroesProfileMmr').reverse().slice(0, 4).meanBy('heroesProfileMmr').value())
+    // console.log(_.chain(player_ranks).sortBy('heroesProfileMmr').reverse().slice(0, 4).meanBy('heroesProfileMmr').value())
 
     let avg_mmr_top_four = _.chain(player_ranks).sortBy('heroesProfileMmr').reverse().slice(0, 4).meanBy('heroesProfileMmr').value()
     let avg_rank_top_four = _.chain(player_ranks).sortBy('level').reverse().slice(0, 4).meanBy('level').value()
     let ranks = _.chain(player_ranks).sortBy('level').reverse().map('rank').value()
     let all_ranks = _.chain(player_ranks).sortBy('level').reverse().map('rank').join(', ').value()
     let all_mmr = _.chain(player_ranks).sortBy('heroesProfileMmr').reverse().map('heroesProfileMmr').join(', ').value()
+    let captain_discord = _.find(team.teamDetails, ['displayName', team.captain])
+    // console.log(team.captain)
+    // console.log(team.teamDetails)
 
     return {
         team: team.teamName,
-        captain: team.captain,
+        captain: captain_discord['discordTag'],
         last_season: team.questionnaire.lastSeason,
         old_team: team.questionnaire.oldTeam,
         old_division: team.questionnaire.oldDivision,
@@ -234,5 +248,67 @@ async function parseTeam(team) {
         points: _.get(team, 'points', ''),
         dominations: _.get(team, 'dominations', ''),
         matchesPlayed: _.get(team, 'matchesPlayed', ''),
+    }
+}
+
+
+
+function rwa(jsonl) {
+    let l = 0
+    let vals = _.map(jsonl, (p) => {
+        if (l == 0) {
+            l = Object.values(p).length
+        } else {
+            if (Object.values(p).length != l) {
+                console.log(`${l} != ${Object.values(p).length} row is the wrong length: ${Object.values(p)}`)
+            }
+        }
+        
+        return Object.values(p)
+    })
+    // console.log(vals.slice(0,4))
+
+    let m = new Matrix(vals)
+    let m_c = correlation(m)
+
+    let r2 = squareMatrix(m_c.toJSON())
+    
+
+    function squareMatrix(m) {
+        for (let r = 0; r < m.length; r++) {
+            let row = m[r]
+
+            for (let c = 0; c < row.length; c++) {
+                let cell = row[c]
+                row[c] = cell * cell
+                if (r == c) {
+                    row[c] = 1
+                }
+            }
+        }
+        return m
+    }
+    const s = new Matrix(r2)
+    console.log(m_c.isSymmetric())
+
+    console.log(s.isSymmetric())
+
+    const jrwAnalysis = require('johnsons-relative-weights');
+
+    // console.log(m_c.toJSON())
+
+    const jrwResults = jrwAnalysis(
+        m_c.toJSON(),
+        1
+    );
+
+    let variables = Object.keys(jsonl[0])
+    let weights = []
+    console.log(`variable, weight`)
+
+    for (let v = 1; v < variables.length - 1; v++) {
+        let variable = variables[v]
+        let weight = jrwResults.rescaledRawRelativeWeights[v]
+        console.log(`${variable}, ${weight}`)
     }
 }
