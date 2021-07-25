@@ -109,6 +109,9 @@ async function processTeam(team) {
         console.log(team)
         process.exit()
     }
+    // if (team.teamName != 'Tricky Gooses') {
+    //     return
+    // }
     const s11_data = s11[team.teamName]
     // console.log(s11_data)
     Object.assign(team, s11_data)
@@ -175,7 +178,16 @@ async function parseTeam(team) {
 
     let player_ranks_promises = _.map(team.teamDetails, async (player) => {
         let latest = _.last(player.verifiedRankHistory)
-        let levels = _.map(player.verifiedRankHistory, 'level')
+        // console.log(player.verifiedRankHistory)
+        // let last_3 
+        let sl_rank_max = _.maxBy(player.verifiedRankHistory.slice(-3), 'level')
+        // let mmr_max = _.max(player.verifiedRankHistory, 'heroesProfileMmr')
+
+        // let levels = _.map(player.verifiedRankHistory, 'level')
+        // console.log(player.displayName)
+        // console.log(sl_rank_max)
+        // // console.log(mmr_max)
+        // console.log(_.map(player.verifiedRankHistory, 'level'))
 
         await smurfDetectPlayer(player, team)
         if (!latest) {
@@ -193,12 +205,14 @@ async function parseTeam(team) {
 
         return {
             name: player.displayName,
-            rank: latest.hlRankMetal.startsWith("Grand") ? "GM" : `${latest.hlRankMetal.charAt(0)}${latest.hlRankDivision}`,
-            level: latest.level,
+            rank: sl_rank_max.hlRankMetal.startsWith("Grand") ? "GM" : `${sl_rank_max.hlRankMetal.charAt(0)}${sl_rank_max.hlRankDivision}`,
+            level: sl_rank_max.level,
             heroesProfileMmr: player.heroesProfileMmr
         }
     })
     const player_ranks = await Promise.all(player_ranks_promises)
+
+
 
     // console.log(team.teamName_lower)
     // console.log(player_ranks)
@@ -210,9 +224,14 @@ async function parseTeam(team) {
     let ranks = _.chain(player_ranks).sortBy('level').reverse().map('rank').value()
     let all_ranks = _.chain(player_ranks).sortBy('level').reverse().map('rank').join(', ').value()
     let all_mmr = _.chain(player_ranks).sortBy('heroesProfileMmr').reverse().map('heroesProfileMmr').join(', ').value()
+    let all_level = _.chain(player_ranks).sortBy('level').reverse().map('level').join(', ').value()
+
     let captain_discord = _.find(team.teamDetails, ['displayName', team.captain])
     // console.log(team.captain)
     // console.log(team.teamDetails)
+
+    let mmr_score = _.chain(player_ranks).sortBy('heroesProfileMmr').reverse().slice(0, 4).sum().value()
+
 
     return {
         team: team.teamName,
@@ -242,6 +261,7 @@ async function parseTeam(team) {
         mean_mmr: _.meanBy(team.teamDetails, 'heroesProfileMmr'),
         min_mmr: _.minBy(team.teamDetails, 'heroesProfileMmr').heroesProfileMmr,
         all_mmr: all_mmr,
+        all_level: all_level,
         season_11_div: _.get(team, 'season_11_div', 'new team'),
         wins: _.get(team, 'wins', ''),
         losses: _.get(team, 'losses', ''),
