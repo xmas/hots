@@ -1,6 +1,9 @@
 const MongoClient = require('mongodb').MongoClient;
 const assert = require('assert');
 const _ = require('lodash')
+// require('lodash-math')(_);
+
+
 const ObjectsToCsv = require('objects-to-csv');
 const fs = require('fs')
 require('dotenv').config();
@@ -48,11 +51,11 @@ const agg = [
 
 const db_name = "heroku_8jbv3vlb"
 
+const last_season = 12
+let last_season_ranks = JSON.parse(fs.readFileSync(`ngs_archive/ngs_s${last_season}_results.json`, 'utf8'))
 
-let s11 = JSON.parse(fs.readFileSync('ngs_s11_results.json', 'utf8'))
-
-const player_level_file = "ngs_player_level_cache.jsonl"
-const player_detail_file = "ngs_player_detail_cache.jsonl"
+const player_level_file = "ngs_archive/ngs_player_level_cache.jsonl"
+const player_detail_file = "ngs_archive/ngs_player_detail_cache.jsonl"
 let player_levels = {}
 let player_details = {}
 
@@ -93,15 +96,112 @@ async function run() {
         console.log(`Currently there are ${teams.length} teams registered`)
         
 
+        mmrToRank(teams)
+        
 
-        new ObjectsToCsv(teams).toDisk(`ngs_teams.csv`);
-        // console.log(raw_teams)
     } catch (e) {
         console.log(e)
     }
 
 }
 run().catch(console.dir);
+function standardDeviation(values){
+    var avg = average(values);
+    
+    var squareDiffs = values.map(function(value){
+      var diff = value - avg;
+      var sqrDiff = diff * diff;
+      return sqrDiff;
+    });
+    
+    var avgSquareDiff = average(squareDiffs);
+  
+    var stdDev = Math.sqrt(avgSquareDiff);
+    return stdDev;
+  }
+  
+  function average(data){
+    var sum = data.reduce(function(sum, value){
+      return sum + value;
+    }, 0);
+  
+    var avg = sum / data.length;
+    return avg;
+  }
+
+function mmrToRank(teams) {
+    let players = _.flatMap(teams, 'players')
+    let ranks = _.chain(players)
+    .groupBy( (player) => {
+        if (player.rank.startsWith("M")) {
+            return "M"
+        } 
+        return player.rank
+    })
+    .map( (rank, rank_name) => {
+        let stats =  {
+            name: rank_name,
+            count: rank.length,
+            level: _.minBy(rank, 'heroesProfileMmr').level,
+            mmr_min: _.minBy(rank, 'heroesProfileMmr')['heroesProfileMmr'],
+            mmr_mean: _.meanBy(rank, 'heroesProfileMmr'),
+            mmr_max: _.maxBy(rank, 'heroesProfileMmr')['heroesProfileMmr'],
+            stdev: standardDeviation(_.map(rank, 'heroesProfileMmr'))
+        }
+        let sigma = 2.5
+        let outliers = _.filter(rank, (player) => {
+            return player.heroesProfileMmr > stats.mmr_mean+2.5*stats.stdev //|| player.heroesProfileMmr < stats.mmr_mean-2.5*stats.stdev
+        })
+        stats['outliers'] = _.map(outliers, (player) => {
+            return `${player.name} - ${player.heroesProfileMmr}`
+        })
+        return stats
+    })
+    .sortBy('mmr_mean')
+    .value()
+    new ObjectsToCsv(ranks).toDisk(`ranks.csv`);
+
+    console.log(ranks)
+}
+
+function sortTeams(teams) {
+    // new ObjectsToCsv(teams).toDisk(`ngs_teams.csv`);
+        // console.log(raw_teams)
+
+        let sorted_teams = _.chain(teams)
+        .sortBy( (team) => {
+            return team.metal_top_four
+        })
+        .reverse()
+        .map( (team) => {
+
+            return {
+                team: team.team,
+                season_11_div: team.season_11_div,
+                coast: team.coast,
+                metal_top_four: team.metal_top_four,
+                metal_1: team.metal_1,
+                all_ranks: team.all_ranks,
+                all_mmr: team.all_mmr,
+
+                divisionPlacement: team.divisionPlacement,
+                
+            }
+        }).value()
+
+        console.log(sorted_teams.length)
+        let storm = sorted_teams.slice(0,6)
+        sorted_teams = sorted_teams.slice(6)
+        let east = _.filter(sorted_teams, ['coast', 'east'])
+        let west = _.filter(sorted_teams, ['coast', 'west'])
+        let either = _.filter(sorted_teams, (team) => {
+            return team.coast != 'west'&& team.coast != 'east'
+        })
+        console.log(_.map(storm, 'team'))
+        console.log(`${storm[storm.length-1].team} east ${east[0].team} west ${west[0].team}`)
+        console.log(`storm: ${storm.length} east ${east.length} west ${west.length} either ${either.length}`)
+        new ObjectsToCsv(sorted_teams).toDisk(`sorted_teams.csv`);
+}
 
 async function processTeam(team) {
     if (!team) {
@@ -109,12 +209,9 @@ async function processTeam(team) {
         console.log(team)
         process.exit()
     }
-    // if (team.teamName != 'Tricky Gooses') {
-    //     return
-    // }
-    const s11_data = s11[team.teamName]
-    // console.log(s11_data)
-    Object.assign(team, s11_data)
+    const last_season_ranks_data = last_season_ranks[team.teamName]
+    // console.log(last_season_ranks_data)
+    Object.assign(team, last_season_ranks_data)
 
     const team_data = await parseTeam(team)
     // console.log('data added to teams list')
@@ -178,16 +275,7 @@ async function parseTeam(team) {
 
     let player_ranks_promises = _.map(team.teamDetails, async (player) => {
         let latest = _.last(player.verifiedRankHistory)
-        // console.log(player.verifiedRankHistory)
-        // let last_3 
-        let sl_rank_max = _.maxBy(player.verifiedRankHistory.slice(-3), 'level')
-        // let mmr_max = _.max(player.verifiedRankHistory, 'heroesProfileMmr')
-
-        // let levels = _.map(player.verifiedRankHistory, 'level')
-        // console.log(player.displayName)
-        // console.log(sl_rank_max)
-        // // console.log(mmr_max)
-        // console.log(_.map(player.verifiedRankHistory, 'level'))
+        let levels = _.map(player.verifiedRankHistory, 'level')
 
         await smurfDetectPlayer(player, team)
         if (!latest) {
@@ -203,15 +291,47 @@ async function parseTeam(team) {
             console.log(`no MMR for player: ${player.displayName} team: ${team.teamName_lower}`)
         }
 
+        let rank = latest.hlRankMetal.startsWith("Grand") ? "GM" : `${latest.hlRankMetal.charAt(0)}${latest.hlRankDivision}`
+        let metal = latest.level
+        if (rank === "GM") {
+            metal = 10000
+        } else if (rank.startsWith("M")) {
+            metal = 5000
+        } else if (rank.startsWith("D")) {
+            metal = 3000 + latest.level
+        } else if (rank.startsWith("P")) {
+            metal = 2000 + latest.level
+        } else if (rank.startsWith("G")) {
+            metal = 1000 + latest.level
+        } else if (rank.startsWith("S")) {
+            metal = 1000 + latest.level
+        } else {
+            metal = 100 + latest.level
+            //bronze
+        }
+
         return {
             name: player.displayName,
-            rank: sl_rank_max.hlRankMetal.startsWith("Grand") ? "GM" : `${sl_rank_max.hlRankMetal.charAt(0)}${sl_rank_max.hlRankDivision}`,
-            level: sl_rank_max.level,
+            rank: rank,
+            level: latest.level,
+            metal: metal,
+            // metal: 27-latest.level * 1000,
             heroesProfileMmr: player.heroesProfileMmr
         }
     })
     const player_ranks = await Promise.all(player_ranks_promises)
 
+    // assign unranked players to the same level as the highest rank
+    // let max_player = _.chain(player_ranks).sortBy('level').reverse().value()[0]
+    // for (let i = 0; i < player_ranks.length; i++) {
+    //     let p = player_ranks[i]
+    //     if (p.rank.startsWith("U")) {
+    //         // console.log(`unranked player: ${p.rank} assigned to ${max_player.rank}`)
+    //         player_ranks[i] = _.clone(max_player)
+    //         // console.log(p.metal)
+    //     }
+    // }
+    // console.log(_.map(player_ranks, 'rank'))
 
 
     // console.log(team.teamName_lower)
@@ -231,10 +351,14 @@ async function parseTeam(team) {
     // console.log(team.teamDetails)
 
     let mmr_score = _.chain(player_ranks).sortBy('heroesProfileMmr').reverse().slice(0, 4).sum().value()
+    let level_score = _.chain(player_ranks).sortBy('metal').reverse().slice(0, 4).sum().value()
+    let metals = _.chain(player_ranks).sortBy('metal').reverse().map('metal').value()
+    let metal_top_four = _.chain(player_ranks).sortBy('metal').reverse().slice(0, 4).meanBy('metal').value()
 
 
     return {
         team: team.teamName,
+        players: player_ranks,
         captain: captain_discord['discordTag'],
         last_season: team.questionnaire.lastSeason,
         old_team: team.questionnaire.oldTeam,
@@ -255,6 +379,12 @@ async function parseTeam(team) {
         rank_3: ranks[2],
         rank_4: ranks[3],
         rank_5: ranks[4],
+        metal_1: metals[0],
+        metal_2: metals[1],
+        metal_3: metals[2],
+        metal_4: metals[3],
+        metal_5: metals[4],
+        metal_top_four: metal_top_four,
         all_ranks: all_ranks,
         avg_mmr_top_four: avg_mmr_top_four,
         max_mmr: _.maxBy(team.teamDetails, 'heroesProfileMmr').heroesProfileMmr,

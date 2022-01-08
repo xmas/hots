@@ -1,0 +1,608 @@
+[{
+  "_id": {
+    "$oid": "61a8f4550e0db2001fb860a1"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [
+      "ReGen",
+      "GG till i die",
+      "Anti-Clown Association",
+      "WildHeart Omega",
+      "Error 404",
+      "Can't Censor Ship",
+      "Heavy Impact",
+      "Team Back Door"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "5f4d8ebba3493a0017c2d50b"
+    },
+    "displayName": "Storm",
+    "divisionName": "Storm",
+    "divisionConcat": "storm",
+    "sorting": 1,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "Murda#1838",
+    "public": true,
+    "__v": 19,
+    "divColor": "4b0082"
+  },
+  "timeStamp": "1638462549448",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a8f4550e0db2001fb860aa"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [
+      "Phoenix Rising Ruby",
+      "gillyShark",
+      "Caffeinated Knights",
+      "BeefBois",
+      "Gen.M Esports",
+      "Match Ready",
+      "Minion Miners",
+      "Phoenix Rising Xanthite",
+      "Phoenix Rising Zircon",
+      "Running Wild",
+      "Small Potatoes",
+      "The Wild Squad"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "602220fd28736b0028d777f8"
+    },
+    "displayName": "Nexus",
+    "divisionName": "Nexus",
+    "divisionConcat": "nexus",
+    "sorting": 6,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "erikwithak#3178",
+    "__v": 8,
+    "public": true,
+    "divColor": "e8834e"
+  },
+  "timeStamp": "1638462549962",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a8f4560e0db2001fb860bb"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [
+      "Archon",
+      "Baby Makers",
+      "Big Push Power",
+      "Bronze6",
+      "LTK - No Time To Die",
+      "Phoenix Rising Esports",
+      "The Church of Orphea",
+      "Vendetta",
+      "I JUST ENJOY BREAD MAN",
+      "Team Happy Cloud",
+      "Dark Allegiance",
+      "We Are Farmers (WITHDRAWN)"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "60222cb328736b0028d77835"
+    },
+    "displayName": "Heroic",
+    "divisionName": "Heroic",
+    "divisionConcat": "heroic",
+    "sorting": 2,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "Wedge#7006 & bAnKai#8407",
+    "DRR": false,
+    "__v": 17,
+    "public": true,
+    "divColor": "fe610e"
+  },
+  "timeStamp": "1638462550359",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a8f4560e0db2001fb860ce"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "60222d2928736b0028d77838"
+    },
+    "displayName": "A East",
+    "divisionName": "A East",
+    "divisionConcat": "a-east",
+    "sorting": 8,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "borntoshine#5141",
+    "DRR": false,
+    "__v": 5,
+    "public": false
+  },
+  "timeStamp": "1638462550633",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a8f4560e0db2001fb860cf"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "60222d9c28736b0028d7783a"
+    },
+    "displayName": "A West",
+    "divisionName": "A West",
+    "divisionConcat": "a-west",
+    "sorting": 9,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "Daxx#2957",
+    "DRR": true,
+    "__v": 4,
+    "public": false
+  },
+  "timeStamp": "1638462550666",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a8f4560e0db2001fb860d5"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [
+      "Durotan's Couch",
+      "Bad By Design",
+      "A New Barak Obama",
+      "Chien Chaud Steamé (Withdrawn)",
+      "Smoke",
+      "ReGen Ghost",
+      "ReGen Phoenix",
+      "Wholesome Halfwits",
+      "Beyond Gaming",
+      "Currently Chasing Samuro"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "60222e6428736b0028d77840"
+    },
+    "displayName": "B NorthEast",
+    "divisionName": "B NorthEast",
+    "divisionConcat": "b-northeast",
+    "sorting": 10,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "Irakaf#3111",
+    "__v": 11,
+    "public": true,
+    "divColor": "000080"
+  },
+  "timeStamp": "1638462550719",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a8f4560e0db2001fb860e1"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [
+      "A Touch of Honey",
+      "LLAMS (withdrawn)",
+      "BG: Johanna Means Family",
+      "Clouded Minds Unleashed",
+      "death and delay",
+      "Psistorm Immortals",
+      "Fight, You Cowardly King! (Withdrawn)",
+      "Mean Old Men",
+      "Phoenix Rising Onyx",
+      "Frank's Furters"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "602232af28736b0028d77842"
+    },
+    "displayName": "B SouthEast",
+    "divisionName": "B SouthEast",
+    "divisionConcat": "b-southeast",
+    "sorting": 11,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "Idioms#3361",
+    "__v": 13,
+    "public": true,
+    "divColor": "0000cd"
+  },
+  "timeStamp": "1638462550973",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a8f4570e0db2001fb860f1"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [
+      "Spooky Ghosts",
+      "sOaK eVeRy LaNe",
+      "Arrogant Nephalem",
+      "Randy Newman (Withdrawn)",
+      "Amateur Opponents",
+      "Ana Maniacs",
+      "BanzaiGG (Withdrawn)",
+      "Magnitude",
+      "TheBestFriends (Withdrawn)",
+      "WHATS WAVE CLEAR",
+      "U.S. Army Esports",
+      "Emanon",
+      "CM After Dark"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "602232d5fc07120022c059ac"
+    },
+    "displayName": "B West",
+    "divisionName": "B West",
+    "divisionConcat": "b-west",
+    "sorting": 12,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "DWhitt#7840",
+    "__v": 16,
+    "public": true,
+    "divColor": "6464f4"
+  },
+  "timeStamp": "1638462551201",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a8f4570e0db2001fb86104"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [
+      "Xul Gin Distillery",
+      "Business of Ferrets",
+      "Die for Vision",
+      "Icecrown Citadel Raiders",
+      "Phoenix Rising Citrine (Withdrawn)",
+      "The ProBUs Strikes Back",
+      "2Calculated2Throw",
+      "Team Banshee",
+      "Heavy Slaps",
+      "Avalanche"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "602232f728736b0028d77844"
+    },
+    "displayName": "C East",
+    "divisionName": "C East",
+    "divisionConcat": "c-east",
+    "sorting": 13,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "Aura#6541",
+    "__v": 17,
+    "public": true,
+    "divColor": "d20101"
+  },
+  "timeStamp": "1638462551547",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a8f4580e0db2001fb86116"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [
+      "Can't Connect Stuns",
+      "ReGen Divine",
+      "Clouded Minds",
+      "Artemis",
+      "Cats On My Keyboard",
+      "Cool Cats and Kittens",
+      "Knights that Go Bork",
+      "Team Rainbow Strike Go!",
+      "Trash Pandas",
+      "Roll1Esports",
+      "COSMOS",
+      "TRSG Knights"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "6022331528736b0028d77846"
+    },
+    "displayName": "C West",
+    "divisionName": "C West",
+    "divisionConcat": "c-west",
+    "sorting": 14,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "Ectar#2294",
+    "__v": 11,
+    "public": true,
+    "divColor": "f5b7ba"
+  },
+  "timeStamp": "1638462552038",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a8f4580e0db2001fb86128"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "60223340fc07120022c059ae"
+    },
+    "displayName": "D East",
+    "divisionName": "D East",
+    "divisionConcat": "d-east",
+    "sorting": 15,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "Irakaf#3111",
+    "__v": 6,
+    "public": false
+  },
+  "timeStamp": "1638462552671",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a8f4580e0db2001fb86129"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [
+      "Puns Upon a Time",
+      "Maximum Thrust",
+      "Can't Counterpick Stupid",
+      "DeepFriedMingBalls (Withdrawn)",
+      "Knife Party",
+      "Lurk Patrol",
+      "Phoenix Rising Jade (Withdrawn)",
+      "Team Momentum",
+      "Wood League Express",
+      "Phoenix Rising Topaz"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "6022336328736b0028d77848"
+    },
+    "displayName": "D West",
+    "divisionName": "D West",
+    "divisionConcat": "d-west",
+    "sorting": 18,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "DerShaneTrain#8621",
+    "__v": 11,
+    "public": true,
+    "divColor": "bffec5"
+  },
+  "timeStamp": "1638462552694",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a8f4580e0db2001fb8613a"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [
+      "30 Seconds to Mosh",
+      "Macro Machines",
+      "CM Beyond",
+      "Icecrown Citadel Knights",
+      "ReGen Rebel",
+      "souls in slowmo",
+      "Tar Pit Tipplers",
+      "The Baddest Dudez",
+      "Wood League Airlines",
+      "Phoenix Rising Sapphire"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "602233ac28736b0028d7784a"
+    },
+    "displayName": "E East",
+    "divisionName": "E East",
+    "divisionConcat": "e-east",
+    "sorting": 19,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "DallyingPig#8452",
+    "__v": 9,
+    "public": true,
+    "divColor": "04abb4"
+  },
+  "timeStamp": "1638462552966",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a8f4590e0db2001fb8614a"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [
+      "Phoenix Rising Amethyst",
+      "Nerd Herders",
+      "Liquid metal",
+      "210 Blechman Street",
+      "KingFishers",
+      "Lowered Expectations",
+      "PorkSlap (Withdrawn)",
+      "Private Potato",
+      "Screaming Nachos",
+      "The EH Team"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "602233cd28736b0028d7784c"
+    },
+    "displayName": "E West",
+    "divisionName": "E West",
+    "divisionConcat": "e-west",
+    "sorting": 20,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "Gokue#1112",
+    "DRR": false,
+    "__v": 6,
+    "public": true,
+    "divColor": "a2eff5"
+  },
+  "timeStamp": "1638462553254",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a8f4590e0db2001fb8615a"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [
+      "FF & the Pancakes",
+      "Bunker Fun Time",
+      "LTK - GoldenEye",
+      "Rise N' Grind",
+      "The Fallen Lords",
+      "The GB's",
+      "YCMYCCST5:YavapaiSwimsBack",
+      "FC Hong Kong",
+      "The Nine Avatara",
+      "Protectors of Aiur"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "61089a2f6c1c4b001e7176c2"
+    },
+    "displayName": "D SouthEast",
+    "divisionName": "D SouthEast",
+    "divisionConcat": "d-southeast",
+    "sorting": 17,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "Bogz#6938",
+    "divColor": "03ff00",
+    "__v": 4,
+    "public": true
+  },
+  "timeStamp": "1638462553551",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a8f4590e0db2001fb8616a"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [
+      "Almost Legends Ruby",
+      "Brickhouse",
+      "Bull Moose Party",
+      "Council of Mages",
+      "Infernal Affairs",
+      "Phoenix Rising Moonstone",
+      "Council of War",
+      "Wait Till 10",
+      "Icecrown Citadel Queens",
+      "ReGen Nebula"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "6108b8d66c1c4b001e7178bd"
+    },
+    "displayName": "D NorthEast",
+    "divisionName": "D NorthEast",
+    "divisionConcat": "d-northeast",
+    "sorting": 16,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "Pina Colada#1327",
+    "divColor": "029d03",
+    "__v": 6,
+    "public": true
+  },
+  "timeStamp": "1638462553796",
+  "__v": 0
+},{
+  "_id": {
+    "$oid": "61a8f45a0e0db2001fb8617a"
+  },
+  "type": "division",
+  "season": 12,
+  "object": {
+    "teams": [
+      "Icecrown Citadel Archons",
+      "Mallow Oats",
+      "Plat Form",
+      "Tactical Feed",
+      "Under Newb Management",
+      "Yellow Owls",
+      "Mnaval",
+      "ProBUs",
+      "Boogans Forever",
+      "Tricky Gooses",
+      "Better Than Bots (Withdrawn)",
+      "Strange Team Comp",
+      "Cat Daddies"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "6108ba0a6c1c4b001e7178f2"
+    },
+    "displayName": "A",
+    "divisionName": "A",
+    "divisionConcat": "a",
+    "sorting": 7,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "borntoshine#5141",
+    "divColor": "ff00e9",
+    "__v": 9,
+    "public": true
+  },
+  "timeStamp": "1638462554050",
+  "__v": 0
+}]

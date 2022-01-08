@@ -1,17 +1,16 @@
-const MongoClient = require('mongodb').MongoClient;
-const assert = require('assert');
 const _ = require('lodash')
-const ObjectsToCsv = require('objects-to-csv');
 const fs = require('fs')
 
-const base = 'http://nexusgamingseries.org/api'
+const base = 'https://www.nexusgamingseries.org/api'
 const axios = require('axios')
 axios.defaults.params = {};
 const api = axios.create({
     baseURL: base
 })
 
-let s11 = JSON.parse(fs.readFileSync('ngs_s_11.json', 'utf8'))
+const season = 12
+
+let last_season_mongo = JSON.parse(fs.readFileSync(`ngs_archive/ngs_s_${season}.json`, 'utf8'))
 
 
 let all_teams = {}
@@ -26,19 +25,22 @@ const storeData = (data, path) => {
 
 async function start() {
 
-    let post_all =  _.map(s11, async (div) => {
+    let post_all =  _.map(last_season_mongo, async (div) => {
+        // console.log(div)
 
-        return await api.post('/standings/fetch/division', { "division": div.object.divisionConcat, "season": 11, "pastSeason": true })
+        return await api.post('/standings/fetch/division', { "division": div.object.divisionConcat, "season": season, "pastSeason": true })
             .then((response) => {
-                // console.log(response.data)
+                // console.log(JSON.stringify(response.data), null, 4)
+
                 let data = response.data.returnObject
+                
                 for (let i = 0; i < data.length; i++) {
                     let team = data[i]
                     if (team.teamName.endsWith('(Withdrawn)')) {
                         team['withdrawn'] = true
                         team.teamName = team.teamName.replace(' (Withdrawn)', '')
                     }
-                    team["season_11_div"] = div.object.divisionConcat
+                    team[`season_${season}_div`] = div.object.divisionConcat
                 }
                 let teams = _.keyBy(data, 'teamName')
                 Object.assign(all_teams, teams)
@@ -48,7 +50,7 @@ async function start() {
     })
     Promise.all(post_all).then( () => {
         // console.log(all_teams)
-        storeData(all_teams, 'ngs_s11_results.json')
+        storeData(all_teams, `ngs_archive/ngs_s${season}_results.json`)
     })
 
 }
