@@ -23,7 +23,7 @@
     "johnsons-relative-weights": "^1.0.3",
     "lodash": "^4.17.20",
     "lodash-math": "^0.0.7",
-    "mathjs": "^7.5.1",
+    "mathjs": "^7.6.0",
     "ml-matrix": "^6.5.3",
     "mongodb": "^3.6.9",
     "node-jsonl": "^0.1.0",

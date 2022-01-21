@@ -13,6 +13,9 @@ const api = axios.create({
     baseURL: base
 })
 
+// const { std } = require('mathjs')
+const maths = require('mathjs')
+
 const hp_base = 'https://api.heroesprofile.com/api'
 axios.defaults.params = {};
 const hp_api = axios.create({
@@ -40,13 +43,47 @@ const agg = [
     }
 ];
 
+
 const db_name = "heroku_8jbv3vlb"
 
 const last_season = 12
 let last_season_ranks = JSON.parse(fs.readFileSync(`ngs_archive/ngs_s${last_season}_results.json`, 'utf8'))
+let last_season_teams = JSON.parse(fs.readFileSync(`ngs_archive/season_${last_season}_teams.json`, 'utf8'))
+last_season_teams = _.keyBy(last_season_teams, (team) => { return team.object.teamName_lower })
 
 const player_level_file = "ngs_archive/ngs_player_level_cache.jsonl"
 const player_detail_file = "ngs_archive/ngs_player_detail_cache.jsonl"
+let smurfs = []
+let unranked = []
+
+let divs = _.groupBy(last_season_ranks, "season_12_div")
+
+let div_spread = _.map(divs, (div, div_name) => {
+
+    let points = _.chain(div).filter((team) => {
+        // console.log(team.teamName, team.points)
+        // console.log(team.teamName, team.teamName.includes('Withdrawn')) 
+        let is_withdrawn = team.teamName.toLowerCase().includes('withdrawn') || team['withdrawn']
+        // if (is_withdrawn)
+        //     console.log(team)
+        return !is_withdrawn
+
+    }).map('points').value()
+
+    return {
+        div: div_name,
+        points: points,
+        max: Math.max(...points),
+        min: Math.min(...points),
+        mean: maths.mean(points),
+        stdev: maths.std(points)
+    }
+})
+
+
+new ObjectsToCsv(div_spread).toDisk(`div_spread.csv`);
+const last_season_spread = _.keyBy(div_spread, `div`)
+
 let player_levels = {}
 let player_details = {}
 
@@ -69,26 +106,40 @@ async function run() {
         await readPlayerCache(player_level_file, player_levels, 'battletag')
         await readPlayerCache(player_detail_file, player_details, 'battletag')
         let teams = []
-        let  = []
+        let = []
 
         const client = await MongoClient.connect(
             'mongodb+srv://neoneROprod:f88IfzGEopyW6VXi@cluster1.tumzk.mongodb.net/myFirstDatabase?authSource=admin&replicaSet=atlas-8v96lc-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true',
             { useNewUrlParser: true, useUnifiedTopology: true })
 
-        const raw_teams = await client.db(db_name).collection('teams').aggregate(agg).toArray()
+        let raw_teams = await client.db(db_name).collection('teams').aggregate(agg).toArray()
+
         client.close();
 
         for (let i = 0; i < raw_teams.length; i++) {
-            const raw_team = raw_teams[i]
-            const team_data = await processTeam(raw_team)
+            let raw_team = raw_teams[i]
+            let team_data = await processTeam(raw_team)
             teams.push(team_data)
 
         }
         console.log(`Currently there are ${teams.length} teams registered`)
-        
+        teams = _.filter(teams)
+        teams = _.map(teams, (team) => {
+            // console.log(team)
+            if (team['player_info']) {
+                delete team.player_info
+                delete team.teamName_lower
+                // console.log(Object.keys(team))
 
+            }
+            // team['player_info'] = "null"
+            return team
+        })
 
         new ObjectsToCsv(teams).toDisk(`ngs_teams.csv`);
+        new ObjectsToCsv(smurfs).toDisk(`smurfs.csv`);
+        new ObjectsToCsv(unranked).toDisk(`unranked.csv`);
+
         // console.log(raw_teams)
     } catch (e) {
         console.log(e)
@@ -110,9 +161,50 @@ async function processTeam(team) {
     // console.log(last_season_ranks_data)
     Object.assign(team, last_season_ranks_data)
 
-    const team_data = await parseTeam(team)
+    let team_data = await parseTeam(team)
     // console.log('data added to teams list')
+    team_data = analyzeTeamChange(team_data)
+
     return team_data
+}
+
+async function analyzeTeamChange(team) {
+
+    const last_season = last_season_teams[team.teamName_lower]
+    if (!last_season) {
+        return team
+    }
+
+    // console.log(team)
+    // console.log(last_season)
+
+    let current_players = _.map(team.player_info, 'name')
+    let past_players = _.map(last_season.object.teamMembers, "displayName")
+    // console.log(current_players)
+    // console.log(past_players)
+
+    // console.log('returning players')
+    // console.log(_.intersection(current_players, past_players))
+
+    // console.log('new players')
+    // console.log(_.difference(current_players, past_players))
+
+    // console.log('dropped players')
+    // console.log(_.difference(past_players, current_players))
+
+    let new_players = _.difference(current_players, past_players)
+    new_players = _.map(new_players, (player) => {
+        let info = _.find(team.player_info, ['name', player])
+        return `${player}(${info.rank})`
+
+    })
+    // console.log(new_players)
+
+    team['returning_players'] = _.chain(current_players).intersection(current_players, past_players).join(", ").value()
+    team['dropped_players'] = _.chain(past_players).difference(current_players).join(", ").value()
+    team['added_players'] = new_players.join(", ")
+    // console.log(team)
+    return team
 }
 
 async function smurfDetectPlayer(player, team) {
@@ -122,15 +214,17 @@ async function smurfDetectPlayer(player, team) {
         if (!result) {
             result = await hp_api.get(`/Player?battletag=${encodeURIComponent(player.displayName)}&region=1`)
             fs.appendFile(player_level_file, JSON.stringify(result.data) + "\n", function (err) {
-                if (err) return console.log(err);
+                if (err) return
+                // console.log(err['response'] );
 
             });
+
         }
         level = result.account_level
     } catch (e) {
-        console.log(e)
+        // console.log(e.response)
     }
-
+    // console.log(player.hlRankMetal)
     if (level > 300) {
         // console.log(`HIGH LEVEL ${player.displayName} level: ${level}`)
         return
@@ -148,7 +242,8 @@ async function smurfDetectPlayer(player, team) {
             result = result.data
             result['battletag'] = player.displayName
             fs.appendFile(player_detail_file, JSON.stringify(result) + "\n", function (err) {
-                if (err) return console.log(err);
+                if (err) return
+                // console.log(err.data);
 
             });
         }
@@ -159,9 +254,16 @@ async function smurfDetectPlayer(player, team) {
 
         // console.log(team_name)
         // _.set(team['potentialSmurfs'],  
-        console.log(`${player.displayName} level: ${level} win_rate: ${win_rate} team: ${team.teamName_lower}`)
+        console.log(`${player.displayName} level: ${level} win_rate: ${Math.round(win_rate * 100) / 100}% team: ${team.teamName_lower}`)
+        smurfs.push({
+            displayName: player.displayName,
+            level: level,
+            win_rate: Math.round(win_rate * 100) / 100 + "%",
+            team: team.teamName_lower
+        })
+
     } catch (e) {
-        console.log(e)
+        // console.log(e.response)
     }
 
 
@@ -197,6 +299,19 @@ async function parseTeam(team) {
             console.log(`no MMR for player: ${player.displayName} team: ${team.teamName_lower}`)
         }
 
+        if (sl_rank_max.hlRankMetal.charAt(0) == "U") {
+            unranked.push({
+                name: player.displayName,
+                division: sl_rank_max.hlRankDivision,
+                max: sl_rank_max.hlRankMetal,
+                rank: sl_rank_max.hlRankMetal.startsWith("Grand") ? "GM" : `${sl_rank_max.hlRankMetal.charAt(0)}${sl_rank_max.hlRankDivision}`,
+                level: sl_rank_max.level,
+                heroesProfileMmr: player.heroesProfileMmr,
+                team: team.teamName_lower,
+                win_rate: player.win_rate
+            })
+        }
+
         return {
             name: player.displayName,
             rank: sl_rank_max.hlRankMetal.startsWith("Grand") ? "GM" : `${sl_rank_max.hlRankMetal.charAt(0)}${sl_rank_max.hlRankDivision}`,
@@ -226,9 +341,23 @@ async function parseTeam(team) {
 
     let mmr_score = _.chain(player_ranks).sortBy('heroesProfileMmr').reverse().slice(0, 4).sum().value()
 
+    let last_season_div = _.get(team, `season_${last_season}_div`, 'new team')
+    let deviation
+    if (last_season_div != 'new team') {
+
+        console.log(Object.keys(last_season_spread))
+        let spread = last_season_spread[last_season_div]
+        console.log(last_season_div)
+
+        console.log(spread)
+        deviation = (team.points - spread.mean) / spread.stdev
+    }
+
+
 
     return {
         team: team.teamName,
+        teamName_lower: team.teamName_lower,
         captain: captain_discord['discordTag'],
         last_season: team.questionnaire.lastSeason,
         old_team: team.questionnaire.oldTeam,
@@ -256,12 +385,14 @@ async function parseTeam(team) {
         min_mmr: _.minBy(team.teamDetails, 'heroesProfileMmr').heroesProfileMmr,
         all_mmr: all_mmr,
         all_level: all_level,
-        season_11_div: _.get(team, 'season_11_div', 'new team'),
+        season_11_div: last_season_div,
         wins: _.get(team, 'wins', ''),
         losses: _.get(team, 'losses', ''),
         points: _.get(team, 'points', ''),
         dominations: _.get(team, 'dominations', ''),
         matchesPlayed: _.get(team, 'matchesPlayed', ''),
+        deviation: deviation,
+        player_info: player_ranks
     }
 }
 
@@ -277,7 +408,7 @@ function rwa(jsonl) {
                 console.log(`${l} != ${Object.values(p).length} row is the wrong length: ${Object.values(p)}`)
             }
         }
-        
+
         return Object.values(p)
     })
     // console.log(vals.slice(0,4))
@@ -286,7 +417,7 @@ function rwa(jsonl) {
     let m_c = correlation(m)
 
     let r2 = squareMatrix(m_c.toJSON())
-    
+
 
     function squareMatrix(m) {
         for (let r = 0; r < m.length; r++) {
