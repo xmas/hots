@@ -8,7 +8,7 @@ const api = axios.create({
     baseURL: base
 })
 
-const season = 12
+const season = 13
 
 let last_season_mongo = JSON.parse(fs.readFileSync(`ngs_archive/ngs_s_${season}.json`, 'utf8'))
 

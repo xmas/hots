@@ -14,15 +14,19 @@ const api = axios.create({
 })
 
 // const { std } = require('mathjs')
-const maths = require('mathjs')
+const maths = require('mathjs');
+const { exit } = require('process');
 
 const hp_base = 'https://api.heroesprofile.com/api'
 axios.defaults.params = {};
 const hp_api = axios.create({
     baseURL: hp_base
 })
+const hp_api_key = process.env.HEROES_PROFILE_TOKEN
 hp_api.interceptors.request.use((config) => {
     config.params = config.params || {};
+    config.params.apiKey = hp_api_key;
+  
     config.params['api_token'] = process.env.HEROES_PROFILE_TOKEN
     return config;
 });
@@ -46,7 +50,7 @@ const agg = [
 
 const db_name = "heroku_8jbv3vlb"
 
-const last_season = 12
+const last_season = 13
 let last_season_ranks = JSON.parse(fs.readFileSync(`ngs_archive/ngs_s${last_season}_results.json`, 'utf8'))
 let last_season_teams = JSON.parse(fs.readFileSync(`ngs_archive/season_${last_season}_teams.json`, 'utf8'))
 last_season_teams = _.keyBy(last_season_teams, (team) => { return team.object.teamName_lower })
@@ -56,7 +60,7 @@ const player_detail_file = "ngs_archive/ngs_player_detail_cache.jsonl"
 let smurfs = []
 let unranked = []
 
-let divs = _.groupBy(last_season_ranks, "season_12_div")
+let divs = _.groupBy(last_season_ranks, `season_${last_season}_div`)
 
 let div_spread = _.map(divs, (div, div_name) => {
 
@@ -212,7 +216,7 @@ async function smurfDetectPlayer(player, team) {
     try {
         let result = player_levels[player.displayName]
         if (!result) {
-            result = await hp_api.get(`/Player?battletag=${encodeURIComponent(player.displayName)}&region=1`)
+            result = await hp_api.get(`/Player?battletag=${encodeURIComponent(player.displayName)}&region=1&api_token=${hp_api_key}`)
             fs.appendFile(player_level_file, JSON.stringify(result.data) + "\n", function (err) {
                 if (err) return
                 // console.log(err['response'] );
@@ -226,19 +230,18 @@ async function smurfDetectPlayer(player, team) {
     }
     // console.log(player.hlRankMetal)
     if (level > 300) {
-        // console.log(`HIGH LEVEL ${player.displayName} level: ${level}`)
+        // console.log(`NOT A SMURF RETURN: HIGH LEVEL ${player.displayName} level: ${level}`)
         return
     } else {
         // console.log(`${player.displayName} level: ${level}`)
 
     }
-    // console.log('BUG IN LEVELS>>>>>')
-    // return
+
     try {
         let result = player_details[player.displayName]
         if (!result) {
             console.log(`no player details for ${player.displayName} level: ${level}`)
-            result = await hp_api.get(`/Player/Hero/All?battletag=${encodeURIComponent(player.displayName)}&region=1&game_type=${encodeURIComponent("Storm League")}`)
+            result = await hp_api.get(`/Player/Hero/All?battletag=${encodeURIComponent(player.displayName)}&region=1&game_type=${encodeURIComponent("Storm League")}&api_token=${hp_api_key}`)
             result = result.data
             result['battletag'] = player.displayName
             fs.appendFile(player_detail_file, JSON.stringify(result) + "\n", function (err) {
@@ -263,7 +266,8 @@ async function smurfDetectPlayer(player, team) {
         })
 
     } catch (e) {
-        // console.log(e.response)
+        console.log(`HEROES PROFILE ERROR- ${e}`)
+        console.log(e.response.data)
     }
 
 
@@ -345,11 +349,11 @@ async function parseTeam(team) {
     let deviation
     if (last_season_div != 'new team') {
 
-        console.log(Object.keys(last_season_spread))
+        // console.log(Object.keys(last_season_spread))
         let spread = last_season_spread[last_season_div]
-        console.log(last_season_div)
+        // console.log(last_season_div)
 
-        console.log(spread)
+        // console.log(spread)
         deviation = (team.points - spread.mean) / spread.stdev
     }
 
@@ -392,7 +396,11 @@ async function parseTeam(team) {
         dominations: _.get(team, 'dominations', ''),
         matchesPlayed: _.get(team, 'matchesPlayed', ''),
         deviation: deviation,
-        player_info: player_ranks
+        player_info: player_ranks,
+        returningPlayers: team.questionnaire.returningPlayers,
+        returningPlayersDiv: team.questionnaire.returningPlayersDiv,
+        newPlayers: team.questionnaire.newPlayers,
+        teamChanges: team.questionnaire.teamChanges
     }
 }
 
