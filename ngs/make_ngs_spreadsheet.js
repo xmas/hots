@@ -50,7 +50,7 @@ const agg = [
 
 const db_name = "heroku_8jbv3vlb"
 
-const last_season = 13
+const last_season = process.env.THIS_SEASON - 1
 let last_season_ranks = JSON.parse(fs.readFileSync(`ngs_archive/ngs_s${last_season}_results.json`, 'utf8'))
 let last_season_teams = JSON.parse(fs.readFileSync(`ngs_archive/season_${last_season}_teams.json`, 'utf8'))
 last_season_teams = _.keyBy(last_season_teams, (team) => { return team.object.teamName_lower })
@@ -110,7 +110,6 @@ async function run() {
         await readPlayerCache(player_level_file, player_levels, 'battletag')
         await readPlayerCache(player_detail_file, player_details, 'battletag')
         let teams = []
-        let = []
 
         const client = await MongoClient.connect(
             'mongodb+srv://neoneROprod:f88IfzGEopyW6VXi@cluster1.tumzk.mongodb.net/myFirstDatabase?authSource=admin&replicaSet=atlas-8v96lc-shard-0&w=majority&readPreference=primary&appname=MongoDB%20Compass&retryWrites=true&ssl=true',
@@ -276,7 +275,20 @@ async function smurfDetectPlayer(player, team) {
 
 async function parseTeam(team) {
 
+
+
     let player_ranks_promises = _.map(team.teamDetails, async (player) => {
+
+        if ( player.displayName.startsWith('DeltaSniper')
+            || player.displayName.startsWith('Papertankz')
+            || player.displayName.startsWith('Azuriel')
+            || player.displayName.startsWith('Crispy')
+        ) {
+            console.log(player)
+
+        }
+
+
         let latest = _.last(player.verifiedRankHistory)
         // console.log(player.verifiedRankHistory)
         // let last_3 
@@ -384,9 +396,9 @@ async function parseTeam(team) {
         rank_5: ranks[4],
         all_ranks: all_ranks,
         avg_mmr_top_four: avg_mmr_top_four,
-        max_mmr: _.maxBy(team.teamDetails, 'heroesProfileMmr').heroesProfileMmr,
-        mean_mmr: _.meanBy(team.teamDetails, 'heroesProfileMmr'),
-        min_mmr: _.minBy(team.teamDetails, 'heroesProfileMmr').heroesProfileMmr,
+        max_mmr: ' ',//_.maxBy(team.teamDetails, 'heroesProfileMmr').heroesProfileMmr,
+        mean_mmr: ' ',//_.meanBy(team.teamDetails, 'heroesProfileMmr'),
+        min_mmr: ' ',//_.minBy(team.teamDetails, 'heroesProfileMmr').heroesProfileMmr,
         all_mmr: all_mmr,
         all_level: all_level,
         season_11_div: last_season_div,

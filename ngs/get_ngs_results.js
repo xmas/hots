@@ -1,5 +1,6 @@
 const _ = require('lodash')
 const fs = require('fs')
+require('dotenv').config();
 
 const base = 'https://www.nexusgamingseries.org/api'
 const axios = require('axios')
@@ -8,7 +9,7 @@ const api = axios.create({
     baseURL: base
 })
 
-const season = 13
+const season = process.env.THIS_SEASON - 1
 
 let last_season_mongo = JSON.parse(fs.readFileSync(`ngs_archive/ngs_s_${season}.json`, 'utf8'))
 
