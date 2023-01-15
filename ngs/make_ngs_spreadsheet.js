@@ -26,7 +26,7 @@ const hp_api_key = process.env.HEROES_PROFILE_TOKEN
 hp_api.interceptors.request.use((config) => {
     config.params = config.params || {};
     config.params.apiKey = hp_api_key;
-  
+
     config.params['api_token'] = process.env.HEROES_PROFILE_TOKEN
     return config;
 });
@@ -275,24 +275,56 @@ async function smurfDetectPlayer(player, team) {
 
 async function parseTeam(team) {
 
+    // let d = false
+    // if (team["teamName_lower"] == "death and delay") {
+    //     // console.log(JSON.stringify(team.teamDetails, null, 4))
+    //     // process.exit()
+    //     d = true
+    // }
+
 
 
     let player_ranks_promises = _.map(team.teamDetails, async (player) => {
 
-        if ( player.displayName.startsWith('DeltaSniper')
-            || player.displayName.startsWith('Papertankz')
-            || player.displayName.startsWith('Azuriel')
-            || player.displayName.startsWith('Crispy')
-        ) {
-            console.log(player)
+        // if (d) {console.log(player.displayName)}
 
+        let rank_history = player.verifiedRankHistory
+        _.remove(rank_history, (rank) => {
+            return rank.season == '9'
+        })
+
+        let latest = _.last(rank_history)
+        let sl_rank_max = _.maxBy(rank_history.slice(-2), 'level')
+
+        // if (d) {
+        // let all_time_master = false
+        // _.map(rank_history, (rank) => {
+        //     if (rank.hlRankMetal == 'Master') {
+        //         all_time_master = true
+        //     }
+        // })
+
+        let recent_master = _.filter(rank_history.slice(-3), (rank) => {
+            if (rank.hlRankMetal == 'Master') {
+                return rank.hlRankDivision
+            }
+        })
+        if (recent_master.length) {
+            // console.log(recent_master)
+            // console.log(_.maxBy(recent_master, 'hlRankDivision').hlRankDivision)
+            sl_rank_max = _.maxBy(recent_master, 'hlRankDivision')
         }
 
+        // console.log(`all time master: ${all_time_master}`)
 
-        let latest = _.last(player.verifiedRankHistory)
-        // console.log(player.verifiedRankHistory)
+        // }
+
+        // let latest_rank_history = rank_history.slice(-2)
+
+
+
+        // if (d) { console.log(rank_history) }
         // let last_3 
-        let sl_rank_max = _.maxBy(player.verifiedRankHistory.slice(-3), 'level')
         // let mmr_max = _.max(player.verifiedRankHistory, 'heroesProfileMmr')
 
         // let levels = _.map(player.verifiedRankHistory, 'level')
@@ -337,6 +369,7 @@ async function parseTeam(team) {
     })
     const player_ranks = await Promise.all(player_ranks_promises)
 
+    // if (d) { process.exit() }
 
 
     // console.log(team.teamName_lower)

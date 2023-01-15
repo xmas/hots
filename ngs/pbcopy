@@ -1,0 +1,3977 @@
+{
+    "_id": "5c46204b64c08b0017bc1eea",
+    "teamName_lower": "durotan's couch",
+    "lookingForMore": false,
+    "availability": {
+        "monday": {
+            "available": false,
+            "startTime": null,
+            "endTime": null
+        },
+        "tuesday": {
+            "available": true,
+            "startTime": "19:00",
+            "endTime": "22:00",
+            "allDay": true,
+            "startTimeNumber": 1900,
+            "endTimeNumber": 2200,
+            "zeroGMTstartTimeNumber": 2400,
+            "zeroGMTendTimeNumber": 2700
+        },
+        "wednesday": {
+            "available": true,
+            "startTime": "19:00",
+            "endTime": "22:00",
+            "allDay": true,
+            "startTimeNumber": 1900,
+            "endTimeNumber": 2200,
+            "zeroGMTstartTimeNumber": 2400,
+            "zeroGMTendTimeNumber": 2700
+        },
+        "thursday": {
+            "available": false,
+            "startTime": null,
+            "endTime": null
+        },
+        "friday": {
+            "available": false,
+            "startTime": null,
+            "endTime": null
+        },
+        "saturday": {
+            "available": false,
+            "startTime": null,
+            "endTime": null
+        },
+        "sunday": {
+            "available": false,
+            "startTime": null,
+            "endTime": null
+        }
+    },
+    "competitiveLevel": 3,
+    "descriptionOfTeam": "Been playing since season 1 and we objectively have the best couch in all of NGS.",
+    "rolesNeeded": {
+        "tank": false,
+        "meleeassassin": false,
+        "rangedassassin": false,
+        "support": false,
+        "offlane": false,
+        "healer": false,
+        "flex": false
+    },
+    "timeZone": "-5",
+    "teamMembers": [
+        {
+            "_id": "5c4620c064c08b0017bc1efd",
+            "displayName": "Aphish#1180"
+        },
+        {
+            "_id": "5c46a33ff6b60a0017680de6",
+            "displayName": "WildKarde#1839"
+        },
+        {
+            "_id": "5cc8fcca8294ab0017baf624",
+            "displayName": "CaptainWedge#1451"
+        },
+        {
+            "_id": "5dd3031687f8280017cb5e07",
+            "displayName": "GOHANN#11237"
+        },
+        {
+            "_id": "62cde0ac72687a0021e23dd6",
+            "id": "5d1032c323141100171b291c",
+            "displayName": "Goliath#1410"
+        },
+        {
+            "_id": "6391da3241736b0021b0ecc2",
+            "id": "5c60592035a9b800174cde07",
+            "displayName": "infafox#1236"
+        },
+        {
+            "_id": "63a4ebf7af1021002197def9",
+            "id": "5f375d66bfc7a200176036b4",
+            "displayName": "Tyledrahn#1703"
+        },
+        {
+            "_id": "63bf427879bc7c002189190f",
+            "id": "5c45291af3614c001723516d",
+            "displayName": "Yonners#1462"
+        },
+        {
+            "_id": "63c201ebbcc50b002109e979",
+            "id": "5d01a26a1e95340017a09968",
+            "displayName": "Idioms#1746"
+        }
+    ],
+    "pendingMembers": [],
+    "captain": "CaptainWedge#1451",
+    "teamMMRAvg": null,
+    "teamName": "Durotan's Couch",
+    "__v": 362,
+    "logo": "Durotan's Couch9326_logo.png",
+    "invitedUsers": [],
+    "replays": [
+        "4bkiq1njt06y0g4",
+        "4bkiq1njt06y0g5",
+        "hn1injt7yp4xr",
+        "hn1injt7yp4xt",
+        "111rdc2njti30dcz",
+        "111rdc2njti30dd1",
+        "111rdc2njti30dd2",
+        "dkwxcunjtjhvss8",
+        "dkwxcunjtjhvss9",
+        "41auennjttfyu5c",
+        "41auennjttfyu5e",
+        "f010e1xnju3fqq2d",
+        "f010e1xnju3fqq2e",
+        "5wulcq6njuajxudm",
+        "5wulcq6njuajxudo",
+        "1vt08njukpfabd",
+        "1vt08njukpfabe",
+        "3plwsnjumz5q57",
+        "3plwsnjumz5q59",
+        "76bvnjxv7p445",
+        "76bvnjxv7p447",
+        "76bvnjxv7p448",
+        "3ql7wynjy6tp1kj",
+        "3ql7wynjy6tp1kk",
+        "gjrynjygoxngm",
+        "gjrynjygoxngn",
+        "gjrynjygoxngo",
+        "4rt5qnjyi3xd89",
+        "4rt5qnjyi3xd8a",
+        "31d5eq7njyqlhloq",
+        "31d5eq7njyqlhlor",
+        "faso5onjz2391qu",
+        "faso5onjz2391qv",
+        "faso5onjz2391qw",
+        "16z3vnnjzj8v6lw",
+        "16z3vnnjzj8v6lx",
+        "16z3vnnjzj8v6ly",
+        "18xfenjzklssq7",
+        "18xfenjzklssq8",
+        "bj93nk07kxwdw",
+        "bj93nk07kxwdx",
+        "bj93nk07kxwdy",
+        "1hxd7nk3tknui0",
+        "1hxd7nk3tknui1",
+        "1sdgnk40phtxw",
+        "1sdgnk40phtxx",
+        "2sa5knk5d8071m",
+        "2sa5knk5d8071n",
+        "2sa5knk5dajkgn",
+        "2sa5knk5dajkgo",
+        "1cvdank5hmcyh4",
+        "1cvdank5hmcyh5",
+        "1cvdank5hmcyh6",
+        "ti4h5nk5orjhy3",
+        "ti4h5nk5orjhy4",
+        "ti4h5nk5orjhy6",
+        "7lfnk5rmrtca",
+        "7lfnk5rmrtcb",
+        "7lfnk5rmrtcc",
+        "gwnk5xbtn14",
+        "gwnk5xbtn15",
+        "41immnk61o9z1s",
+        "41immnk61o9z1t",
+        "41immnk61o9z1u",
+        "ivznk6cmj7as",
+        "ivznk6cmj7at",
+        "ry9vynk9jbswkm",
+        "ry9vynk9jbswkn",
+        "ry9vynk9jbswko",
+        "1ahdnka7ie8gj",
+        "1ahdnka7ie8gk",
+        "1ahdnka7ie8gl",
+        "3yftjnkaere3a1",
+        "3yftjnkaere3a3",
+        "3yftjnkaere3a4",
+        "2si4imgnkav7le6u",
+        "2si4imgnkav7le6x",
+        "2si4imgnkav7le6y",
+        "j332tnkbipbg75",
+        "j332tnkbipbg77",
+        "i7t73nkbllhj4f",
+        "i7t73nkbllhj4i",
+        "1l23jynkbsr0lji",
+        "1l23jynkbsr0ljj",
+        "ctqte8nkbvkbwx0",
+        "ctqte8nkbvkbwx2",
+        "7qfnkc2rjxo9",
+        "7qfnkc2rjxol",
+        "1xvf9nkexlqc38",
+        "1xvf9nkexlqc39",
+        "1xvf9nkexlqc3a",
+        "pgrnkfeqldmw",
+        "pgrnkfeqldmy",
+        "pgrnkferwq7g",
+        "pgrnkferwq7i",
+        "1b81rnkfnda188",
+        "1b81rnkfnda18a",
+        "ewxfnkfyqnwo7",
+        "ewxfnkfyqnwo9",
+        "v6w70nkg8ubygw",
+        "v6w70nkg8ubygy",
+        "b6bqbnkgk6oyxr",
+        "b6bqbnkgk6oyxu",
+        "4fsaankgvqusj5",
+        "4fsaankgvqusj7",
+        "10l66mnkheb2uve",
+        "10l66mnkheb2uvg",
+        "4fp7892ykl9swxlr",
+        "4fp7892ykl9swxlt",
+        "1ktr715klrefqow",
+        "1ktr715klrefqoy",
+        "31ro6jgykm1dgv90",
+        "31ro6jgykm1dgv93",
+        "9vwcqe14kmbe7mhz",
+        "9vwcqe14kmbe7mia",
+        "3pmhr13kmmwubh0",
+        "3pmhr13kmmwubh2",
+        "3pmhr13kmmwubh3",
+        "11se7m6w15kmyw7oo8",
+        "11se7m6w15kmyw7oob",
+        "212zw5ykn6umnm1",
+        "212zw5ykn6umnm5",
+        "212zw5ykn7e2ha9",
+        "212zw5ykn7e2haa",
+        "eexi8pyknfgoitj",
+        "eexi8pyknfgoitm",
+        "32u5kdyko0r7ukc",
+        "32u5kdyko0r7ukd",
+        "4kpk06ukro94qk1",
+        "4kpk06ukro94qk2",
+        "1idniuks5hetq3",
+        "1idniuks5hetq4",
+        "ckk5oqvkssalz9s",
+        "ckk5oqvkssalz9t",
+        "dhvy8vkt804a54",
+        "dhvy8vkt804a55",
+        "5jvmwvktawp38j",
+        "5jvmwvktawp38k",
+        "5jvmwvktawp38l",
+        "fl24vktm9fm8r",
+        "fl24vktm9fm8s",
+        "4ftvpmivkttgqwax",
+        "4ftvpmivkttgqway",
+        "4ftvpmivkttgqwaz",
+        "b45svkuj83rfe",
+        "b45svkuj83rfg",
+        "b45svkuj83rfh",
+        "5qh5vkuxhyph4",
+        "5qh5vkuxhyph5",
+        "5qh5vkuxhyph3",
+        "c7q27hdtkz3ld2ar",
+        "c7q27hdtkz3ldm4y",
+        "c7q27hdtkz3legjb",
+        "5d6547tkzlt44a5",
+        "5d6547tkzlt6qmr",
+        "20gxtkzrv2fsg",
+        "20gxtkzrv2fsh",
+        "3s1u2eltl01uq6yx",
+        "3s1u2eltl01uq6yy",
+        "5t5ltl092q83x",
+        "5t5ltl092q83y",
+        "5t5ltl092q83z",
+        "5t5ltl092verw",
+        "5t5ltl092w77g",
+        "5t5ltl092wlpz",
+        "1oggdqntl0hlilqw",
+        "1oggdqntl0hlilqy",
+        "1oggdqntl0hlilqz",
+        "8grutl0j0ipks",
+        "8grutl0j0j8wi",
+        "4cz37tl0vt8hx5",
+        "4cz37tl0vt8hx6",
+        "eq6gtl13zjy2h",
+        "eq6gtl13zk5f1",
+        "eq6gtl13zkc78",
+        "8vvlxvtl1ftauzd",
+        "8vvlxvtl1ftauze",
+        "orwzxtl1lkgon1",
+        "orwzxtl1lkgon2",
+        "e0fmtl1noy92f",
+        "e0fmtl1noyh25",
+        "1muvhtl26xri8d",
+        "1muvhtl26xri8f",
+        "h6ixvtl2mnjeg3",
+        "h6ixvtl2mnjeg6",
+        "uizlvwetl2zln325",
+        "uizlvwetl2zln326",
+        "uizlvwetl2zln327",
+        "509hxtl38aa6vn",
+        "509hxtl38aa6vp",
+        "509hxtl38aa6vq",
+        "2r5eaxl6px88bg",
+        "2r5eaxl6px88bh",
+        "a0qlexl75jcpbb",
+        "a0qlexl75jcpbc",
+        "7vdaacxl7flwvus",
+        "7vdaacxl7flwvut",
+        "7vdaacxl7flwvuu",
+        "1gs5kxl7zj0ry7",
+        "1gs5kxl7zj0ry8",
+        "1gawt0uxl83tk3yt",
+        "1gawt0uxl83tk3yv",
+        "4rggxl89lgq62",
+        "4rggxl89lgq63",
+        "3xxprixl8mh5gc8",
+        "3xxprixl8mh5gcf",
+        "3xxprixl8mh5gci",
+        "1k4ggf18l8tkc6od",
+        "1k4ggf18l8tkc6oe",
+        "79xmxl8v1va03",
+        "79xmxl8v1va04",
+        "79xmxl8v1va05",
+        "2iauhxl96g510r",
+        "2iauhxl96g510s",
+        "13d012xl97vp7zj",
+        "13d012xl97vp7zk",
+        "at5b4kxl9hvkr6m",
+        "at5b4kxl9hvkr6n"
+    ],
+    "lastTouched": 1609056012448,
+    "parseStats": false,
+    "history": [
+        {
+            "timestamp": 1559689360864,
+            "action": "Joined team",
+            "target": "SaylorTwift#11820"
+        },
+        {
+            "timestamp": 1559698792339,
+            "action": "Joined team",
+            "target": "SaylorTwift#11820"
+        },
+        {
+            "timestamp": 1574120183779,
+            "action": "Joined team",
+            "target": "GOHANN#11237",
+            "season": 8
+        },
+        {
+            "timestamp": 1574658940097,
+            "action": "Added to division",
+            "target": "C East",
+            "season": 8
+        },
+        {
+            "timestamp": 1574659277362,
+            "action": "Added to division",
+            "target": "C East",
+            "season": 8
+        },
+        {
+            "timestamp": 1575758961116,
+            "action": "Joined team",
+            "target": "Franklin#11345",
+            "season": 8
+        },
+        {
+            "timestamp": 1585940417714,
+            "action": "Joined team",
+            "target": "Ace#1729",
+            "season": 9
+        },
+        {
+            "timestamp": 1585940463021,
+            "action": "Joined team",
+            "target": "SirNoble#11465",
+            "season": 9
+        },
+        {
+            "timestamp": 1587401372715,
+            "action": "Added to division",
+            "target": "B East",
+            "season": 9
+        },
+        {
+            "timestamp": 1592144273220,
+            "action": "Joined team",
+            "target": "Gokue#1112",
+            "season": 9
+        },
+        {
+            "timestamp": 1599019787493,
+            "action": "Added to division",
+            "target": "C East",
+            "season": 10
+        },
+        {
+            "timestamp": 1599758393149,
+            "action": "Joined team",
+            "target": "Lordfable#1426",
+            "season": 10
+        },
+        {
+            "timestamp": 1611039323025,
+            "action": "Joined team",
+            "target": "Goliath#1410",
+            "season": 11
+        },
+        {
+            "timestamp": 1612894374235,
+            "action": "Added to division",
+            "target": "B NorthEast",
+            "season": 11
+        },
+        {
+            "timestamp": 1615487263933,
+            "action": "Joined team",
+            "target": "Atlas#14641",
+            "season": 11
+        },
+        {
+            "timestamp": 1624835378104,
+            "action": "Joined team",
+            "target": "SaylorTwift#11820",
+            "season": 12
+        },
+        {
+            "timestamp": 1624853071961,
+            "action": "Joined team",
+            "target": "Earlshlep#1563",
+            "season": 12
+        },
+        {
+            "timestamp": 1628046334014,
+            "action": "Added to division",
+            "target": "B NorthEast",
+            "season": 12
+        },
+        {
+            "timestamp": 1641533257025,
+            "action": "Joined team",
+            "target": "Ectar#11304",
+            "season": 13
+        },
+        {
+            "timestamp": 1641617800205,
+            "action": "Joined team",
+            "target": "Ace#1729",
+            "season": 13
+        },
+        {
+            "timestamp": 1643165676012,
+            "action": "Added to division",
+            "target": "B East",
+            "season": 13
+        },
+        {
+            "timestamp": 1647659332078,
+            "action": "Joined team",
+            "target": "Gokue#1112",
+            "season": 13
+        },
+        {
+            "timestamp": 1657662271245,
+            "action": "Joined team",
+            "target": "Goliath#1410",
+            "season": 14
+        },
+        {
+            "timestamp": 1657682853523,
+            "action": "Joined team",
+            "target": "Shoopufff#1557",
+            "season": 14
+        },
+        {
+            "timestamp": 1658371260909,
+            "action": "Joined team",
+            "target": "EightBit#11705",
+            "season": 14
+        },
+        {
+            "timestamp": 1659503543197,
+            "action": "Added to division",
+            "target": "A East",
+            "season": 14
+        },
+        {
+            "timestamp": 1670546398107,
+            "action": "Joined team",
+            "target": "infafox#1236",
+            "season": 14
+        },
+        {
+            "timestamp": 1671813339464,
+            "action": "Joined team",
+            "target": "Tyledrahn#1703",
+            "season": 15
+        },
+        {
+            "timestamp": 1673479054018,
+            "action": "Joined team",
+            "target": "Yonners#1462",
+            "season": 15
+        },
+        {
+            "timestamp": 1673674776253,
+            "action": "Joined team",
+            "target": "Idioms#1746",
+            "season": 15
+        }
+    ],
+    "questionnaire": {
+        "compLevel": "Balance winning with fun",
+        "lastSeason": "yes",
+        "oldTeam": "Durotan's Couch",
+        "oldDivision": "A East",
+        "returningPlayers": "5",
+        "returningPlayersDiv": "A East",
+        "newPlayers": "infafox, Tyledrahn and TBD",
+        "teamChanges": "Comparable to last season",
+        "divisionPlacement": "A East",
+        "priorPlacement": "We started out really slow but picked things up towards the end to secure 7th seed. We expect to compete in the mid-pack of A East again",
+        "otherLeagues": "No",
+        "otherInfo": "No",
+        "eastWest": "east",
+        "acknowledge": true,
+        "registered": true
+    },
+    "hpMmrAvg": 2985,
+    "ngsMmrAvg": null,
+    "assistantCaptain": [],
+    "ticker": "dc",
+    "ticker_lower": "dc",
+    "stormRankAvg": 21,
+    "divisionDisplayName": null,
+    "divisionConcat": null,
+    "teamDetails": [
+        {
+            "_id": "5c45fea5c24d53001734457a",
+            "messageCenter": [],
+            "displayName": "Aphish#1180",
+            "bNetId": "53315872",
+            "__v": 186,
+            "availability": {
+                "monday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null,
+                    "allDay": false
+                },
+                "tuesday": {
+                    "available": true,
+                    "startTime": "17:30",
+                    "endTime": "22:45",
+                    "allDay": true,
+                    "startTimeNumber": 1730,
+                    "endTimeNumber": 2245,
+                    "zeroGMTstartTimeNumber": 2230,
+                    "zeroGMTendTimeNumber": 2745
+                },
+                "wednesday": {
+                    "available": true,
+                    "startTime": "17:30",
+                    "endTime": "22:45",
+                    "allDay": true,
+                    "startTimeNumber": 1730,
+                    "endTimeNumber": 2245,
+                    "zeroGMTstartTimeNumber": 2230,
+                    "zeroGMTendTimeNumber": 2745
+                },
+                "thursday": {
+                    "available": true,
+                    "startTime": "17:30",
+                    "endTime": "22:45",
+                    "allDay": true,
+                    "startTimeNumber": 1730,
+                    "endTimeNumber": 2245,
+                    "zeroGMTstartTimeNumber": 2230,
+                    "zeroGMTendTimeNumber": 2745
+                },
+                "friday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": "17:00"
+                },
+                "saturday": {
+                    "available": false,
+                    "startTime": "13:00",
+                    "endTime": "18:30",
+                    "startTimeNumber": 1300,
+                    "endTimeNumber": 1830,
+                    "zeroGMTstartTimeNumber": 1800,
+                    "zeroGMTendTimeNumber": 2330
+                },
+                "sunday": {
+                    "available": true,
+                    "startTime": "13:00",
+                    "endTime": "22:45",
+                    "startTimeNumber": 1300,
+                    "endTimeNumber": 2245,
+                    "zeroGMTstartTimeNumber": 1800,
+                    "zeroGMTendTimeNumber": 2745
+                }
+            },
+            "averageMmr": null,
+            "competitiveLevel": "3",
+            "descriptionOfPlay": "Murder",
+            "discordTag": "Aphish#6361",
+            "hlRankDivision": 1,
+            "hlRankMetal": "Platinum",
+            "hotsLogsURL": "https://www.hotslogs.com/Player/Profile?PlayerID=1553266",
+            "lookingForGroup": false,
+            "role": {
+                "tank": false,
+                "meleeassassin": false,
+                "rangedassassin": true,
+                "support": false,
+                "healer": false,
+                "offlane": false,
+                "flex": false
+            },
+            "timeZone": "-5",
+            "pendingTeam": false,
+            "teamId": "5c46204b64c08b0017bc1eea",
+            "teamName": "Durotan's Couch",
+            "hotsLogsPlayerID": null,
+            "replays": [],
+            "parseStats": false,
+            "toonHandle": "1-Hero-1-615244",
+            "history": [],
+            "replayArchive": [
+                {
+                    "replays": [
+                        "4bkiq1njt06y0g4",
+                        "4bkiq1njt06y0g5",
+                        "hn1injt7yp4xr",
+                        "hn1injt7yp4xt",
+                        "111rdc2njti30dcz",
+                        "111rdc2njti30dd1",
+                        "111rdc2njti30dd2",
+                        "dkwxcunjtjhvss8",
+                        "dkwxcunjtjhvss9",
+                        "41auennjttfyu5c",
+                        "41auennjttfyu5e",
+                        "f010e1xnju3fqq2d",
+                        "f010e1xnju3fqq2e",
+                        "5wulcq6njuajxudm",
+                        "5wulcq6njuajxudo",
+                        "1vt08njukpfabd",
+                        "1vt08njukpfabe",
+                        "3plwsnjumz5q57",
+                        "3plwsnjumz5q59"
+                    ],
+                    "_id": "5ceb3329a993dc7a7e0af5a3",
+                    "season": 6
+                },
+                {
+                    "replays": [
+                        "31d5eq7njyqlhloq",
+                        "31d5eq7njyqlhlor",
+                        "faso5onjz2391qu",
+                        "faso5onjz2391qv",
+                        "faso5onjz2391qw",
+                        "18xfenjzklssq7",
+                        "18xfenjzklssq8",
+                        "157pk03wfgmu",
+                        "157pk03wfhnw",
+                        "157pk03wfilk",
+                        "bj93nk07kxwdw",
+                        "bj93nk07kxwdx",
+                        "bj93nk07kxwdy"
+                    ],
+                    "_id": "5d8a213a0d742259441c0349",
+                    "season": 7
+                },
+                {
+                    "replays": [
+                        "1hxd7nk3tknui0",
+                        "1hxd7nk3tknui1",
+                        "1sdgnk40phtxw",
+                        "1sdgnk40phtxx",
+                        "2sa5knk5dajkgn",
+                        "2sa5knk5dajkgo",
+                        "1cvdank5hmcyh4",
+                        "1cvdank5hmcyh5",
+                        "1cvdank5hmcyh6",
+                        "ivznk6cmj7as",
+                        "ivznk6cmj7at"
+                    ],
+                    "_id": "5e6063b9763149384f59c7f6",
+                    "season": 8
+                },
+                {
+                    "replays": [
+                        "lgpw8l24eok7f8km0t",
+                        "lgpw8l24eok7f8knm8",
+                        "lgpw8l24eok7f8oo13",
+                        "lgpw8l24eok7f8opd6",
+                        "lgpw8l24eok7f8oqul",
+                        "1ahdnka7ie8gj",
+                        "1ahdnka7ie8gk",
+                        "1ahdnka7ie8gl",
+                        "2si4imgnkav7le6u",
+                        "2si4imgnkav7le6x",
+                        "2si4imgnkav7le6y",
+                        "xd087blzkbgo0i10",
+                        "xd087blzkbgo0k27",
+                        "xd087blzkbgo0lv9"
+                    ],
+                    "_id": "5f1c9726db5d95289af86ae8",
+                    "season": 9
+                },
+                {
+                    "replays": [
+                        "1xvf9nkexlqc38",
+                        "1xvf9nkexlqc39",
+                        "1xvf9nkexlqc3a",
+                        "pgrnkfeqldmw",
+                        "pgrnkfeqldmy",
+                        "pgrnkferwq7g",
+                        "pgrnkferwq7i",
+                        "1b81rnkfnda188",
+                        "1b81rnkfnda18a",
+                        "ewxfnkfyqnwo7",
+                        "ewxfnkfyqnwo9",
+                        "v6w70nkg8ubygw",
+                        "v6w70nkg8ubygy",
+                        "4fsaankgvqusj5",
+                        "4fsaankgvqusj7",
+                        "10l66mnkheb2uve",
+                        "10l66mnkheb2uvg"
+                    ],
+                    "_id": "5fe11c9dc3966d0017b00277",
+                    "season": 10
+                },
+                {
+                    "replays": [
+                        "4fp7892ykl9swxlr",
+                        "4fp7892ykl9swxlt",
+                        "31ro6jgykm1dgv90",
+                        "31ro6jgykm1dgv93",
+                        "3pmhr13kmmwubh0",
+                        "3pmhr13kmmwubh2",
+                        "3pmhr13kmmwubh3",
+                        "11se7m6w15kmyw7oo8",
+                        "11se7m6w15kmyw7oob",
+                        "212zw5ykn6umnm1",
+                        "212zw5ykn6umnm5"
+                    ],
+                    "_id": "60b437a9e78c1600226ff508",
+                    "season": 11
+                },
+                {
+                    "replays": [
+                        "dhvy8vkt804a54",
+                        "dhvy8vkt804a55",
+                        "5jvmwvktawp38j",
+                        "5jvmwvktawp38k",
+                        "5jvmwvktawp38l",
+                        "fl24vktm9fm8r",
+                        "fl24vktm9fm8s",
+                        "4ftvpmivkttgqwax",
+                        "4ftvpmivkttgqway",
+                        "4ftvpmivkttgqwaz",
+                        "b45svkuj83rfe",
+                        "b45svkuj83rfg",
+                        "b45svkuj83rfh",
+                        "5qh5vkuxhyph4",
+                        "5qh5vkuxhyph5",
+                        "5qh5vkuxhyph3"
+                    ],
+                    "_id": "61a8f45f0e0db2001fb861a8",
+                    "season": 12
+                },
+                {
+                    "replays": [
+                        "5d6547tkzlt44a5",
+                        "5d6547tkzlt6qmr",
+                        "20gxtkzrv2fsg",
+                        "20gxtkzrv2fsh",
+                        "3s1u2eltl01uq6yx",
+                        "3s1u2eltl01uq6yy",
+                        "5t5ltl092q83x",
+                        "5t5ltl092q83y",
+                        "5t5ltl092q83z",
+                        "5t5ltl092verw",
+                        "5t5ltl092w77g",
+                        "5t5ltl092wlpz",
+                        "8grutl0j0ipks",
+                        "8grutl0j0j8wi",
+                        "4cz37tl0vt8hx5",
+                        "4cz37tl0vt8hx6",
+                        "8vvlxvtl1ftauzd",
+                        "8vvlxvtl1ftauze",
+                        "orwzxtl1lkgon1",
+                        "orwzxtl1lkgon2",
+                        "e0fmtl1noy92f",
+                        "e0fmtl1noyh25",
+                        "1muvhtl26xri8d",
+                        "1muvhtl26xri8f",
+                        "h6ixvtl2mnjeg3",
+                        "h6ixvtl2mnjeg6",
+                        "uizlvwetl2zln325",
+                        "uizlvwetl2zln326",
+                        "uizlvwetl2zln327",
+                        "509hxtl38aa6vn",
+                        "509hxtl38aa6vp",
+                        "509hxtl38aa6vq"
+                    ],
+                    "_id": "62a2ce0adbf8d2001d87ffcb",
+                    "season": 13
+                },
+                {
+                    "replays": [
+                        "2r5eaxl6px88bg",
+                        "2r5eaxl6px88bh",
+                        "a0qlexl75jcpbb",
+                        "a0qlexl75jcpbc",
+                        "7vdaacxl7flwvus",
+                        "7vdaacxl7flwvut",
+                        "7vdaacxl7flwvuu",
+                        "1gs5kxl7zj0ry7",
+                        "1gs5kxl7zj0ry8",
+                        "1gawt0uxl83tk3yt",
+                        "1gawt0uxl83tk3yv",
+                        "4rggxl89lgq62",
+                        "4rggxl89lgq63",
+                        "3xxprixl8mh5gc8",
+                        "3xxprixl8mh5gcf",
+                        "3xxprixl8mh5gci",
+                        "1k4ggf18l8tkc6od",
+                        "1k4ggf18l8tkc6oe",
+                        "79xmxl8v1va03",
+                        "79xmxl8v1va04",
+                        "79xmxl8v1va05",
+                        "2iauhxl96g510r",
+                        "2iauhxl96g510s",
+                        "13d012xl97vp7zj",
+                        "13d012xl97vp7zk",
+                        "at5b4kxl9hvkr6m",
+                        "at5b4kxl9hvkr6n"
+                    ],
+                    "_id": "639b48124081470d31a7cb1a",
+                    "season": 14
+                }
+            ],
+            "seasonsPlayed": 9,
+            "heroesProfileMmr": 2773,
+            "twitch": "twitch.tv/aphishie",
+            "twitter": "twitter.com/aphishie",
+            "verifiedRankHistory": [
+                {
+                    "_id": "600a6eda3b0bb90022e4e99e",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 4,
+                    "season": "4",
+                    "year": "2020",
+                    "level": 22,
+                    "status": "verified"
+                },
+                {
+                    "_id": "600a6ed53b0bb90022e4e99c",
+                    "hlRankMetal": "Unranked",
+                    "hlRankDivision": 0,
+                    "season": "3",
+                    "year": "2020",
+                    "level": 0,
+                    "status": "verified"
+                },
+                {
+                    "_id": "600a6ed175a0a70023d6f988",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 5,
+                    "season": "2",
+                    "year": "2020",
+                    "level": 21,
+                    "status": "verified"
+                },
+                {
+                    "_id": "60d904e8084c71002207869e",
+                    "hlRankMetal": "Unranked",
+                    "hlRankDivision": 0,
+                    "season": "1",
+                    "year": "2021",
+                    "level": 0,
+                    "status": "verified"
+                },
+                {
+                    "_id": "61d28ab405c6c4001fdbae4c",
+                    "hlRankMetal": "Platinum",
+                    "hlRankDivision": 2,
+                    "season": "2",
+                    "year": "2021",
+                    "level": 19,
+                    "status": "verified"
+                },
+                {
+                    "_id": "62d753b930a6bc002151ebf1",
+                    "hlRankMetal": "Platinum",
+                    "hlRankDivision": 2,
+                    "season": "1",
+                    "year": "2022",
+                    "level": 19,
+                    "status": "verified"
+                },
+                {
+                    "_id": "63aeff486de64a0021a40e92",
+                    "hlRankMetal": "Platinum",
+                    "hlRankDivision": 1,
+                    "season": "2",
+                    "year": "2022",
+                    "level": 20,
+                    "status": "verified"
+                }
+            ],
+            "discordId": "207567138502868992"
+        },
+        {
+            "_id": "5c4520d146111b00172147f2",
+            "messageCenter": [],
+            "displayName": "CaptainWedge#1451",
+            "bNetId": "89941899",
+            "__v": 252,
+            "availability": {
+                "monday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "tuesday": {
+                    "available": true,
+                    "startTime": "00:00",
+                    "endTime": "23:45",
+                    "allDay": true,
+                    "startTimeNumber": 0,
+                    "endTimeNumber": 2345,
+                    "zeroGMTstartTimeNumber": 500,
+                    "zeroGMTendTimeNumber": 2845
+                },
+                "wednesday": {
+                    "available": true,
+                    "startTime": "00:00",
+                    "endTime": "23:45",
+                    "allDay": true,
+                    "startTimeNumber": 0,
+                    "endTimeNumber": 2345,
+                    "zeroGMTstartTimeNumber": 500,
+                    "zeroGMTendTimeNumber": 2845
+                },
+                "thursday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "friday": {
+                    "available": true,
+                    "startTime": "00:00",
+                    "endTime": "23:45",
+                    "allDay": true,
+                    "startTimeNumber": 0,
+                    "endTimeNumber": 2345,
+                    "zeroGMTstartTimeNumber": 500,
+                    "zeroGMTendTimeNumber": 2845
+                },
+                "saturday": {
+                    "available": true,
+                    "startTime": "00:00",
+                    "endTime": "23:45",
+                    "allDay": true,
+                    "startTimeNumber": 0,
+                    "endTimeNumber": 2345,
+                    "zeroGMTstartTimeNumber": 500,
+                    "zeroGMTendTimeNumber": 2845
+                },
+                "sunday": {
+                    "available": true,
+                    "startTime": "00:00",
+                    "endTime": "23:45",
+                    "allDay": true,
+                    "startTimeNumber": 0,
+                    "endTimeNumber": 2345,
+                    "zeroGMTstartTimeNumber": 500,
+                    "zeroGMTendTimeNumber": 2845
+                }
+            },
+            "averageMmr": null,
+            "competitiveLevel": "3",
+            "discordTag": "Wedge#7006",
+            "hlRankDivision": 5,
+            "hlRankMetal": "Platinum",
+            "hotsLogsURL": "https://www.hotslogs.com/Player/Profile?PlayerID=5094847",
+            "lookingForGroup": false,
+            "role": {
+                "tank": false,
+                "meleeassassin": true,
+                "rangedassassin": true,
+                "support": false,
+                "healer": false,
+                "offlane": true,
+                "flex": true
+            },
+            "timeZone": "-5",
+            "isCaptain": true,
+            "teamId": "5c46204b64c08b0017bc1eea",
+            "teamName": "Durotan's Couch",
+            "hotsLogsPlayerID": null,
+            "replays": [],
+            "parseStats": false,
+            "toonHandle": "1-Hero-1-4436476",
+            "history": [],
+            "pendingTeam": false,
+            "replayArchive": [
+                {
+                    "replays": [
+                        "hn1injt7yp4xr",
+                        "hn1injt7yp4xt",
+                        "111rdc2njti30dcz",
+                        "111rdc2njti30dd1",
+                        "111rdc2njti30dd2",
+                        "dkwxcunjtjhvss8",
+                        "dkwxcunjtjhvss9",
+                        "41auennjttfyu5c",
+                        "41auennjttfyu5e",
+                        "f010e1xnju3fqq2d",
+                        "f010e1xnju3fqq2e",
+                        "5wulcq6njuajxudm",
+                        "5wulcq6njuajxudo",
+                        "1vt08njukpfabd",
+                        "1vt08njukpfabe",
+                        "3plwsnjumz5q57",
+                        "3plwsnjumz5q59"
+                    ],
+                    "_id": "5ceb3329a993dc7a7e0af58e",
+                    "season": 6
+                },
+                {
+                    "replays": [
+                        "76bvnjxv7p445",
+                        "76bvnjxv7p447",
+                        "76bvnjxv7p448",
+                        "gjrynjygoxngm",
+                        "gjrynjygoxngn",
+                        "gjrynjygoxngo",
+                        "4rt5qnjyi3xd89",
+                        "4rt5qnjyi3xd8a",
+                        "faso5onjz2391qu",
+                        "faso5onjz2391qv",
+                        "faso5onjz2391qw",
+                        "16z3vnnjzj8v6lw",
+                        "16z3vnnjzj8v6lx",
+                        "16z3vnnjzj8v6ly",
+                        "18xfenjzklssq7",
+                        "18xfenjzklssq8",
+                        "157pk03wfgmu",
+                        "157pk03wfhnw",
+                        "157pk03wfilk",
+                        "bj93nk07kxwdw",
+                        "bj93nk07kxwdx",
+                        "bj93nk07kxwdy"
+                    ],
+                    "_id": "5d8a213a0d742259441c0300",
+                    "season": 7
+                },
+                {
+                    "replays": [
+                        "1hxd7nk3tknui0",
+                        "1hxd7nk3tknui1",
+                        "1sdgnk40phtxw",
+                        "1sdgnk40phtxx",
+                        "2sa5knk5d8071m",
+                        "2sa5knk5d8071n",
+                        "2sa5knk5dajkgn",
+                        "2sa5knk5dajkgo",
+                        "1cvdank5hmcyh4",
+                        "1cvdank5hmcyh5",
+                        "1cvdank5hmcyh6",
+                        "ti4h5nk5orjhy3",
+                        "ti4h5nk5orjhy4",
+                        "ti4h5nk5orjhy6",
+                        "7lfnk5rmrtca",
+                        "7lfnk5rmrtcb",
+                        "7lfnk5rmrtcc",
+                        "gwnk5xbtn14",
+                        "gwnk5xbtn15",
+                        "41immnk61o9z1s",
+                        "41immnk61o9z1t",
+                        "41immnk61o9z1u",
+                        "ivznk6cmj7as",
+                        "ivznk6cmj7at"
+                    ],
+                    "_id": "5e6063b9763149384f59c7d3",
+                    "season": 8
+                },
+                {
+                    "replays": [
+                        "lgpw8l24eok7f8km0t",
+                        "lgpw8l24eok7f8knm8",
+                        "lgpw8l24eok7f8oo13",
+                        "lgpw8l24eok7f8opd6",
+                        "lgpw8l24eok7f8oqul",
+                        "ry9vynk9jbswkm",
+                        "ry9vynk9jbswkn",
+                        "ry9vynk9jbswko",
+                        "1ahdnka7ie8gj",
+                        "1ahdnka7ie8gk",
+                        "1ahdnka7ie8gl",
+                        "3yftjnkaere3a1",
+                        "3yftjnkaere3a3",
+                        "3yftjnkaere3a4",
+                        "2si4imgnkav7le6u",
+                        "2si4imgnkav7le6x",
+                        "2si4imgnkav7le6y",
+                        "xd087blzkbgo0i10",
+                        "xd087blzkbgo0k27",
+                        "xd087blzkbgo0lv9",
+                        "xd087blzkbgo5zdv",
+                        "xd087blzkbgo622j",
+                        "xd087blzkbgo646k",
+                        "xd087blzkbgo994c",
+                        "xd087blzkbgo9b3l",
+                        "xd087blzkbgo9dgl",
+                        "j332tnkbipbg75",
+                        "j332tnkbipbg77",
+                        "i7t73nkbllhj4f",
+                        "i7t73nkbllhj4i",
+                        "1l23jynkbsr0lji",
+                        "1l23jynkbsr0ljj",
+                        "ctqte8nkbvkbwx0",
+                        "ctqte8nkbvkbwx2",
+                        "7qfnkc2rjxo9",
+                        "7qfnkc2rjxol"
+                    ],
+                    "_id": "5f1c9726db5d95289af86acf",
+                    "season": 9
+                },
+                {
+                    "replays": [
+                        "1xvf9nkexlqc38",
+                        "1xvf9nkexlqc39",
+                        "1xvf9nkexlqc3a",
+                        "pgrnkfeqldmw",
+                        "pgrnkfeqldmy",
+                        "pgrnkferwq7g",
+                        "pgrnkferwq7i",
+                        "1b81rnkfnda188",
+                        "1b81rnkfnda18a",
+                        "ewxfnkfyqnwo7",
+                        "ewxfnkfyqnwo9",
+                        "v6w70nkg8ubygw",
+                        "v6w70nkg8ubygy",
+                        "b6bqbnkgk6oyxr",
+                        "b6bqbnkgk6oyxu",
+                        "4fsaankgvqusj5",
+                        "4fsaankgvqusj7",
+                        "10l66mnkheb2uve",
+                        "10l66mnkheb2uvg"
+                    ],
+                    "_id": "5fe11c9dc3966d0017b0026f",
+                    "season": 10
+                },
+                {
+                    "replays": [
+                        "4fp7892ykl9swxlr",
+                        "4fp7892ykl9swxlt",
+                        "1ktr715klrefqow",
+                        "1ktr715klrefqoy",
+                        "31ro6jgykm1dgv90",
+                        "31ro6jgykm1dgv93",
+                        "9vwcqe14kmbe7mhz",
+                        "9vwcqe14kmbe7mia",
+                        "3pmhr13kmmwubh0",
+                        "3pmhr13kmmwubh2",
+                        "3pmhr13kmmwubh3",
+                        "11se7m6w15kmyw7oo8",
+                        "11se7m6w15kmyw7oob",
+                        "212zw5ykn6umnm1",
+                        "212zw5ykn6umnm5",
+                        "212zw5ykn7e2ha9",
+                        "212zw5ykn7e2haa",
+                        "eexi8pyknfgoitj",
+                        "eexi8pyknfgoitm",
+                        "32u5kdyko0r7ukc",
+                        "32u5kdyko0r7ukd"
+                    ],
+                    "_id": "60b437a9e78c1600226ff4fb",
+                    "season": 11
+                },
+                {
+                    "replays": [
+                        "4kpk06ukro94qk1",
+                        "4kpk06ukro94qk2",
+                        "1idniuks5hetq3",
+                        "1idniuks5hetq4",
+                        "ckk5oqvkssalz9s",
+                        "ckk5oqvkssalz9t",
+                        "5jvmwvktawp38j",
+                        "5jvmwvktawp38k",
+                        "5jvmwvktawp38l",
+                        "fl24vktm9fm8r",
+                        "fl24vktm9fm8s",
+                        "4ftvpmivkttgqwax",
+                        "4ftvpmivkttgqway",
+                        "4ftvpmivkttgqwaz",
+                        "b45svkuj83rfe",
+                        "b45svkuj83rfg",
+                        "b45svkuj83rfh",
+                        "5qh5vkuxhyph4",
+                        "5qh5vkuxhyph5",
+                        "5qh5vkuxhyph3"
+                    ],
+                    "_id": "61a8f45f0e0db2001fb86198",
+                    "season": 12
+                },
+                {
+                    "replays": [
+                        "c7q27hdtkz3ld2ar",
+                        "c7q27hdtkz3ldm4y",
+                        "c7q27hdtkz3legjb",
+                        "5d6547tkzlt44a5",
+                        "5d6547tkzlt6qmr",
+                        "20gxtkzrv2fsg",
+                        "20gxtkzrv2fsh",
+                        "3s1u2eltl01uq6yx",
+                        "3s1u2eltl01uq6yy",
+                        "5t5ltl092q83x",
+                        "5t5ltl092q83y",
+                        "5t5ltl092q83z",
+                        "5t5ltl092verw",
+                        "5t5ltl092w77g",
+                        "5t5ltl092wlpz",
+                        "1oggdqntl0hlilqw",
+                        "1oggdqntl0hlilqy",
+                        "1oggdqntl0hlilqz",
+                        "8grutl0j0ipks",
+                        "8grutl0j0j8wi",
+                        "4cz37tl0vt8hx5",
+                        "4cz37tl0vt8hx6",
+                        "eq6gtl13zjy2h",
+                        "eq6gtl13zk5f1",
+                        "eq6gtl13zkc78",
+                        "8vvlxvtl1ftauzd",
+                        "8vvlxvtl1ftauze",
+                        "orwzxtl1lkgon1",
+                        "orwzxtl1lkgon2",
+                        "e0fmtl1noy92f",
+                        "e0fmtl1noyh25",
+                        "1muvhtl26xri8d",
+                        "1muvhtl26xri8f",
+                        "h6ixvtl2mnjeg3",
+                        "h6ixvtl2mnjeg6",
+                        "uizlvwetl2zln325",
+                        "uizlvwetl2zln326",
+                        "uizlvwetl2zln327",
+                        "509hxtl38aa6vn",
+                        "509hxtl38aa6vp",
+                        "509hxtl38aa6vq"
+                    ],
+                    "_id": "62a2ce0adbf8d2001d87ffbc",
+                    "season": 13
+                },
+                {
+                    "replays": [
+                        "2r5eaxl6px88bg",
+                        "2r5eaxl6px88bh",
+                        "a0qlexl75jcpbb",
+                        "a0qlexl75jcpbc",
+                        "7vdaacxl7flwvus",
+                        "7vdaacxl7flwvut",
+                        "7vdaacxl7flwvuu",
+                        "1gs5kxl7zj0ry7",
+                        "1gs5kxl7zj0ry8",
+                        "1gawt0uxl83tk3yt",
+                        "1gawt0uxl83tk3yv",
+                        "4rggxl89lgq62",
+                        "4rggxl89lgq63",
+                        "3xxprixl8mh5gc8",
+                        "3xxprixl8mh5gcf",
+                        "3xxprixl8mh5gci",
+                        "1k4ggf18l8tkc6od",
+                        "1k4ggf18l8tkc6oe",
+                        "79xmxl8v1va03",
+                        "79xmxl8v1va04",
+                        "79xmxl8v1va05",
+                        "2iauhxl96g510r",
+                        "2iauhxl96g510s",
+                        "13d012xl97vp7zj",
+                        "13d012xl97vp7zk",
+                        "at5b4kxl9hvkr6m",
+                        "at5b4kxl9hvkr6n"
+                    ],
+                    "_id": "639b48124081470d31a7cb16",
+                    "season": 14
+                }
+            ],
+            "seasonsPlayed": 9,
+            "heroesProfileMmr": 2800,
+            "avatar": "CaptainWedge#14517696_avatar.png",
+            "verifiedRankHistory": [
+                {
+                    "_id": "6005cf8320e4fa0022656670",
+                    "hlRankMetal": "Platinum",
+                    "hlRankDivision": 1,
+                    "season": "4",
+                    "year": "2020",
+                    "level": 20,
+                    "status": "verified"
+                },
+                {
+                    "_id": "6005cf82ea5aa2002656bfb2",
+                    "hlRankMetal": "Platinum",
+                    "hlRankDivision": 2,
+                    "season": "3",
+                    "year": "2020",
+                    "level": 19,
+                    "status": "verified"
+                },
+                {
+                    "_id": "6005cf8120e4fa002265666e",
+                    "hlRankMetal": "Platinum",
+                    "hlRankDivision": 2,
+                    "season": "2",
+                    "year": "2020",
+                    "level": 19,
+                    "status": "verified"
+                },
+                {
+                    "_id": "60d9050f084c7100220786aa",
+                    "hlRankMetal": "Platinum",
+                    "hlRankDivision": 1,
+                    "season": "1",
+                    "year": "2021",
+                    "level": 20,
+                    "status": "verified"
+                },
+                {
+                    "_id": "61d290ee05c6c4001fdbae64",
+                    "hlRankMetal": "Platinum",
+                    "hlRankDivision": 2,
+                    "season": "2",
+                    "year": "2021",
+                    "level": 19,
+                    "status": "verified"
+                },
+                {
+                    "_id": "62d753a430a6bc002151ebcf",
+                    "hlRankMetal": "Platinum",
+                    "hlRankDivision": 2,
+                    "season": "1",
+                    "year": "2022",
+                    "level": 19,
+                    "status": "verified"
+                },
+                {
+                    "_id": "63aeff576de64a0021a40ea4",
+                    "hlRankMetal": "Platinum",
+                    "hlRankDivision": 2,
+                    "season": "2",
+                    "year": "2022",
+                    "level": 19,
+                    "status": "verified"
+                }
+            ],
+            "discordId": "193484348211593216"
+        },
+        {
+            "_id": "5dd2e54587f8280017cb5df6",
+            "messageCenter": [],
+            "replays": [],
+            "history": [
+                {
+                    "timestamp": 1574120183779,
+                    "action": "Joined team",
+                    "target": "Durotan's Couch",
+                    "season": 8
+                }
+            ],
+            "displayName": "GOHANN#11237",
+            "bNetId": "348423377",
+            "heroesProfileMmr": 2554,
+            "replayArchive": [
+                {
+                    "replays": [
+                        "1hxd7nk3tknui0",
+                        "1hxd7nk3tknui1",
+                        "2sa5knk5d8071m",
+                        "2sa5knk5d8071n",
+                        "ti4h5nk5orjhy3",
+                        "ti4h5nk5orjhy4",
+                        "ti4h5nk5orjhy6",
+                        "7lfnk5rmrtca",
+                        "7lfnk5rmrtcb",
+                        "7lfnk5rmrtcc",
+                        "gwnk5xbtn14",
+                        "gwnk5xbtn15",
+                        "41immnk61o9z1s",
+                        "41immnk61o9z1t",
+                        "41immnk61o9z1u"
+                    ],
+                    "_id": "5e6063b8763149384f59c717",
+                    "season": 8
+                },
+                {
+                    "replays": [
+                        "lgpw8l24eok7f8km0t",
+                        "lgpw8l24eok7f8knm8",
+                        "lgpw8l24eok7f8oo13",
+                        "lgpw8l24eok7f8opd6",
+                        "lgpw8l24eok7f8oqul",
+                        "ry9vynk9jbswkm",
+                        "ry9vynk9jbswkn",
+                        "ry9vynk9jbswko",
+                        "3yftjnkaere3a1",
+                        "3yftjnkaere3a3",
+                        "3yftjnkaere3a4",
+                        "xd087blzkbgo0i10",
+                        "xd087blzkbgo0k27",
+                        "xd087blzkbgo0lv9",
+                        "xd087blzkbgo622j",
+                        "j332tnkbipbg75",
+                        "j332tnkbipbg77",
+                        "i7t73nkbllhj4f",
+                        "i7t73nkbllhj4i",
+                        "1l23jynkbsr0lji",
+                        "1l23jynkbsr0ljj",
+                        "ctqte8nkbvkbwx0",
+                        "ctqte8nkbvkbwx2"
+                    ],
+                    "_id": "5f1c9726db5d95289af86d2a",
+                    "season": 9
+                },
+                {
+                    "replays": [
+                        "1xvf9nkexlqc38",
+                        "1xvf9nkexlqc39",
+                        "1xvf9nkexlqc3a",
+                        "pgrnkfeqldmw",
+                        "pgrnkfeqldmy",
+                        "pgrnkferwq7g",
+                        "pgrnkferwq7i",
+                        "1b81rnkfnda188",
+                        "1b81rnkfnda18a",
+                        "ewxfnkfyqnwo7",
+                        "ewxfnkfyqnwo9",
+                        "v6w70nkg8ubygw",
+                        "v6w70nkg8ubygy",
+                        "b6bqbnkgk6oyxr",
+                        "b6bqbnkgk6oyxu",
+                        "10l66mnkheb2uve",
+                        "10l66mnkheb2uvg"
+                    ],
+                    "_id": "5fe11c9ec3966d0017b00402",
+                    "season": 10
+                },
+                {
+                    "replays": [
+                        "1ktr715klrefqow",
+                        "1ktr715klrefqoy"
+                    ],
+                    "_id": "60b437a9e78c1600226ff667",
+                    "season": 11
+                },
+                {
+                    "replays": [
+                        "ckk5oqvkssalz9s",
+                        "ckk5oqvkssalz9t",
+                        "dhvy8vkt804a54",
+                        "dhvy8vkt804a55"
+                    ],
+                    "_id": "61a8f45f0e0db2001fb86306",
+                    "season": 12
+                },
+                {
+                    "replays": [
+                        "c7q27hdtkz3ld2ar",
+                        "c7q27hdtkz3ldm4y",
+                        "c7q27hdtkz3legjb",
+                        "1oggdqntl0hlilqw",
+                        "1oggdqntl0hlilqy",
+                        "1oggdqntl0hlilqz"
+                    ],
+                    "_id": "62a2ce0bdbf8d2001d8800de",
+                    "season": 13
+                }
+            ],
+            "__v": 89,
+            "lookingForGroup": false,
+            "pendingTeam": false,
+            "teamId": "5c46204b64c08b0017bc1eea",
+            "teamName": "Durotan's Couch",
+            "parseStats": true,
+            "toonHandle": "1-Hero-1-6696823",
+            "seasonsPlayed": 7,
+            "verifiedRankHistory": [
+                {
+                    "_id": "600a6eba75a0a70023d6f984",
+                    "hlRankMetal": "Silver",
+                    "hlRankDivision": 2,
+                    "season": "4",
+                    "year": "2020",
+                    "level": 9,
+                    "status": "verified"
+                },
+                {
+                    "_id": "600a6eb23b0bb90022e4e995",
+                    "hlRankMetal": "Silver",
+                    "hlRankDivision": 1,
+                    "season": "3",
+                    "year": "2020",
+                    "level": 10,
+                    "status": "verified"
+                },
+                {
+                    "_id": "600a6eac3b0bb90022e4e993",
+                    "hlRankMetal": "Silver",
+                    "hlRankDivision": 1,
+                    "season": "2",
+                    "year": "2020",
+                    "level": 10,
+                    "status": "verified"
+                },
+                {
+                    "_id": "60d904fd084c7100220786a4",
+                    "hlRankMetal": "Silver",
+                    "hlRankDivision": 3,
+                    "season": "1",
+                    "year": "2021",
+                    "level": 8,
+                    "status": "verified"
+                },
+                {
+                    "_id": "61d28e6305c6c4001fdbae55",
+                    "hlRankMetal": "Silver",
+                    "hlRankDivision": 1,
+                    "season": "2",
+                    "year": "2021",
+                    "level": 10,
+                    "status": "verified"
+                },
+                {
+                    "_id": "62d7539d30a6bc002151ebbe",
+                    "hlRankMetal": "Silver",
+                    "hlRankDivision": 4,
+                    "season": "1",
+                    "year": "2022",
+                    "level": 7,
+                    "status": "verified"
+                },
+                {
+                    "_id": "63aeff326de64a0021a40e75",
+                    "hlRankMetal": "Silver",
+                    "hlRankDivision": 5,
+                    "season": "2",
+                    "year": "2022",
+                    "level": 6,
+                    "status": "verified"
+                }
+            ]
+        },
+        {
+            "_id": "5d1032c323141100171b291c",
+            "messageCenter": [],
+            "replays": [],
+            "history": [
+                {
+                    "timestamp": 1561342876961,
+                    "action": "Joined team",
+                    "target": "Sky5"
+                },
+                {
+                    "timestamp": 1584404141652,
+                    "action": "Left team",
+                    "target": "Sky5",
+                    "season": 9
+                },
+                {
+                    "timestamp": 1584404373539,
+                    "season": 9,
+                    "action": "Created Team",
+                    "target": "Respect the Throw"
+                },
+                {
+                    "timestamp": 1584624317524,
+                    "action": "Joined team",
+                    "target": "Respect the Goose",
+                    "season": 9
+                },
+                {
+                    "timestamp": 1610988752400,
+                    "action": "Left team",
+                    "target": "Respect the Goose",
+                    "season": 11
+                },
+                {
+                    "timestamp": 1611039323025,
+                    "action": "Joined team",
+                    "target": "Durotan's Couch",
+                    "season": 11
+                },
+                {
+                    "timestamp": 1641336628848,
+                    "action": "Left team",
+                    "target": "Durotan's Couch",
+                    "season": 13
+                },
+                {
+                    "timestamp": 1641345163943,
+                    "action": "Joined team",
+                    "target": "Rook Gaming",
+                    "season": 13
+                },
+                {
+                    "timestamp": 1647788036233,
+                    "action": "Joined team",
+                    "target": "Rook Gaming (Withdrawn)",
+                    "season": 13
+                },
+                {
+                    "timestamp": 1657151993182,
+                    "action": "Left team",
+                    "target": "Rook Gaming (Withdrawn)",
+                    "season": 14
+                },
+                {
+                    "timestamp": 1657662271245,
+                    "action": "Joined team",
+                    "target": "Durotan's Couch",
+                    "season": 14
+                }
+            ],
+            "displayName": "Goliath#1410",
+            "bNetId": "72233378",
+            "averageMmr": null,
+            "hotsLogsPlayerID": null,
+            "heroesProfileMmr": 2944,
+            "replayArchive": [
+                {
+                    "replays": [
+                        "cn4j3xnjyackvu2",
+                        "cn4j3xnjyackvu7",
+                        "cn4j3xnjyackvu8",
+                        "45glejnjyd79knt",
+                        "45glejnjyd79knu",
+                        "4c34njzm1vrvk",
+                        "4c34njzm1vrvl",
+                        "5rhq3njznh2pu5",
+                        "5rhq3njznh2pu6",
+                        "157pk03wh23v",
+                        "157pk03wh34y",
+                        "4o0dc4nk075t3gl",
+                        "4o0dc4nk075t3gm",
+                        "qjidnk0dys7mh",
+                        "qjidnk0dys7mi"
+                    ],
+                    "_id": "5d8a21390d742259441c02d7",
+                    "season": 7
+                },
+                {
+                    "replays": [
+                        "269uznk0zr02l7",
+                        "269uznk0zr02l8",
+                        "269uznk0zr02l9",
+                        "24rqgaxwnk3zbvpcz",
+                        "24rqgaxwnk3zbvpd0",
+                        "24rqgaxwnk40e1lum",
+                        "24rqgaxwnk40e1lun",
+                        "jzcpbnk5a3v29m",
+                        "jzcpbnk5a3v29n",
+                        "jzcpbnk5a3v29o",
+                        "2sa5knk5dbm1sh",
+                        "2sa5knk5dbm1si",
+                        "z4u5742nk6a7r9ex",
+                        "z4u5742nk6a7r9ey",
+                        "5u5snk6l3cmi3",
+                        "5u5snk6l3cmi4"
+                    ],
+                    "_id": "5e6063b9763149384f59c915",
+                    "season": 8
+                },
+                {
+                    "replays": [
+                        "lgpw8l24eok7f8hwng",
+                        "lgpw8l24eok7f8hyge",
+                        "lgpw8l24eok7f8i07o",
+                        "lgpw8l24eok7f8qe4e",
+                        "lgpw8l24eok7f8qfdw",
+                        "e997nk9oe1gy1",
+                        "e997nk9oe1gy3",
+                        "e997nk9oe1gy4",
+                        "14khwmnka1oyseb",
+                        "14khwmnka1oysed",
+                        "14khwmnka1oysee",
+                        "9n0jhqnkajbp1io",
+                        "9n0jhqnkajbp1iq",
+                        "38nkakru45f",
+                        "38nkakru45i",
+                        "38nkakru45k",
+                        "21vk9nkarpvkby",
+                        "21vk9nkarpvkc0",
+                        "21vk9nkarpw8rb",
+                        "21vk9nkarpw8rc",
+                        "1byknkayk52mr",
+                        "1byknkayk52ms",
+                        "xd087blzkbgodldn",
+                        "xd087blzkbgodng9",
+                        "m4unkbsmmd3w",
+                        "m4unkbsmmd3x",
+                        "m4unkbsmmd3y",
+                        "1l23jynkbsvth8w",
+                        "1l23jynkbsvth8y",
+                        "9ibknkbvm3ciu",
+                        "9ibknkbvm3ciw",
+                        "9ibknkbvsg49s",
+                        "9ibknkbvsg49t",
+                        "9ibknkbvsg49u"
+                    ],
+                    "_id": "5f1c9726db5d95289af86c99",
+                    "season": 9
+                },
+                {
+                    "replays": [
+                        "1xvf9nkexrkbqw",
+                        "1xvf9nkexrkbqx",
+                        "3h5ubnkf8qyjlb",
+                        "3h5ubnkf8qyjld",
+                        "3h5ubnkf8qyjlf",
+                        "5gdnkfhryb2o",
+                        "5gdnkfhryb2r",
+                        "6azonkg0vzvzu",
+                        "6azonkg0vzvzx",
+                        "a9zdnkg1thy3c",
+                        "a9zdnkg1thy3f",
+                        "24synkgbqtr3t",
+                        "24synkgbqtr3v",
+                        "1t8knkgiutzlm",
+                        "1t8knkgiutzlo",
+                        "4fsaankgvpb18f",
+                        "4fsaankgvpb18g",
+                        "41wdjjnkh326uo9",
+                        "41wdjjnkh326uob",
+                        "4iqnkh5se38m",
+                        "4iqnkh5se38p",
+                        "3ze85nkha2rcki",
+                        "3ze85nkha2rckk",
+                        "3ze85nkha2rckl"
+                    ],
+                    "_id": "5fe11c9ec3966d0017b0038a",
+                    "season": 10
+                },
+                {
+                    "replays": [
+                        "4fp7892ykl9swxlr",
+                        "4fp7892ykl9swxlt",
+                        "1ktr715klrefqow",
+                        "1ktr715klrefqoy",
+                        "31ro6jgykm1dgv90",
+                        "31ro6jgykm1dgv93",
+                        "9vwcqe14kmbe7mhz",
+                        "9vwcqe14kmbe7mia",
+                        "3pmhr13kmmwubh0",
+                        "3pmhr13kmmwubh2",
+                        "3pmhr13kmmwubh3",
+                        "11se7m6w15kmyw7oo8",
+                        "11se7m6w15kmyw7oob",
+                        "212zw5ykn6umnm1",
+                        "212zw5ykn6umnm5",
+                        "212zw5ykn7e2ha9",
+                        "212zw5ykn7e2haa",
+                        "eexi8pyknfgoitj",
+                        "eexi8pyknfgoitm",
+                        "32u5kdyko0r7ukc",
+                        "32u5kdyko0r7ukd"
+                    ],
+                    "_id": "60b437a9e78c1600226ff607",
+                    "season": 11
+                },
+                {
+                    "replays": [
+                        "4kpk06ukro94qk1",
+                        "4kpk06ukro94qk2",
+                        "1idniuks5hetq3",
+                        "1idniuks5hetq4",
+                        "ckk5oqvkssalz9s",
+                        "ckk5oqvkssalz9t",
+                        "dhvy8vkt804a54",
+                        "dhvy8vkt804a55",
+                        "fl24vktm9fm8r",
+                        "fl24vktm9fm8s",
+                        "4ftvpmivkttgqwax",
+                        "4ftvpmivkttgqway",
+                        "4ftvpmivkttgqwaz",
+                        "b45svkuj83rfe",
+                        "b45svkuj83rfg",
+                        "b45svkuj83rfh",
+                        "5qh5vkuxhyph4",
+                        "5qh5vkuxhyph5",
+                        "5qh5vkuxhyph3"
+                    ],
+                    "_id": "61a8f45f0e0db2001fb862a5",
+                    "season": 12
+                },
+                {
+                    "replays": [
+                        "68entkyhvdsha",
+                        "68entkyhvdshb",
+                        "68entkyhvdshc",
+                        "68entkyhvrz7s",
+                        "68entkyhvrz7t",
+                        "68entkyhvrz7u",
+                        "11aqlytkywbe73n",
+                        "11aqlytkywbe73o",
+                        "mlftkz9dmy8w",
+                        "mlftkz9dmy8x",
+                        "hlrbktkzjj618r",
+                        "hlrbktkzjj618s",
+                        "20gxtkzrms9tk",
+                        "20gxtkzrms9tl",
+                        "20gxtkzrms9tm",
+                        "c2ei1tl0dboa8y",
+                        "c2ei1tl0dboa8z",
+                        "dl1t1dtl0n24qn8",
+                        "dl1t1dtl0n24qna",
+                        "4cz37tl0vt3hkn",
+                        "4cz37tl0vt3hko",
+                        "4cz37tl0vt3hkp"
+                    ],
+                    "_id": "62a2ce0bdbf8d2001d880097",
+                    "season": 13
+                },
+                {
+                    "replays": [
+                        "2r5eaxl6px88bg",
+                        "2r5eaxl6px88bh",
+                        "a0qlexl75jcpbb",
+                        "a0qlexl75jcpbc",
+                        "7vdaacxl7flwvus",
+                        "7vdaacxl7flwvut",
+                        "7vdaacxl7flwvuu",
+                        "1gs5kxl7zj0ry7",
+                        "1gs5kxl7zj0ry8",
+                        "1gawt0uxl83tk3yt",
+                        "1gawt0uxl83tk3yv",
+                        "4rggxl89lgq62",
+                        "4rggxl89lgq63",
+                        "3xxprixl8mh5gc8",
+                        "3xxprixl8mh5gcf",
+                        "3xxprixl8mh5gci",
+                        "1k4ggf18l8tkc6od",
+                        "1k4ggf18l8tkc6oe",
+                        "79xmxl8v1va03",
+                        "79xmxl8v1va04",
+                        "79xmxl8v1va05",
+                        "2iauhxl96g510r",
+                        "2iauhxl96g510s",
+                        "13d012xl97vp7zj",
+                        "13d012xl97vp7zk",
+                        "at5b4kxl9hvkr6m",
+                        "at5b4kxl9hvkr6n"
+                    ],
+                    "_id": "639b48134081470d31a7cbd8",
+                    "season": 14
+                }
+            ],
+            "__v": 212,
+            "lookingForGroup": false,
+            "pendingTeam": false,
+            "teamId": "5c46204b64c08b0017bc1eea",
+            "teamName": "Durotan's Couch",
+            "parseStats": false,
+            "toonHandle": "1-Hero-1-595349",
+            "seasonsPlayed": 8,
+            "isCaptain": null,
+            "availability": {
+                "monday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "tuesday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "wednesday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "thursday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "friday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "saturday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "sunday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                }
+            },
+            "discordTag": "Goliath#2721",
+            "role": {
+                "tank": false,
+                "meleeassassin": false,
+                "rangedassassin": false,
+                "support": false,
+                "healer": false,
+                "offlane": false,
+                "flex": false
+            },
+            "verifiedRankHistory": [
+                {
+                    "_id": "60073a5739c3e80022b0ab6d",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 4,
+                    "season": "4",
+                    "year": "2020",
+                    "level": 22,
+                    "status": "verified"
+                },
+                {
+                    "_id": "60073a3739c3e80022b0ab6b",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 2,
+                    "season": "3",
+                    "year": "2020",
+                    "level": 24,
+                    "status": "verified"
+                },
+                {
+                    "_id": "60073a2f39c3e80022b0ab69",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 2,
+                    "season": "2",
+                    "year": "2020",
+                    "level": 24,
+                    "status": "verified"
+                },
+                {
+                    "_id": "60d90506084c7100220786a8",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 2,
+                    "season": "1",
+                    "year": "2021",
+                    "level": 24,
+                    "status": "verified"
+                },
+                {
+                    "_id": "61d290e105c6c4001fdbae62",
+                    "hlRankMetal": "Master",
+                    "hlRankDivision": 1735,
+                    "season": "2",
+                    "year": "2021",
+                    "level": 26,
+                    "status": "verified"
+                },
+                {
+                    "_id": "62d7539730a6bc002151ebb1",
+                    "hlRankMetal": "Master",
+                    "hlRankDivision": 468,
+                    "season": "1",
+                    "year": "2022",
+                    "level": 26,
+                    "status": "verified"
+                },
+                {
+                    "_id": "63aeff2a6de64a0021a40e6c",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 3,
+                    "season": "2",
+                    "year": "2022",
+                    "level": 23,
+                    "status": "verified"
+                }
+            ],
+            "discordId": "198570803833339904"
+        },
+        {
+            "_id": "5d01a26a1e95340017a09968",
+            "messageCenter": [],
+            "replays": [],
+            "history": [
+                {
+                    "timestamp": 1560400701498,
+                    "action": "Joined team",
+                    "target": "The Real Ultimate Mosh Pit"
+                },
+                {
+                    "timestamp": 1573952793963,
+                    "action": "Left team",
+                    "target": "The Real Ultimate Mosh Pit",
+                    "season": 8
+                },
+                {
+                    "timestamp": 1573955397592,
+                    "action": "Joined team",
+                    "target": "Saltscale Mrgles",
+                    "season": 8
+                },
+                {
+                    "timestamp": 1583433094967,
+                    "action": "Joined team",
+                    "target": "Redemption",
+                    "season": 8
+                },
+                {
+                    "timestamp": 1586801780821,
+                    "action": "Joined team",
+                    "target": "Roomba Rotations",
+                    "season": 9
+                },
+                {
+                    "timestamp": 1607022682734,
+                    "action": "Joined team",
+                    "target": "Phoenix Rising Xanthite",
+                    "season": 10
+                },
+                {
+                    "timestamp": 1648139364115,
+                    "action": "Left team",
+                    "target": "Phoenix Rising Xanthite",
+                    "season": 13
+                },
+                {
+                    "timestamp": 1648230141936,
+                    "action": "Joined team",
+                    "target": "Two Heroes One Fountain",
+                    "season": 13
+                },
+                {
+                    "timestamp": 1651634354027,
+                    "action": "Left team",
+                    "target": "Two Heroes One Fountain",
+                    "season": 13
+                },
+                {
+                    "timestamp": 1673674776253,
+                    "action": "Joined team",
+                    "target": "Durotan's Couch",
+                    "season": 15
+                }
+            ],
+            "displayName": "Idioms#1746",
+            "bNetId": "303296394",
+            "averageMmr": null,
+            "hotsLogsPlayerID": null,
+            "replayArchive": [
+                {
+                    "replays": [
+                        "bxn7h6njyp7gzz3",
+                        "bxn7h6njyp7gzz0",
+                        "bxn7h6njyp7gzz2",
+                        "19j8hnjyuzgxna",
+                        "19j8hnjyuzgxnb",
+                        "4oqsunjz3gpp2s",
+                        "4oqsunjz3gpp2t",
+                        "1ahlunjzdhfre6",
+                        "1ahlunjzdhfre7",
+                        "fyu5gbnjzko9ar4",
+                        "fyu5gbnjzko9ar5",
+                        "5rhq3njznied9g",
+                        "5rhq3njznied9h",
+                        "4w0u8njzunp651",
+                        "4w0u8njzunp652",
+                        "4w0u8njzunp653",
+                        "1carwnjzxkalf3",
+                        "1carwnjzxkalf4",
+                        "bj93nk07mwmy6",
+                        "bj93nk07mwmy7",
+                        "bj93nk07mwmy8",
+                        "43odm1nk0g1xxei",
+                        "43odm1nk0g1xxej",
+                        "43odm1nk0g1xxek",
+                        "c0kank0w0ww3i",
+                        "c0kank0w0ww3j",
+                        "c0kank0w0ww3k"
+                    ],
+                    "_id": "5d8a213a0d742259441c03ba",
+                    "season": 7
+                },
+                {
+                    "replays": [
+                        "nouonk3q7wg2l",
+                        "nouonk3q7wg2m",
+                        "nouonk3q7wg2n",
+                        "24rqgaxwnk3z7z70z",
+                        "24rqgaxwnk3z7z710",
+                        "fmnk57qk9z3",
+                        "fmnk57qk9z4",
+                        "1cvdank5iikyha",
+                        "1cvdank5iikyhb",
+                        "1aa59mnk5t52i9f",
+                        "1aa59mnk5t52i9g",
+                        "1aa59mnk5t52i9h",
+                        "1571x0nk5vyq25f",
+                        "1571x0nk5vyq25g",
+                        "1571x0nk5vyq25h",
+                        "2led4fnnk632zdcf",
+                        "2led4fnnk632zdcg",
+                        "eb6gxsnk6fwynn9",
+                        "eb6gxsnk6fwynna"
+                    ],
+                    "_id": "5e6063b9763149384f59c839",
+                    "season": 8
+                },
+                {
+                    "replays": [
+                        "lgpw8l24eok7f8hnf1",
+                        "lgpw8l24eok7f8hm6o",
+                        "lgpw8l24eok7f8kp0m",
+                        "lgpw8l24eok7f8kqfq",
+                        "lgpw8l24eok7f8q3kx",
+                        "lgpw8l24eok7f8q5hl",
+                        "lgpw8l24eok7f8q6r0",
+                        "lgpw8l24eok7f8w8y4",
+                        "lgpw8l24eok7f8waik",
+                        "3z9jwnk9rxpgrv",
+                        "3z9jwnk9rxpgrx",
+                        "dlmgnk9u1tk18",
+                        "dlmgnk9u1tk1b",
+                        "dlmgnk9u1tk1c",
+                        "62828nka6wtio7",
+                        "62828nka6wtioa",
+                        "62828nka6wtiob",
+                        "1ahdnka7ie8gj",
+                        "1ahdnka7ie8gk",
+                        "1ahdnka7ie8gl",
+                        "653gnkag6d5bi",
+                        "653gnkag6d5bl",
+                        "47eypctnkasgeic3",
+                        "47eypctnkasgeic6",
+                        "5554njnkb5uoe1j",
+                        "5554njnkb5uoe1k",
+                        "xd087blzkbgobeae",
+                        "xd087blzkbgobgv5",
+                        "ys83nkbi65yhx",
+                        "ys83nkbi65yhz",
+                        "25oiwnkbpubju1",
+                        "25oiwnkbpubju4",
+                        "bq7wynkbrbyyiv",
+                        "bq7wynkbrbyyix",
+                        "bq7wynkbrbyyiy",
+                        "giyzm2nkcdjc7qr",
+                        "giyzm2nkcdjc7qy",
+                        "giyzm2nkcdjc7qz",
+                        "dmnkcfk1598",
+                        "dmnkcfk159c",
+                        "dmnkcfk159d"
+                    ],
+                    "_id": "5f1c9726db5d95289af86d80",
+                    "season": 9
+                },
+                {
+                    "replays": [
+                        "1e1pwykkevnymxj",
+                        "1e1pwykkevnyohh",
+                        "48es7zznkf6zix4u",
+                        "48es7zznkf6zix4v",
+                        "48es7zznkf6zix4w",
+                        "5dtlnkf8eqepd",
+                        "5dtlnkf8eqepe",
+                        "5dtlnkf8eqepf",
+                        "btehnkfg55d66",
+                        "btehnkfg55d67",
+                        "2qnhonkfrkkiah",
+                        "2qnhonkfrkkiai",
+                        "a9zdnkg1o53aq",
+                        "a9zdnkg1o53as",
+                        "a9zdnkg1o53at",
+                        "3o84rankga8udri",
+                        "3o84rankga8udrk",
+                        "3s1eq1nkgmya4jw",
+                        "3s1eq1nkgmya4jz",
+                        "dv3jwnkgsr8v98",
+                        "dv3jwnkgsr8v9a",
+                        "xdhccnkh4c0o8o",
+                        "eple2nkhk2kth6",
+                        "eple2nkhk2kth8"
+                    ],
+                    "_id": "5fe11c9ec3966d0017b00360",
+                    "season": 10
+                },
+                {
+                    "replays": [
+                        "bs7o5yklab2apr",
+                        "bs7o5yklab2apu",
+                        "c7812eyklvrogmm",
+                        "c7812eyklvrogmn",
+                        "ptozkm2wxhwj",
+                        "ptozkm2wxhwm",
+                        "ptozkm2wxhwn",
+                        "591zr10km5s1ef9",
+                        "591zr10km5s1efb",
+                        "1bksykmfiwo4i",
+                        "1bksykmfiwo4j",
+                        "1bksykmfiwo4l",
+                        "212zw5ykn6x4kvb",
+                        "212zw5ykn6x4kvd",
+                        "eexi8pykng0m7yi",
+                        "eexi8pykng0m7yk",
+                        "9ze1yknia99uf",
+                        "9ze1yknia99uo",
+                        "oanytyyyko8oo0kt",
+                        "oanytyyyko8oo0kv",
+                        "1hwc3rykoeg0gc9",
+                        "1hwc3rykoeg0gca",
+                        "os4nwykon33wgr",
+                        "os4nwykon33wgs",
+                        "os4nwykon33wgt",
+                        "os4nwykon33wgu",
+                        "os4nwykon33wgv"
+                    ],
+                    "_id": "60b437a9e78c1600226ff5df",
+                    "season": 11
+                },
+                {
+                    "replays": [
+                        "fsluks6gbwba",
+                        "fsluks6gcest",
+                        "fsluks6gd7a3",
+                        "fsluks6gecu3",
+                        "fsluks6gf9bn",
+                        "8yytcjvksff4u19",
+                        "lwvvksml3hka",
+                        "lwvvksml3hkb",
+                        "lwvvksml3hkc",
+                        "rup8rvkt3s2wvd",
+                        "rup8rvkt3s2wve",
+                        "wmljcvktedv5yk",
+                        "wmljcvktedv5yl",
+                        "4ftvpmivktto3g5r",
+                        "4ftvpmivktto3g5t",
+                        "4ftvpmivktto3g5u",
+                        "1mnvvktw722vf",
+                        "1mnvvktw722vg",
+                        "elp7vku99q4i1",
+                        "elp7vku99q4i2",
+                        "ehuvkvch0wxc",
+                        "ehuvkvch0wxd",
+                        "ehuvkvch0wxe",
+                        "fjsqvkvogiv8t",
+                        "fjsqvkvogiv8v",
+                        "fjsqvkvogiv8w",
+                        "fjsqvkvogiv8x",
+                        "c1kit7vkw04lt8c",
+                        "c1kit7vkw04lt8d",
+                        "c1kit7vkw04lt8e",
+                        "c1kit7vkw04lt8f",
+                        "c1kit7vkw04lt8g"
+                    ],
+                    "_id": "61a8f45f0e0db2001fb86282",
+                    "season": 12
+                },
+                {
+                    "replays": [
+                        "4pzwrtl1edb9c1",
+                        "4pzwrtl1edb9c2",
+                        "8vvlxvtl1ftd78f",
+                        "8vvlxvtl1ftd78g"
+                    ],
+                    "_id": "62a2ce0bdbf8d2001d880082",
+                    "season": 13
+                }
+            ],
+            "__v": 202,
+            "heroesProfileMmr": 2973,
+            "availability": {
+                "monday": {
+                    "available": true,
+                    "startTime": "19:00",
+                    "endTime": "23:00",
+                    "startTimeNumber": 1900,
+                    "endTimeNumber": 2300,
+                    "zeroGMTstartTimeNumber": 2400,
+                    "zeroGMTendTimeNumber": 2800
+                },
+                "tuesday": {
+                    "available": true,
+                    "startTime": "19:00",
+                    "endTime": "23:00",
+                    "startTimeNumber": 1900,
+                    "endTimeNumber": 2300,
+                    "zeroGMTstartTimeNumber": 2400,
+                    "zeroGMTendTimeNumber": 2800
+                },
+                "wednesday": {
+                    "available": true,
+                    "startTime": "19:00",
+                    "endTime": "23:00",
+                    "startTimeNumber": 1900,
+                    "endTimeNumber": 2300,
+                    "zeroGMTstartTimeNumber": 2400,
+                    "zeroGMTendTimeNumber": 2800
+                },
+                "thursday": {
+                    "available": true,
+                    "startTime": "19:00",
+                    "endTime": "23:00",
+                    "startTimeNumber": 1900,
+                    "endTimeNumber": 2300,
+                    "zeroGMTstartTimeNumber": 2400,
+                    "zeroGMTendTimeNumber": 2800
+                },
+                "friday": {
+                    "available": true,
+                    "startTime": "19:00",
+                    "endTime": "23:00",
+                    "startTimeNumber": 1900,
+                    "endTimeNumber": 2300,
+                    "zeroGMTstartTimeNumber": 2400,
+                    "zeroGMTendTimeNumber": 2800
+                },
+                "saturday": {
+                    "available": true,
+                    "startTime": "19:00",
+                    "endTime": "23:00",
+                    "startTimeNumber": 1900,
+                    "endTimeNumber": 2300,
+                    "zeroGMTstartTimeNumber": 2400,
+                    "zeroGMTendTimeNumber": 2800
+                },
+                "sunday": {
+                    "available": true,
+                    "startTime": "19:00",
+                    "endTime": "23:00",
+                    "startTimeNumber": 1900,
+                    "endTimeNumber": 2300,
+                    "zeroGMTstartTimeNumber": 2400,
+                    "zeroGMTendTimeNumber": 2800
+                }
+            },
+            "competitiveLevel": "5",
+            "discordTag": "Idioms#3361",
+            "hlRankDivision": 2,
+            "hlRankMetal": "Diamond",
+            "lookingForGroup": false,
+            "role": {
+                "tank": false,
+                "meleeassassin": true,
+                "rangedassassin": true,
+                "support": true,
+                "healer": true,
+                "offlane": true,
+                "flex": true
+            },
+            "timeZone": "-5",
+            "pendingTeam": false,
+            "teamId": "5c46204b64c08b0017bc1eea",
+            "teamName": "Durotan's Couch",
+            "parseStats": true,
+            "toonHandle": "1-Hero-1-5605167",
+            "seasonsPlayed": 7,
+            "isCaptain": null,
+            "verifiedRankHistory": [
+                {
+                    "_id": "600215fafd4d350022262e8c",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 2,
+                    "season": "4",
+                    "year": "2020",
+                    "level": 24,
+                    "status": "verified"
+                },
+                {
+                    "_id": "600215f6a76f3d0023d4d2e0",
+                    "hlRankMetal": "Master",
+                    "hlRankDivision": 3,
+                    "season": "3",
+                    "year": "2020",
+                    "level": 26,
+                    "status": "verified"
+                },
+                {
+                    "_id": "600215f1a76f3d0023d4d2de",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 5,
+                    "season": "2",
+                    "year": "2020",
+                    "level": 21,
+                    "status": "verified"
+                },
+                {
+                    "_id": "60f453d72842390022c92a54",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 1,
+                    "season": "1",
+                    "year": "2021",
+                    "level": 25,
+                    "status": "verified"
+                },
+                {
+                    "_id": "623caf059f6b1b001d7e2a19",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 1,
+                    "season": "2",
+                    "year": "2021",
+                    "level": 25,
+                    "status": "verified"
+                }
+            ],
+            "discordId": "250389742435172353",
+            "descriptionOfPlay": "I play everything :^)",
+            "twitch": "www.twitch.tv/idiomsplays"
+        },
+        {
+            "_id": "5f375d66bfc7a200176036b4",
+            "messageCenter": [],
+            "replays": [],
+            "history": [
+                {
+                    "timestamp": 1597464926281,
+                    "season": 10,
+                    "action": "Created Team",
+                    "target": "Fighting Mongooses"
+                },
+                {
+                    "timestamp": 1598895379029,
+                    "action": "Left team",
+                    "target": "Fighting Mongooses",
+                    "season": 10
+                },
+                {
+                    "timestamp": 1642392007513,
+                    "action": "Joined team",
+                    "target": "Bi for Catbois",
+                    "season": 13
+                },
+                {
+                    "timestamp": 1671508917016,
+                    "action": "Left team",
+                    "target": "Bi for Catbois",
+                    "season": 15
+                },
+                {
+                    "timestamp": 1671813339465,
+                    "action": "Joined team",
+                    "target": "Durotan's Couch",
+                    "season": 15
+                }
+            ],
+            "displayName": "Tyledrahn#1703",
+            "bNetId": "52429732",
+            "heroesProfileMmr": 2734,
+            "replayArchive": [
+                {
+                    "replays": [
+                        "5w7tkz9ck5za",
+                        "5w7tkz9ck5zc",
+                        "4s3d7tkzobvfdt",
+                        "4s3d7tkzobvfdu",
+                        "3ppestkzw82zyb",
+                        "3ppestkzw82zyc",
+                        "3ppestkzw82zyd",
+                        "1odk2xtl068hxek",
+                        "1odk2xtl068hxel",
+                        "1odk2xtl068hxem",
+                        "6q1tl0bx5p26",
+                        "6q1tl0bx5p27",
+                        "1oggdqntl0hlwtn5",
+                        "1oggdqntl0hlwtn6",
+                        "4uycstl0t0lez5",
+                        "4uycstl0t0lez6",
+                        "2h2stl17blcoe",
+                        "2h2stl17blcof",
+                        "2ay6tl1pwmy74",
+                        "2ay6tl1pwmy75",
+                        "2ay6tl1pwmy76",
+                        "3216btl1rd0gjc",
+                        "3216btl1rd0gjd",
+                        "qakntl245rs3p",
+                        "qakntl245rs3q"
+                    ],
+                    "_id": "62a2ce0bdbf8d2001d880160",
+                    "season": 13
+                },
+                {
+                    "replays": [
+                        "10qllzxl8dwakq8",
+                        "1bejzxl8gso0s7",
+                        "1bejzxl8gsp02y",
+                        "1bejzxl8gssnq0",
+                        "3xxprixl8mgio1s",
+                        "3xxprixl8mgio1t",
+                        "dxdxxl8wh0f4i",
+                        "dxdxxl8wh0f4j",
+                        "dxdxxl8wh0f4k",
+                        "2iauhxl96fyfqk",
+                        "2iauhxl96fyfql",
+                        "damt25l9c6maia",
+                        "damt25l9c6maib",
+                        "26i3p618l9qjp730",
+                        "26i3p618l9qjp731",
+                        "26i3p618l9qjp732",
+                        "at7cxl9z1bft0",
+                        "at7cxl9z1bfsy",
+                        "i31pxlaeln0f4",
+                        "i31pxlaeln0f5"
+                    ],
+                    "_id": "639b48134081470d31a7cc8e",
+                    "season": 14
+                }
+            ],
+            "__v": 88,
+            "availability": {
+                "monday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "tuesday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "wednesday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "thursday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "friday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "saturday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "sunday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                }
+            },
+            "discordTag": "Tyledrahn#7228",
+            "lookingForGroup": false,
+            "role": {
+                "tank": false,
+                "meleeassassin": false,
+                "rangedassassin": true,
+                "support": true,
+                "healer": false,
+                "offlane": true,
+                "flex": true
+            },
+            "isCaptain": null,
+            "teamId": "5c46204b64c08b0017bc1eea",
+            "teamName": "Durotan's Couch",
+            "pendingTeam": false,
+            "verifiedRankHistory": [
+                {
+                    "_id": "61e4ee6b9ee626001deb71a0",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 4,
+                    "season": "2",
+                    "year": "2021",
+                    "level": 22,
+                    "status": "verified"
+                },
+                {
+                    "_id": "61e4ee629ee626001deb719e",
+                    "hlRankMetal": "Unranked",
+                    "hlRankDivision": 0,
+                    "season": "1",
+                    "year": "2021",
+                    "level": 0,
+                    "status": "verified"
+                },
+                {
+                    "_id": "61e4ee5c9ee626001deb719c",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 4,
+                    "season": "4",
+                    "year": "2020",
+                    "level": 22,
+                    "status": "verified"
+                },
+                {
+                    "_id": "62dc3160fa06f9002cbba2ac",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 5,
+                    "season": "1",
+                    "year": "2022",
+                    "level": 21,
+                    "status": "verified"
+                },
+                {
+                    "_id": "63aeff1c6de64a0021a40e5a",
+                    "hlRankMetal": "Gold",
+                    "hlRankDivision": 2,
+                    "season": "2",
+                    "year": "2022",
+                    "level": 14,
+                    "status": "verified"
+                }
+            ],
+            "discordId": "200467260979150848",
+            "parseStats": false,
+            "toonHandle": "1-Hero-1-1368058",
+            "seasonsPlayed": 2
+        },
+        {
+            "_id": "5c46a16af6b60a0017680dd9",
+            "messageCenter": [],
+            "displayName": "WildKarde#1839",
+            "bNetId": "314016285",
+            "hotsLogsPlayerID": null,
+            "averageMmr": null,
+            "__v": 236,
+            "availability": {
+                "monday": {
+                    "available": true,
+                    "startTime": "18:00",
+                    "endTime": "23:30",
+                    "startTimeNumber": 1800,
+                    "endTimeNumber": 2330,
+                    "zeroGMTstartTimeNumber": 2300,
+                    "zeroGMTendTimeNumber": 2830
+                },
+                "tuesday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "wednesday": {
+                    "available": true,
+                    "startTime": "18:00",
+                    "endTime": "23:30",
+                    "startTimeNumber": 1800,
+                    "endTimeNumber": 2330,
+                    "zeroGMTstartTimeNumber": 2300,
+                    "zeroGMTendTimeNumber": 2830
+                },
+                "thursday": {
+                    "available": true,
+                    "startTime": "18:00",
+                    "endTime": "23:30",
+                    "startTimeNumber": 1800,
+                    "endTimeNumber": 2330,
+                    "zeroGMTstartTimeNumber": 2300,
+                    "zeroGMTendTimeNumber": 2830
+                },
+                "friday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "saturday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "sunday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                }
+            },
+            "discordTag": "Wildkarde#7975",
+            "hlRankDivision": 1,
+            "hlRankMetal": "Diamond",
+            "lookingForGroup": false,
+            "role": {
+                "tank": false,
+                "meleeassassin": false,
+                "rangedassassin": false,
+                "support": false,
+                "offlane": false,
+                "flex": false
+            },
+            "timeZone": "-5",
+            "pendingTeam": false,
+            "teamId": "5c46204b64c08b0017bc1eea",
+            "teamName": "Durotan's Couch",
+            "replays": [],
+            "parseStats": false,
+            "toonHandle": "1-Hero-1-4481459",
+            "history": [],
+            "isCaptain": false,
+            "replayArchive": [
+                {
+                    "replays": [
+                        "4bkiq1njt06y0g4",
+                        "4bkiq1njt06y0g5",
+                        "hn1injt7yp4xr",
+                        "hn1injt7yp4xt",
+                        "111rdc2njti30dcz",
+                        "111rdc2njti30dd1",
+                        "111rdc2njti30dd2",
+                        "dkwxcunjtjhvss8",
+                        "dkwxcunjtjhvss9",
+                        "41auennjttfyu5c",
+                        "41auennjttfyu5e",
+                        "f010e1xnju3fqq2d",
+                        "f010e1xnju3fqq2e",
+                        "5wulcq6njuajxudm",
+                        "5wulcq6njuajxudo",
+                        "1vt08njukpfabd",
+                        "1vt08njukpfabe",
+                        "3plwsnjumz5q57",
+                        "3plwsnjumz5q59"
+                    ],
+                    "_id": "5ceb332aa993dc7a7e0af703",
+                    "season": 6
+                },
+                {
+                    "replays": [
+                        "76bvnjxv7p445",
+                        "76bvnjxv7p447",
+                        "76bvnjxv7p448",
+                        "gjrynjygoxngm",
+                        "gjrynjygoxngn",
+                        "gjrynjygoxngo",
+                        "31d5eq7njyqlhloq",
+                        "31d5eq7njyqlhlor",
+                        "faso5onjz2391qu",
+                        "faso5onjz2391qv",
+                        "faso5onjz2391qw",
+                        "16z3vnnjzj8v6lw",
+                        "16z3vnnjzj8v6lx",
+                        "16z3vnnjzj8v6ly",
+                        "18xfenjzklssq7",
+                        "18xfenjzklssq8",
+                        "bj93nk07kxwdw",
+                        "bj93nk07kxwdx",
+                        "bj93nk07kxwdy"
+                    ],
+                    "_id": "5d8a213a0d742259441c03ea",
+                    "season": 7
+                },
+                {
+                    "replays": [
+                        "1sdgnk40phtxw",
+                        "1sdgnk40phtxx",
+                        "2sa5knk5d8071m",
+                        "2sa5knk5d8071n",
+                        "2sa5knk5dajkgn",
+                        "2sa5knk5dajkgo",
+                        "1cvdank5hmcyh4",
+                        "1cvdank5hmcyh5",
+                        "1cvdank5hmcyh6",
+                        "ti4h5nk5orjhy3",
+                        "ti4h5nk5orjhy4",
+                        "ti4h5nk5orjhy6",
+                        "7lfnk5rmrtca",
+                        "7lfnk5rmrtcb",
+                        "7lfnk5rmrtcc",
+                        "gwnk5xbtn14",
+                        "gwnk5xbtn15",
+                        "41immnk61o9z1s",
+                        "41immnk61o9z1t",
+                        "41immnk61o9z1u",
+                        "ivznk6cmj7as",
+                        "ivznk6cmj7at"
+                    ],
+                    "_id": "5e6063b9763149384f59c857",
+                    "season": 8
+                },
+                {
+                    "replays": [
+                        "lgpw8l24eok7f8km0t",
+                        "lgpw8l24eok7f8knm8",
+                        "lgpw8l24eok7f8oo13",
+                        "lgpw8l24eok7f8opd6",
+                        "lgpw8l24eok7f8oqul",
+                        "ry9vynk9jbswkm",
+                        "ry9vynk9jbswkn",
+                        "ry9vynk9jbswko",
+                        "1ahdnka7ie8gj",
+                        "1ahdnka7ie8gk",
+                        "1ahdnka7ie8gl",
+                        "xd087blzkbgo0i10",
+                        "xd087blzkbgo0k27",
+                        "xd087blzkbgo0lv9",
+                        "xd087blzkbgo5zdv",
+                        "xd087blzkbgo622j",
+                        "xd087blzkbgo646k",
+                        "j332tnkbipbg75",
+                        "1l23jynkbsr0lji",
+                        "1l23jynkbsr0ljj",
+                        "7qfnkc2rjxo9",
+                        "7qfnkc2rjxol"
+                    ],
+                    "_id": "5f1c9726db5d95289af86b43",
+                    "season": 9
+                },
+                {
+                    "replays": [
+                        "1xvf9nkexlqc38",
+                        "1xvf9nkexlqc39",
+                        "1xvf9nkexlqc3a",
+                        "pgrnkfeqldmw",
+                        "pgrnkfeqldmy",
+                        "pgrnkferwq7g",
+                        "pgrnkferwq7i",
+                        "1b81rnkfnda188",
+                        "1b81rnkfnda18a",
+                        "ewxfnkfyqnwo7",
+                        "ewxfnkfyqnwo9",
+                        "v6w70nkg8ubygw",
+                        "v6w70nkg8ubygy",
+                        "b6bqbnkgk6oyxr",
+                        "b6bqbnkgk6oyxu",
+                        "4fsaankgvqusj5",
+                        "4fsaankgvqusj7",
+                        "10l66mnkheb2uve",
+                        "10l66mnkheb2uvg"
+                    ],
+                    "_id": "5fe11c9ec3966d0017b002a1",
+                    "season": 10
+                },
+                {
+                    "replays": [
+                        "4fp7892ykl9swxlr",
+                        "4fp7892ykl9swxlt",
+                        "1ktr715klrefqow",
+                        "1ktr715klrefqoy",
+                        "31ro6jgykm1dgv90",
+                        "31ro6jgykm1dgv93",
+                        "9vwcqe14kmbe7mhz",
+                        "9vwcqe14kmbe7mia",
+                        "3pmhr13kmmwubh0",
+                        "3pmhr13kmmwubh2",
+                        "3pmhr13kmmwubh3",
+                        "11se7m6w15kmyw7oo8",
+                        "11se7m6w15kmyw7oob",
+                        "212zw5ykn6umnm1",
+                        "212zw5ykn6umnm5",
+                        "212zw5ykn7e2ha9",
+                        "212zw5ykn7e2haa",
+                        "eexi8pyknfgoitj",
+                        "eexi8pyknfgoitm",
+                        "32u5kdyko0r7ukc",
+                        "32u5kdyko0r7ukd"
+                    ],
+                    "_id": "60b437a9e78c1600226ff51f",
+                    "season": 11
+                },
+                {
+                    "replays": [
+                        "4kpk06ukro94qk1",
+                        "4kpk06ukro94qk2",
+                        "1idniuks5hetq3",
+                        "1idniuks5hetq4",
+                        "ckk5oqvkssalz9s",
+                        "ckk5oqvkssalz9t",
+                        "5jvmwvktawp38j",
+                        "5jvmwvktawp38k",
+                        "5jvmwvktawp38l",
+                        "fl24vktm9fm8r",
+                        "fl24vktm9fm8s",
+                        "4ftvpmivkttgqwax",
+                        "4ftvpmivkttgqway",
+                        "4ftvpmivkttgqwaz",
+                        "b45svkuj83rfe",
+                        "b45svkuj83rfg",
+                        "b45svkuj83rfh",
+                        "5qh5vkuxhyph4",
+                        "5qh5vkuxhyph5",
+                        "5qh5vkuxhyph3"
+                    ],
+                    "_id": "61a8f45f0e0db2001fb861c1",
+                    "season": 12
+                },
+                {
+                    "replays": [
+                        "c7q27hdtkz3ld2ar",
+                        "c7q27hdtkz3ldm4y",
+                        "c7q27hdtkz3legjb",
+                        "5d6547tkzlt44a5",
+                        "5d6547tkzlt6qmr",
+                        "20gxtkzrv2fsg",
+                        "20gxtkzrv2fsh",
+                        "3s1u2eltl01uq6yx",
+                        "3s1u2eltl01uq6yy",
+                        "5t5ltl092q83x",
+                        "5t5ltl092q83y",
+                        "5t5ltl092q83z",
+                        "5t5ltl092verw",
+                        "5t5ltl092w77g",
+                        "5t5ltl092wlpz",
+                        "1oggdqntl0hlilqw",
+                        "1oggdqntl0hlilqy",
+                        "1oggdqntl0hlilqz",
+                        "8grutl0j0ipks",
+                        "8grutl0j0j8wi",
+                        "4cz37tl0vt8hx5",
+                        "4cz37tl0vt8hx6",
+                        "eq6gtl13zjy2h",
+                        "eq6gtl13zk5f1",
+                        "eq6gtl13zkc78",
+                        "8vvlxvtl1ftauzd",
+                        "8vvlxvtl1ftauze",
+                        "orwzxtl1lkgon1",
+                        "orwzxtl1lkgon2",
+                        "e0fmtl1noy92f",
+                        "e0fmtl1noyh25",
+                        "1muvhtl26xri8d",
+                        "1muvhtl26xri8f",
+                        "h6ixvtl2mnjeg3",
+                        "h6ixvtl2mnjeg6",
+                        "uizlvwetl2zln325",
+                        "uizlvwetl2zln326",
+                        "uizlvwetl2zln327",
+                        "509hxtl38aa6vn",
+                        "509hxtl38aa6vp",
+                        "509hxtl38aa6vq"
+                    ],
+                    "_id": "62a2ce0bdbf8d2001d87ffdc",
+                    "season": 13
+                },
+                {
+                    "replays": [
+                        "2r5eaxl6px88bg",
+                        "2r5eaxl6px88bh",
+                        "a0qlexl75jcpbb",
+                        "a0qlexl75jcpbc",
+                        "7vdaacxl7flwvus",
+                        "7vdaacxl7flwvut",
+                        "7vdaacxl7flwvuu",
+                        "1gs5kxl7zj0ry7",
+                        "1gs5kxl7zj0ry8",
+                        "1gawt0uxl83tk3yt",
+                        "1gawt0uxl83tk3yv",
+                        "4rggxl89lgq62",
+                        "4rggxl89lgq63",
+                        "3xxprixl8mh5gc8",
+                        "3xxprixl8mh5gcf",
+                        "3xxprixl8mh5gci",
+                        "1k4ggf18l8tkc6od",
+                        "1k4ggf18l8tkc6oe",
+                        "79xmxl8v1va03",
+                        "79xmxl8v1va04",
+                        "79xmxl8v1va05",
+                        "2iauhxl96g510r",
+                        "2iauhxl96g510s",
+                        "13d012xl97vp7zj",
+                        "13d012xl97vp7zk",
+                        "at5b4kxl9hvkr6m",
+                        "at5b4kxl9hvkr6n"
+                    ],
+                    "_id": "639b48134081470d31a7cb38",
+                    "season": 14
+                }
+            ],
+            "seasonsPlayed": 9,
+            "heroesProfileMmr": 2986,
+            "verifiedRankHistory": [
+                {
+                    "_id": "600a6e953b0bb90022e4e98d",
+                    "hlRankMetal": "Platinum",
+                    "hlRankDivision": 1,
+                    "season": "4",
+                    "year": "2020",
+                    "level": 20,
+                    "status": "verified"
+                },
+                {
+                    "_id": "600a6e8e3b0bb90022e4e98b",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 5,
+                    "season": "3",
+                    "year": "2020",
+                    "level": 21,
+                    "status": "verified"
+                },
+                {
+                    "_id": "600a6e8a3b0bb90022e4e989",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 5,
+                    "season": "2",
+                    "year": "2020",
+                    "level": 21,
+                    "status": "verified"
+                },
+                {
+                    "_id": "60d904f5084c7100220786a2",
+                    "hlRankMetal": "Unranked",
+                    "hlRankDivision": 0,
+                    "season": "1",
+                    "year": "2021",
+                    "level": 0,
+                    "status": "verified"
+                },
+                {
+                    "_id": "61d28e0805c6c4001fdbae50",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 5,
+                    "season": "2",
+                    "year": "2021",
+                    "level": 21,
+                    "status": "verified"
+                },
+                {
+                    "_id": "62d753aa30a6bc002151ebdb",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 4,
+                    "season": "1",
+                    "year": "2022",
+                    "level": 22,
+                    "status": "verified"
+                },
+                {
+                    "_id": "63aeff3a6de64a0021a40e80",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 2,
+                    "season": "2",
+                    "year": "2022",
+                    "level": 24,
+                    "status": "verified"
+                }
+            ],
+            "discordId": "192458513014980618"
+        },
+        {
+            "_id": "5c45291af3614c001723516d",
+            "messageCenter": [],
+            "displayName": "Yonners#1462",
+            "bNetId": "50420641",
+            "__v": 248,
+            "availability": {
+                "monday": {
+                    "available": true,
+                    "startTime": "21:00",
+                    "endTime": "23:45",
+                    "startTimeNumber": 2100,
+                    "endTimeNumber": 2345,
+                    "zeroGMTstartTimeNumber": 2700,
+                    "zeroGMTendTimeNumber": 2945
+                },
+                "tuesday": {
+                    "available": true,
+                    "startTime": "21:00",
+                    "endTime": "23:45",
+                    "startTimeNumber": 2100,
+                    "endTimeNumber": 2345,
+                    "zeroGMTstartTimeNumber": 2700,
+                    "zeroGMTendTimeNumber": 2945
+                },
+                "wednesday": {
+                    "available": true,
+                    "startTime": "21:00",
+                    "endTime": "23:45",
+                    "startTimeNumber": 2100,
+                    "endTimeNumber": 2345,
+                    "zeroGMTstartTimeNumber": 2700,
+                    "zeroGMTendTimeNumber": 2945
+                },
+                "thursday": {
+                    "available": true,
+                    "startTime": "21:00",
+                    "endTime": "23:45",
+                    "startTimeNumber": 2100,
+                    "endTimeNumber": 2345,
+                    "zeroGMTstartTimeNumber": 2700,
+                    "zeroGMTendTimeNumber": 2945
+                },
+                "friday": {
+                    "available": true,
+                    "startTime": "21:00",
+                    "endTime": "23:45",
+                    "startTimeNumber": 2100,
+                    "endTimeNumber": 2345,
+                    "zeroGMTstartTimeNumber": 2700,
+                    "zeroGMTendTimeNumber": 2945
+                },
+                "saturday": {
+                    "available": true,
+                    "startTime": "21:00",
+                    "endTime": "23:45",
+                    "startTimeNumber": 2100,
+                    "endTimeNumber": 2345,
+                    "zeroGMTstartTimeNumber": 2700,
+                    "zeroGMTendTimeNumber": 2945
+                },
+                "sunday": {
+                    "available": true,
+                    "startTime": "21:00",
+                    "endTime": "23:45",
+                    "startTimeNumber": 2100,
+                    "endTimeNumber": 2345,
+                    "zeroGMTstartTimeNumber": 2700,
+                    "zeroGMTendTimeNumber": 2945
+                }
+            },
+            "averageMmr": null,
+            "competitiveLevel": "5",
+            "descriptionOfPlay": "Ranged Assassins ",
+            "discordTag": "Yonners#3931",
+            "hlRankDivision": 1,
+            "hlRankMetal": "Diamond",
+            "hotsLogsURL": "https://www.hotslogs.com/Player/Profile?PlayerID=5635095",
+            "lookingForGroup": false,
+            "role": {
+                "tank": false,
+                "meleeassassin": false,
+                "rangedassassin": true,
+                "support": false,
+                "offlane": false,
+                "flex": false
+            },
+            "timeZone": "-6",
+            "hotsLogsPlayerID": null,
+            "pendingTeam": false,
+            "teamId": "5c46204b64c08b0017bc1eea",
+            "teamName": "Durotan's Couch",
+            "replays": [],
+            "parseStats": false,
+            "toonHandle": "1-Hero-1-5152170",
+            "history": [
+                {
+                    "timestamp": 1560035869947,
+                    "action": "Left team",
+                    "target": "Queens Consorts"
+                },
+                {
+                    "timestamp": 1560035993238,
+                    "action": "Joined team",
+                    "target": "n0b0 Esprouts"
+                },
+                {
+                    "timestamp": 1571876685820,
+                    "action": "Left team",
+                    "target": "n0b0 Esprouts",
+                    "season": 8
+                },
+                {
+                    "timestamp": 1572323031561,
+                    "action": "Joined team",
+                    "target": "You Are Not Alone!",
+                    "season": 8
+                },
+                {
+                    "timestamp": 1585712725299,
+                    "action": "Left team",
+                    "target": "You Are Not Alone!",
+                    "season": 9
+                },
+                {
+                    "timestamp": 1585853253027,
+                    "action": "Joined team",
+                    "target": "Choking Hazards",
+                    "season": 9
+                },
+                {
+                    "timestamp": 1595800460811,
+                    "action": "Left team",
+                    "target": "Choking Hazards",
+                    "season": 10
+                },
+                {
+                    "timestamp": 1596222179637,
+                    "action": "Joined team",
+                    "target": "Fox and His Carries",
+                    "season": 10
+                },
+                {
+                    "timestamp": 1609368866107,
+                    "action": "Left team",
+                    "target": "Fox and His Carries",
+                    "season": 11
+                },
+                {
+                    "timestamp": 1624461777245,
+                    "action": "Joined team",
+                    "target": "Gen.M Esports",
+                    "season": 12
+                },
+                {
+                    "timestamp": 1640203132827,
+                    "action": "Left team",
+                    "target": "Gen.M Esports",
+                    "season": 13
+                },
+                {
+                    "timestamp": 1641952879084,
+                    "season": 13,
+                    "action": "Created Team",
+                    "target": "Degen.M"
+                },
+                {
+                    "timestamp": 1656042073695,
+                    "action": "Left team",
+                    "target": "Degen.M",
+                    "season": 14
+                },
+                {
+                    "timestamp": 1657077752302,
+                    "action": "Joined team",
+                    "target": "CM After Dark",
+                    "season": 14
+                },
+                {
+                    "timestamp": 1671131782460,
+                    "action": "Left team",
+                    "target": "CM After Dark",
+                    "season": 15
+                },
+                {
+                    "timestamp": 1673479054018,
+                    "action": "Joined team",
+                    "target": "Durotan's Couch",
+                    "season": 15
+                }
+            ],
+            "replayArchive": [
+                {
+                    "replays": [
+                        "5aonjsm1zbx2",
+                        "5aonjsm1zbx3",
+                        "hn1injt87g3ai",
+                        "hn1injt87g3aj",
+                        "hn1injt87g3ak",
+                        "55wssnjtkze5pi",
+                        "55wssnjtkze5pj",
+                        "3jgji1njts2hwmt",
+                        "3jgji1njts2hwmu",
+                        "41auennjttiglv3",
+                        "41auennjttiglv4",
+                        "6uatnju21z0kf",
+                        "6uatnju21z0kg",
+                        "1g9eqwnju6etu0x",
+                        "1g9eqwnju6etu0y",
+                        "7vmgnjueyky51",
+                        "7vmgnjueyky52",
+                        "7vmgnjueyky53",
+                        "3plwsnjunj4apr",
+                        "3plwsnjunj4apt",
+                        "3plwsnjunj4apu",
+                        "rinzwnjuta7sqi",
+                        "rinzwnjuta7sqk",
+                        "4fl7puxnjuw3ugl4",
+                        "4fl7puxnjuw3ugl5",
+                        "4fl7puxnjuw3ugl6",
+                        "5cnnjv63a90m",
+                        "5cnnjv63a90n",
+                        "184v8t4njvke8qwv",
+                        "184v8t4njvke8qww",
+                        "3zo662rnjvyg3k0d",
+                        "3zo662rnjvyg3k0e",
+                        "3zo662rnjvyg3k0f"
+                    ],
+                    "_id": "5ceb332aa993dc7a7e0af7a1",
+                    "season": 6
+                },
+                {
+                    "replays": [
+                        "tvdkinjyjj9mi1",
+                        "tvdkinjyjj9mi2",
+                        "1gmio8njym7w5cc",
+                        "1gmio8njym7w5cd",
+                        "1g2tcnjz6c556o",
+                        "1g2tcnjz6c556p",
+                        "1g2tcnjz6c556q",
+                        "1ahlunjzdphzhm",
+                        "1ahlunjzdphzhn",
+                        "1ahlunjzdqapul",
+                        "1kilennjzprlhz8",
+                        "1kilennjzprlhz9",
+                        "1carwnjzxkr3e5",
+                        "1carwnjzxkr3e6",
+                        "1ba0jnk092ed32",
+                        "1ba0jnk092ed33",
+                        "1ba0jnk092ed34",
+                        "1ba0jnk0a2diew",
+                        "1ba0jnk0a2diex",
+                        "dp6iecnk0lupe64",
+                        "dp6iecnk0lupe65",
+                        "7ocs0cnk0q311nl",
+                        "7ocs0cnk0q311nm",
+                        "7ocs0cnk0q311nn"
+                    ],
+                    "_id": "5d8a21390d742259441c0251",
+                    "season": 7
+                },
+                {
+                    "replays": [
+                        "1sdgnk40whw1o",
+                        "1sdgnk40whw1p",
+                        "1sdgnk40wk694",
+                        "1sdgnk40wk695",
+                        "3axznk56dth8y",
+                        "3axznk56dth8z",
+                        "3axznk56dur9t",
+                        "3axznk56dur9u",
+                        "3nbevnk5c3dkrf",
+                        "3nbevnk5c3dkrg",
+                        "ti4h5nk5p16k25",
+                        "ti4h5nk5p16k26",
+                        "1aa59mnk5t87us4",
+                        "1aa59mnk5t87us5",
+                        "z4u5742nk6ahrgjl",
+                        "z4u5742nk6ahrgjm"
+                    ],
+                    "_id": "5e6063b9763149384f59c784",
+                    "season": 8
+                },
+                {
+                    "replays": [
+                        "lgpw8l24eok7f8htjs",
+                        "lgpw8l24eok7f8hv1g",
+                        "lgpw8l24eok7f8p83j",
+                        "lgpw8l24eok7f8p9s5",
+                        "lgpw8l24eok7f8wj8s",
+                        "lgpw8l24eok7f8wkpk",
+                        "lgpw8l24eok7f8wx1v",
+                        "lgpw8l24eok7f8wyhc",
+                        "lgpw8l24eok7f8x019",
+                        "fvm469nkaagre5g",
+                        "fvm469nkaagre5j",
+                        "ft1bgnkaq7j3bd",
+                        "ft1bgnkaq7j3bg"
+                    ],
+                    "_id": "5f1c9726db5d95289af86c8b",
+                    "season": 9
+                },
+                {
+                    "replays": [
+                        "2vvrohcnkf2vpeow",
+                        "2vvrohcnkf2vpeoz",
+                        "b07rvmnkf4yas4e",
+                        "b07rvmnkf4yas4g",
+                        "b07rvmnkf4yas4h",
+                        "3p1lz9nkfafwe01",
+                        "pgrnkfev380q",
+                        "pgrnkfev380r",
+                        "vd3nkfx1s8np",
+                        "vd3nkfx1s8nr",
+                        "vd3nkfx1s8ns",
+                        "25zudmnkfxivx5l",
+                        "25zudmnkfxivx5o",
+                        "3o84rankg9madq7",
+                        "3o84rankg9madqc",
+                        "1b5cxnkgfxof98",
+                        "1b5cxnkgfxof9a",
+                        "3s1eq1nkgn5m9td",
+                        "3s1eq1nkgn5m9tf",
+                        "3s1eq1nkgn5m9tg",
+                        "dv3jwnkgsvzpa3",
+                        "dv3jwnkgsvzpa4",
+                        "dv3jwnkgsvzpa5",
+                        "6uinkh1ibcpd",
+                        "6uinkh1ibcpf",
+                        "6uinkh1ibcpg",
+                        "urf1hnkh8kduee",
+                        "urf1hnkh8kdueg",
+                        "urf1hnkh8kdueh",
+                        "3ze85nkha1v93x",
+                        "3ze85nkha1v93z"
+                    ],
+                    "_id": "5fe11c9dc3966d0017b00270",
+                    "season": 10
+                },
+                {
+                    "replays": [
+                        "1dbwiquks85yv8o",
+                        "1dbwiquks85yv8p",
+                        "449nlvvkstrwsvk",
+                        "449nlvvkstrwsvl",
+                        "1fl5vkt119qgf",
+                        "1fl5vkt119qgg",
+                        "1fl5vkt119qgh",
+                        "1br2yvkthjh6kd",
+                        "1br2yvkthjh6ke",
+                        "1br2yvkthjh6kf",
+                        "5x5ovktnv736g",
+                        "5x5ovktnv736h",
+                        "5x5ovktnv736i",
+                        "9dtgvktz9r335",
+                        "9dtgvktz9r336",
+                        "9dtgvktz9r337",
+                        "u555vku3huez5",
+                        "u555vku3huez7",
+                        "rsvyvkuhuhx4u",
+                        "rsvyvkuhuhx4v",
+                        "rsvyvkuhuhx4w",
+                        "cbzqlvkur50vil",
+                        "cbzqlvkur50vim",
+                        "6000vkut8d9cf",
+                        "6000vkut8d9cg",
+                        "3dgudvkvae3rpo",
+                        "3dgudvkvae3rpp",
+                        "fjsqvkvol2n06",
+                        "fjsqvkvol2n07",
+                        "fjsqvkvol2n08",
+                        "c1kit7vkw04lt8c",
+                        "c1kit7vkw04lt8d",
+                        "c1kit7vkw04lt8e",
+                        "c1kit7vkw04lt8f",
+                        "c1kit7vkw04lt8g"
+                    ],
+                    "_id": "61a8f45f0e0db2001fb8619a",
+                    "season": 12
+                },
+                {
+                    "replays": [
+                        "fw2awtkz6erkrp",
+                        "fw2awtkz6erkrq",
+                        "9k6b3tkzggydew",
+                        "9k6b3tkzggydey",
+                        "9k6b3tkzggydez",
+                        "4s3d7tkzp2ti5i",
+                        "4s3d7tkzp2ti5j",
+                        "4s3d7tkzp2ti5k",
+                        "e79lstl00hfjml",
+                        "e79lstl00hfjmm",
+                        "dl1t1dtl0nd3qsw",
+                        "dl1t1dtl0nd3qsx",
+                        "dl1t1dtl0nd3qsy",
+                        "35drbtl0ykywq3",
+                        "35drbtl0ykywq5",
+                        "3zt78vrtl15u09fq",
+                        "3zt78vrtl15u09fs",
+                        "3zt78vrtl15u09fu",
+                        "73osktl216ktq2",
+                        "73osktl216ktq3",
+                        "73osktl216ktq4",
+                        "evwhtl28gjhkl",
+                        "evwhtl28gjhkm"
+                    ],
+                    "_id": "62a2ce0adbf8d2001d87ffbe",
+                    "season": 13
+                },
+                {
+                    "replays": [
+                        "78zt9xl6rcgfbt",
+                        "78zt9xl6rcgfbu",
+                        "12a9z6xl6x5hwka",
+                        "12a9z6xl6x5hwkb",
+                        "12a9z6xl6x5hwkc",
+                        "5r029xl774jh46",
+                        "5r029xl774jh47",
+                        "5r029xl774jh48",
+                        "jbwsxl7h6aivg",
+                        "jbwsxl7h6aive",
+                        "jbwsxl7h6aivf",
+                        "1r7jaxl7r68dsr",
+                        "1r7jaxl7r68dss",
+                        "1r7jaxl7r68dst",
+                        "1gawt0uxl83xpnf6",
+                        "1gawt0uxl83xpnf7",
+                        "dq9qxl8cjbpwo",
+                        "dq9qxl8cjbpwp",
+                        "hra11xl8nzhcrs",
+                        "hra11xl8nzhcrt",
+                        "hra11xl8nzhcru",
+                        "dxdxxl8v4gku6",
+                        "dxdxxl8v4gku7",
+                        "dxdxxl8v4gku8",
+                        "13de4vxl8xyjg52",
+                        "13de4vxl8xyjg54",
+                        "13d012xl97yh6p9",
+                        "13d012xl97yh6pa",
+                        "1zoxxl9gk4aoz",
+                        "1zoxxl9gk4ap0",
+                        "1zoxxl9gk4ap1"
+                    ],
+                    "_id": "639b48124081470d31a7cb17",
+                    "season": 14
+                }
+            ],
+            "seasonsPlayed": 8,
+            "heroesProfileMmr": 2867,
+            "isCaptain": null,
+            "verifiedRankHistory": [
+                {
+                    "_id": "602367b342abaa0022f123ea",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 1,
+                    "season": "4",
+                    "year": "2020",
+                    "level": 25,
+                    "status": "verified"
+                },
+                {
+                    "_id": "602367ad18580f002811d0d5",
+                    "hlRankMetal": "Master",
+                    "hlRankDivision": 331,
+                    "season": "3",
+                    "year": "2020",
+                    "level": 26,
+                    "status": "verified"
+                },
+                {
+                    "_id": "602367a618580f002811d0d3",
+                    "hlRankMetal": "Master",
+                    "hlRankDivision": 7,
+                    "season": "2",
+                    "year": "2020",
+                    "level": 26,
+                    "status": "verified"
+                },
+                {
+                    "_id": "60d4f8c33e9f0800220e2951",
+                    "hlRankMetal": "Master",
+                    "hlRankDivision": 2382,
+                    "season": "1",
+                    "year": "2021",
+                    "level": 26,
+                    "status": "verified"
+                },
+                {
+                    "_id": "61e2077b9b963b001d422097",
+                    "hlRankMetal": "Master",
+                    "hlRankDivision": 1149,
+                    "season": "2",
+                    "year": "2021",
+                    "level": 26,
+                    "status": "verified"
+                },
+                {
+                    "_id": "62c4ffd22d6212001d0fd06e",
+                    "hlRankMetal": "Platinum",
+                    "hlRankDivision": 2,
+                    "season": "9",
+                    "year": "2022",
+                    "level": 19,
+                    "status": "verified"
+                }
+            ],
+            "discordId": "233028858125877248"
+        },
+        {
+            "_id": "5c60592035a9b800174cde07",
+            "messageCenter": [],
+            "displayName": "infafox#1236",
+            "bNetId": "75620712",
+            "hotsLogsPlayerID": null,
+            "averageMmr": null,
+            "__v": 213,
+            "lookingForGroup": false,
+            "pendingTeam": false,
+            "teamId": "5c46204b64c08b0017bc1eea",
+            "teamName": "Durotan's Couch",
+            "replays": [],
+            "parseStats": false,
+            "toonHandle": "1-Hero-1-690175",
+            "history": [
+                {
+                    "timestamp": 1561337910709,
+                    "action": "Left team",
+                    "target": "Nsomnia"
+                },
+                {
+                    "timestamp": 1563242616346,
+                    "action": "Joined team",
+                    "target": "Lionspeed",
+                    "season": "7"
+                },
+                {
+                    "timestamp": 1573089245863,
+                    "action": "Left team",
+                    "target": "Lionspeed",
+                    "season": 8
+                },
+                {
+                    "timestamp": 1585305896561,
+                    "action": "Joined team",
+                    "target": "Most Wanted",
+                    "season": 9
+                },
+                {
+                    "timestamp": 1587515952130,
+                    "action": "Left team",
+                    "target": "Most Wanted",
+                    "season": 9
+                },
+                {
+                    "timestamp": 1596222182067,
+                    "action": "Joined team",
+                    "target": "Fox and His Carries",
+                    "season": 10
+                },
+                {
+                    "timestamp": 1609369452413,
+                    "action": "Left team",
+                    "target": "Fox and His Carries",
+                    "season": 11
+                },
+                {
+                    "timestamp": 1609435868042,
+                    "action": "Joined team",
+                    "target": "Boosted Bonobos",
+                    "season": 11
+                },
+                {
+                    "timestamp": 1624914274452,
+                    "action": "Left team",
+                    "target": "Boosted Bonobos",
+                    "season": 12
+                },
+                {
+                    "timestamp": 1624922524870,
+                    "action": "Joined team",
+                    "target": "Gen.M Esports",
+                    "season": 12
+                },
+                {
+                    "timestamp": 1657753122440,
+                    "action": "Left team",
+                    "target": null,
+                    "season": 14
+                },
+                {
+                    "timestamp": 1657753153908,
+                    "action": "Joined team",
+                    "target": "Gen.M Esports",
+                    "season": 14
+                },
+                {
+                    "timestamp": 1670107191461,
+                    "action": "Left team",
+                    "target": "Gen.M Esports",
+                    "season": 14
+                },
+                {
+                    "timestamp": 1670546398107,
+                    "action": "Joined team",
+                    "target": "Durotan's Couch",
+                    "season": 14
+                }
+            ],
+            "replayArchive": [
+                {
+                    "replays": [
+                        "2k5ocnjtgg1wwa",
+                        "2k5ocnjtgg1wwc",
+                        "1kmmsnjueelyso",
+                        "1kmmsnjueelysp"
+                    ],
+                    "_id": "5ceb332aa993dc7a7e0af6c0",
+                    "season": 6
+                },
+                {
+                    "replays": [
+                        "10lrztnjz0p1ri5",
+                        "10lrztnjz0p1ri6",
+                        "4o0dc4nk0659hnj"
+                    ],
+                    "_id": "5d8a21390d742259441c01c3",
+                    "season": 7
+                },
+                {
+                    "replays": [
+                        "2vvrohcnkf2vpeow",
+                        "2vvrohcnkf2vpeoz",
+                        "b07rvmnkf4yas4e",
+                        "b07rvmnkf4yas4g",
+                        "b07rvmnkf4yas4h",
+                        "3p1lz9nkfafwe01",
+                        "pgrnkfev380q",
+                        "pgrnkfev380r",
+                        "vd3nkfx1s8np",
+                        "vd3nkfx1s8nr",
+                        "vd3nkfx1s8ns",
+                        "25zudmnkfxivx5l",
+                        "25zudmnkfxivx5o",
+                        "3o84rankg9madq7",
+                        "3o84rankg9madqc",
+                        "3s1eq1nkgn5m9td",
+                        "3s1eq1nkgn5m9tf",
+                        "3s1eq1nkgn5m9tg",
+                        "dv3jwnkgsvzpa3",
+                        "dv3jwnkgsvzpa4",
+                        "dv3jwnkgsvzpa5",
+                        "6uinkh1ibcpd",
+                        "6uinkh1ibcpf",
+                        "6uinkh1ibcpg",
+                        "urf1hnkh8kduee",
+                        "urf1hnkh8kdueg",
+                        "urf1hnkh8kdueh",
+                        "3ze85nkha1v93x",
+                        "3ze85nkha1v93z"
+                    ],
+                    "_id": "5fe11c9ec3966d0017b00330",
+                    "season": 10
+                },
+                {
+                    "replays": [
+                        "adxl3gykmrbwszn",
+                        "adxl3gykmrbwszo",
+                        "11se7m6wykmyhv7bb",
+                        "11se7m6wykmyhv7bd",
+                        "11se7m6wykmyhv7be",
+                        "72ngifykn9xqnx7",
+                        "72ngifykn9xqnx8",
+                        "guyknv9ybpy",
+                        "ell4ykocerb0c",
+                        "ell4ykocerb0d",
+                        "ell4ykocerb0e",
+                        "os4nwykome29b5",
+                        "os4nwykome29b6",
+                        "os4nwykome29b7"
+                    ],
+                    "_id": "60b437a9e78c1600226ff59a",
+                    "season": 11
+                },
+                {
+                    "replays": [
+                        "1dbwiquks85yv8o",
+                        "1dbwiquks85yv8p",
+                        "lwvvksml3hka",
+                        "lwvvksml3hkb",
+                        "lwvvksml3hkc",
+                        "449nlvvkstrwsvk",
+                        "449nlvvkstrwsvl",
+                        "1fl5vkt119qgf",
+                        "1fl5vkt119qgg",
+                        "1fl5vkt119qgh",
+                        "1br2yvkthjh6kd",
+                        "1br2yvkthjh6ke",
+                        "1br2yvkthjh6kf",
+                        "9dtgvktz9r335",
+                        "9dtgvktz9r336",
+                        "9dtgvktz9r337",
+                        "u555vku3huez5",
+                        "u555vku3huez7",
+                        "rsvyvkuhuhx4u",
+                        "rsvyvkuhuhx4v",
+                        "rsvyvkuhuhx4w",
+                        "6000vkut8d9cf",
+                        "6000vkut8d9cg",
+                        "3dgudvkvae3rpo",
+                        "3dgudvkvae3rpp",
+                        "fjsqvkvol2n06",
+                        "fjsqvkvol2n07",
+                        "fjsqvkvol2n08",
+                        "c1kit7vkw04lt8c",
+                        "c1kit7vkw04lt8d",
+                        "c1kit7vkw04lt8e",
+                        "c1kit7vkw04lt8f",
+                        "c1kit7vkw04lt8g"
+                    ],
+                    "_id": "61a8f45f0e0db2001fb8623a",
+                    "season": 12
+                },
+                {
+                    "replays": [
+                        "5w7tkz8e8eb6",
+                        "5w7tkz8e8eb7",
+                        "hlrbktkzjbgfac",
+                        "hlrbktkzjbgfae",
+                        "20gxtkzrvpah2",
+                        "20gxtkzrvpah4",
+                        "em771tl04kvetu",
+                        "em771tl04kvetv",
+                        "em771tl04kvetw",
+                        "6q1tl0bvb78n",
+                        "6q1tl0bvb78o",
+                        "c2ei1tl0da3ln1",
+                        "c2ei1tl0da3ln2",
+                        "1oggdqntl0hmlaf6",
+                        "1oggdqntl0hmlaf7",
+                        "1oggdqntl0hmlaf9",
+                        "4cz37tl0vt8hx5",
+                        "4cz37tl0vt8hx6",
+                        "3zt78vrtl15sikwb",
+                        "3zt78vrtl15sikwe",
+                        "28qtl1bkylc6",
+                        "28qtl1bkylc7",
+                        "2ay6tl1pvcj6k",
+                        "2ay6tl1pvcj6m",
+                        "2ay6tl1pvcj6n",
+                        "3216btl1r9470x",
+                        "3216btl1r9470y",
+                        "evwhtl28eomwk",
+                        "evwhtl28eomwl",
+                        "evwhtl28eomwm",
+                        "4mrl9tl2jrn7g5",
+                        "4mrl9tl2jrn7g6",
+                        "4mrl9tl2jrn7g7",
+                        "uizlvwetl2zln325",
+                        "uizlvwetl2zln326",
+                        "uizlvwetl2zln327"
+                    ],
+                    "_id": "62a2ce0bdbf8d2001d880043",
+                    "season": 13
+                },
+                {
+                    "replays": [
+                        "78zt9xl6qu096p",
+                        "78zt9xl6qu096q",
+                        "12a9z6xl6wy22hu",
+                        "12a9z6xl6wy22hv",
+                        "12a9z6xl6wy22hw",
+                        "9sryxl79vxhbt",
+                        "9sryxl79vxhbu",
+                        "9sryxl79vxhbv",
+                        "306xl7jthq1l",
+                        "306xl7jthq1n",
+                        "a08cxl7ttlbl3",
+                        "a08cxl7ttlbl4",
+                        "1gawt0uxl83tk3yt",
+                        "1gawt0uxl83tk3yv",
+                        "10qllz18l8einhn7",
+                        "10qllz18l8einhn8",
+                        "10qllz18l8einhn9",
+                        "3x5h3mxl8jklh9q",
+                        "3x5h3mxl8jklh9r",
+                        "13de4vxl8ywsqt7",
+                        "13de4vxl8ywsqt9",
+                        "13de4vxl8ywsqta",
+                        "8fbixl94t7plv",
+                        "8fbixl94t7plu",
+                        "13d012xl97ub4kh",
+                        "13d012xl97ub4kk",
+                        "18so51xl9nmipwd",
+                        "18so51xl9nmipwe",
+                        "18so51xl9nmipwf",
+                        "16h1xla7onizg",
+                        "16h1xla7onizh",
+                        "16h1xla7onizi"
+                    ],
+                    "_id": "639b48134081470d31a7cb9f",
+                    "season": 14
+                }
+            ],
+            "seasonsPlayed": 7,
+            "heroesProfileMmr": 3038,
+            "isCaptain": null,
+            "verifiedRankHistory": [
+                {
+                    "_id": "5ff23ae2cde75a002283ff88",
+                    "hlRankMetal": "Master",
+                    "hlRankDivision": 1,
+                    "season": "4",
+                    "year": "2020",
+                    "level": 26,
+                    "status": "verified"
+                },
+                {
+                    "_id": "5ff23addadfcc60028c1f1f0",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 1,
+                    "season": "3",
+                    "year": "2020",
+                    "level": 25,
+                    "status": "verified"
+                },
+                {
+                    "_id": "5ff23aa6cde75a002283ff81",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 2,
+                    "season": "2",
+                    "year": "2020",
+                    "level": 24,
+                    "status": "verified"
+                },
+                {
+                    "_id": "60da78309367950022f196c8",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 1,
+                    "season": "1",
+                    "year": "2021",
+                    "level": 25,
+                    "status": "verified"
+                },
+                {
+                    "_id": "61cfdd580cd5ec001f1b4b05",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 4,
+                    "season": "2",
+                    "year": "2021",
+                    "level": 22,
+                    "status": "verified"
+                },
+                {
+                    "_id": "62cf5428e1847c0021f266e2",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 3,
+                    "season": "1",
+                    "year": "2022",
+                    "level": 23,
+                    "status": "verified"
+                },
+                {
+                    "_id": "63aeff236de64a0021a40e63",
+                    "hlRankMetal": "Diamond",
+                    "hlRankDivision": 2,
+                    "season": "2",
+                    "year": "2022",
+                    "level": 24,
+                    "status": "verified"
+                }
+            ],
+            "availability": {
+                "monday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "tuesday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "wednesday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "thursday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "friday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "saturday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                },
+                "sunday": {
+                    "available": false,
+                    "startTime": null,
+                    "endTime": null
+                }
+            },
+            "role": {
+                "tank": false,
+                "meleeassassin": false,
+                "rangedassassin": false,
+                "support": false,
+                "healer": false,
+                "offlane": false,
+                "flex": false
+            },
+            "discordTag": "infa_fox#0537",
+            "discordId": "169549821315645440",
+            "accountAlias": null,
+            "adminNotes": null,
+            "avatar": null,
+            "casterName": null,
+            "competitiveLevel": null,
+            "descriptionOfPlay": null,
+            "hlRankDivision": null,
+            "hlRankMetal": "",
+            "hotsLogsURL": null,
+            "lowReplays": false,
+            "timeZone": "",
+            "twitch": null,
+            "twitter": null,
+            "youtube": null
+        }
+    ],
+    "wins": 14,
+    "points": 18,
+    "losses": 13,
+    "dominations": 4,
+    "id": "5c46204b64c08b0017bc1eea",
+    "matchesPlayed": 12,
+    "standing": 7,
+    "change": "none",
+    "season_14_div": "a-east"
+}
