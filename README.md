@@ -11,6 +11,10 @@
 in "archives" filter for `{type: 'division',season: 12}`
 save as `ngs_s_12.json`
 
+* Get the last season teams from Mongo
+* in archive filter for `{type: "team", season: 13}`
+save `season_14_teams.json`
+
 * Get the last season rankings that have to be calculated
 * // Update to current season
 node get_ngs_results.js
