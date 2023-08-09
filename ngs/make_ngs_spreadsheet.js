@@ -275,8 +275,8 @@ async function smurfDetectPlayer(player, team) {
 
 async function parseTeam(team) {
 
-    // let d = false
-    // if (team["teamName_lower"] == "death and delay") {
+    let d = false
+    // if (team["teamName_lower"] == "only losses") {
     //     // console.log(JSON.stringify(team.teamDetails, null, 4))
     //     // process.exit()
     //     d = true
@@ -293,8 +293,15 @@ async function parseTeam(team) {
             return rank.season == '9'
         })
 
+        // rank history is not guarenteed to be in date order
+        rank_history = _.sortBy(rank_history, (rank) => {
+            return `${rank.year}-${rank.season}`
+        })
+
+
         let latest = _.last(rank_history)
-        let sl_rank_max = _.maxBy(rank_history.slice(-2), 'level')
+        let sl_rank_max = _.maxBy(rank_history.slice(-2), 'level') || _.maxBy(rank_history.slice(-2), 'hlRankDivision')
+
 
         // if (d) {
         // let all_time_master = false
@@ -314,6 +321,12 @@ async function parseTeam(team) {
             // console.log(_.maxBy(recent_master, 'hlRankDivision').hlRankDivision)
             sl_rank_max = _.maxBy(recent_master, 'hlRankDivision')
         }
+
+        
+        // if (!sl_rank_max) {
+        //     console.log(player)
+        //     process.exit()
+        // }
 
         // console.log(`all time master: ${all_time_master}`)
 
@@ -335,7 +348,7 @@ async function parseTeam(team) {
 
         await smurfDetectPlayer(player, team)
         if (!latest) {
-            console.log(`no verified history for player: ${player.displayName} on team: ${team.teamName}`)
+            // console.log(`no verified history for player: ${player.displayName} on team: ${team.teamName}`)
             return {
                 name: player.displayName,
                 rank: 'UR',
@@ -345,6 +358,12 @@ async function parseTeam(team) {
         }
         if (!player['heroesProfileMmr']) {
             console.log(`no MMR for player: ${player.displayName} team: ${team.teamName_lower}`)
+        }
+
+        if (!sl_rank_max) {
+            console.log(player)
+            console.log(sl_rank_max)
+            process.exit()
         }
 
         if (sl_rank_max.hlRankMetal.charAt(0) == "U") {
@@ -369,7 +388,12 @@ async function parseTeam(team) {
     })
     const player_ranks = await Promise.all(player_ranks_promises)
 
-    // if (d) { process.exit() }
+   
+    if (d) { 
+        console.log(player_ranks)
+        process.exit() 
+    }
+    
 
 
     // console.log(team.teamName_lower)
