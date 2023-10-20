@@ -17,7 +17,7 @@
   },
   "homepage": "https://github.com/xmas/hots#readme",
   "dependencies": {
-    "axios": "^0.20.0",
+    "axios": "^1.5.1",
     "colors": "^1.4.0",
     "dotenv": "^8.2.0",
     "johnsons-relative-weights": "^1.0.3",
