@@ -31,8 +31,8 @@ async function start() {
 
         return await api.post('/standings/fetch/division', { "division": div.object.divisionConcat, "season": season, "pastSeason": true })
             .then((response) => {
-                // console.log(JSON.stringify(response.data), null, 4)
-
+                console.log(JSON.stringify(response.data), null, 4)
+                // process.exit()
                 let data = response.data.returnObject
                 
                 for (let i = 0; i < data.length; i++) {
@@ -46,6 +46,8 @@ async function start() {
                 let teams = _.keyBy(data, 'teamName')
                 Object.assign(all_teams, teams)
                 console.log('added teams')
+            }).catch((error) => {
+                //
             })
 
     })
