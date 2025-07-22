@@ -1,0 +1,382 @@
+[{
+  "_id": {
+    "$oid": "6850b1573904300020c37842"
+  },
+  "type": "division",
+  "season": 19,
+  "object": {
+    "teams": [
+      "Came From Behind",
+      "The High Inquisitors",
+      "Fancy Flightless Fowl (WIthdrawn)",
+      "gillyShark at !Bingo night",
+      "Magnitude: Epicenter",
+      "Points Donation Squad",
+      "Under Newb Management",
+      "Can't Pause Wont Pause",
+      "Crit Kickers",
+      "Spooky Ghosts",
+      "Gen.M Esports"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "6108ba0a6c1c4b001e7178f2"
+    },
+    "displayName": "A",
+    "divisionName": "A",
+    "divisionConcat": "a",
+    "sorting": 5,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "borntoshine",
+    "divColor": "ff00e9",
+    "__v": 49,
+    "public": true
+  },
+  "timeStamp": "1750118743633",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6850b1573904300020c37866"
+  },
+  "type": "division",
+  "season": 19,
+  "object": {
+    "teams": [],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "602220fd28736b0028d777f8"
+    },
+    "displayName": "Nexus",
+    "divisionName": "Nexus",
+    "divisionConcat": "nexus",
+    "sorting": 3,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "raka_lasair",
+    "__v": 49,
+    "public": false,
+    "divColor": "e8834e",
+    "DRR": false
+  },
+  "timeStamp": "1750118743745",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6850b1573904300020c3786d"
+  },
+  "type": "division",
+  "season": 19,
+  "object": {
+    "teams": [
+      "A Solid School",
+      "Blue and the Beta Males",
+      "BoomerGaming",
+      "Durotan's Couch",
+      "Inting For Globes",
+      "Rodney's Imaginary Friends",
+      "Team Happy Cloud",
+      "Psistorm Probes",
+      "Heavy Hitterz",
+      "Potential Scrim Thursday",
+      "Meme Makers (Withdrawn S19)",
+      "Can't Connect Stuns",
+      "9-5"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "60222cb328736b0028d77835"
+    },
+    "displayName": "Heroic",
+    "divisionName": "Heroic",
+    "divisionConcat": "heroic",
+    "sorting": 1,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "Pina Colada",
+    "DRR": false,
+    "__v": 72,
+    "public": true,
+    "divColor": "fe610e",
+    "cupDiv": false,
+    "divisionCoast": ""
+  },
+  "timeStamp": "1750118743753",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6850b1573904300020c378b1"
+  },
+  "type": "division",
+  "season": 19,
+  "object": {
+    "teams": [
+      "Magnitude: Aftershock",
+      "Macro Machines",
+      "Surely We Scale",
+      "Clouded Minds",
+      "Bunker Fun Time",
+      "Roll1Esports",
+      "Bork Side of the Moon"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "602232d5fc07120022c059ac"
+    },
+    "displayName": "B West",
+    "divisionName": "B West",
+    "divisionConcat": "b-west-west",
+    "sorting": 10,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "Raka_Lasair",
+    "__v": 52,
+    "public": true,
+    "divColor": "8585f2",
+    "DRR": true,
+    "divisionCoast": "West"
+  },
+  "timeStamp": "1750118743890",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6850b1573904300020c378e8"
+  },
+  "type": "division",
+  "season": 19,
+  "object": {
+    "teams": [
+      "Protectors of Shakuras",
+      "Rooster Pizza WBP",
+      "Phoenix Rising Amethyst",
+      "FC Hong Kong",
+      "COSMOS",
+      "ReGen DeGens",
+      "Dragon Gall Z"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "60223340fc07120022c059ae"
+    },
+    "displayName": "D",
+    "divisionName": "D",
+    "divisionConcat": "d",
+    "sorting": 12,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "KSTAR2691",
+    "__v": 48,
+    "public": true,
+    "divColor": "029d03",
+    "DRR": true
+  },
+  "timeStamp": "1750118743992",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6850b1583904300020c37913"
+  },
+  "type": "division",
+  "season": 19,
+  "object": {
+    "teams": [],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "6022331528736b0028d77846"
+    },
+    "displayName": "C West",
+    "divisionName": "C West",
+    "divisionConcat": "c-west",
+    "sorting": 11,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "Ectar",
+    "__v": 49,
+    "public": false,
+    "divColor": "f47a80",
+    "DRR": false
+  },
+  "timeStamp": "1750118744075",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6850b1583904300020c3791a"
+  },
+  "type": "division",
+  "season": 19,
+  "object": {
+    "teams": [],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "6022336328736b0028d77848"
+    },
+    "displayName": "D West",
+    "divisionName": "D West",
+    "divisionConcat": "d-west",
+    "sorting": 14,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "KSTAR2691",
+    "__v": 53,
+    "public": false,
+    "divColor": "7efc88",
+    "DRR": true
+  },
+  "timeStamp": "1750118744083",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6850b1583904300020c37928"
+  },
+  "type": "division",
+  "season": 19,
+  "object": {
+    "teams": [
+      "Bad Rats",
+      "Cats On My Keyboard",
+      "Deny Defend Dehaka",
+      "Ginormous Jaegers",
+      "Heavy Group Therapy",
+      "License to Kill",
+      "Maximum Thrust",
+      "Pepegas on Ice",
+      "Witch Rhythm",
+      "HoTS Tuah",
+      "Xul Gin Distillery"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "602232f728736b0028d77844"
+    },
+    "displayName": "C",
+    "divisionName": "C",
+    "divisionConcat": "c",
+    "sorting": 11,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "hokulele",
+    "__v": 60,
+    "public": true,
+    "divColor": "d20101",
+    "DRR": false
+  },
+  "timeStamp": "1750118744099",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6850b1583904300020c37956"
+  },
+  "type": "division",
+  "season": 19,
+  "object": {
+    "teams": [
+      "Crimson Cyber Squad",
+      "Trial by Annihilation",
+      "Habitual Line Steppers",
+      "Really Aggro Ghoul Elites",
+      "YCMYCCaST:(Samuro)CloneWar",
+      "30 Seconds to Mosh"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "602233ac28736b0028d7784a"
+    },
+    "displayName": "E",
+    "divisionName": "E",
+    "divisionConcat": "e",
+    "sorting": 16,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "Aura",
+    "__v": 54,
+    "public": true,
+    "divColor": "04abb4",
+    "DRR": true
+  },
+  "timeStamp": "1750118744192",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6850b1583904300020c37986"
+  },
+  "type": "division",
+  "season": 19,
+  "object": {
+    "teams": [
+      "Ground Up",
+      "CM Daybreak",
+      "Daddy Shams Cat Lounge (Withdrawn)",
+      "FUNdamentals",
+      "Protectors of Aiur",
+      "Frank's Furters",
+      "Braincellmates",
+      "Heavy Greg",
+      "Start Slow Then Taper Off",
+      "Hot(s) Dads",
+      "La Fine Équipe"
+    ],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "61f0888d243fbe001ddd7b0a"
+    },
+    "displayName": "B East",
+    "divisionName": "B East",
+    "divisionConcat": "b-east-east",
+    "sorting": 8,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "McGibblets",
+    "__v": 39,
+    "divColor": "1717ef",
+    "public": true,
+    "divisionCoast": "East"
+  },
+  "timeStamp": "1750118744275",
+  "__v": 0
+},
+{
+  "_id": {
+    "$oid": "6850b1583904300020c379b9"
+  },
+  "type": "division",
+  "season": 19,
+  "object": {
+    "teams": [],
+    "participants": [],
+    "tournaments": [],
+    "_id": {
+      "$oid": "65c3e1ab2717700029cab952"
+    },
+    "displayName": "B",
+    "divisionName": "B",
+    "divisionConcat": "b",
+    "sorting": 5,
+    "maxMMR": 0,
+    "minMMR": 0,
+    "moderator": "_.aura._",
+    "divColor": "1839af",
+    "__v": 3,
+    "public": false
+  },
+  "timeStamp": "1750118744374",
+  "__v": 0
+}]
