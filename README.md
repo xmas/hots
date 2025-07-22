@@ -35,4 +35,4 @@ save `season_19_teams.json`
 > And again
 `node make_ngs_spreadsheet.js`
 
-This makes `ngs/ngs_teams.csv` for upload to the spreadsheet.
+This makes `ngs/ngs_teams.csv` for upload to the spreadsheet. Import, then `REPLACE CURRENT SHEET`
